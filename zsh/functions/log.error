@@ -1,0 +1,3 @@
+#!/usr/bin/env zsh
+
+echo "\e[0;97;101m[ERROR]\e[0m ${@}" >&2

@@ -1,0 +1,85 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+# shell
+brew 'zsh'
+
+# My .zshrc Dependencies
+brew 'sheldon'
+brew 'fzf'
+brew 'ripgrep'
+brew 'eza'
+brew 'git'
+
+# git
+brew 'gh'
+brew 'ghq'
+brew 'git-extras'
+brew 'tig'
+
+# editor
+brew 'neovim'
+brew 'neovim-remote'
+
+# AWS
+brew 'awscli'
+brew 'aws-sam-cli'
+brew 'aws2-wrap'
+
+# IaC tools
+brew 'ansible'
+brew 'terraform'
+
+# CLI tools
+brew 'bat'
+brew 'duckdb'
+brew 'jq'
+brew 'knqyf263/pet/pet'
+brew 'hyperfine'
+brew 'tmux'
+brew 'universal-ctags'
+if OS.mac?
+  brew 'coreutils'
+  brew 'wget'
+  brew 'mas'
+end
+
+# For Build PHP (asdf)
+if OS.mac?
+  brew 'autoconf'
+  brew 'automake'
+  brew 'bison'
+  brew 'freetype'
+  brew 'gd'
+  brew 'gettext'
+  brew 'icu4c'
+  brew 'krb5'
+  brew 'libedit'
+  brew 'libiconv'
+  brew 'libjpeg'
+  brew 'libpng'
+  brew 'libxml2'
+  brew 'libzip'
+  brew 'pkg-config'
+  brew 're2c'
+  brew 'zlib'
+  brew 'gmp'
+  brew 'libsodium'
+  brew 'imagemagick'
+end
+
+# Font
+tap 'homebrew/cask-fonts'
+cask 'font-Hack-nerd-font'
+
+# Cask
+cask '1password'
+cask 'alacritty'
+cask 'discord'
+cask 'docker'
+cask 'google-chrome'
+cask 'ghostty'
+cask 'slack'
+
+# Mas
+mas 'xcode', id: 497_799_835 if OS.mac?

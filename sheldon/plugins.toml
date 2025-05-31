@@ -1,0 +1,114 @@
+shell = "zsh"
+
+[templates]
+defer = "{{ hooks?.pre | nl }}{% for file in files %}zsh-defer source \"{{ file }}\"\n{% endfor %}{{ hooks?.post | nl }}"
+
+[plugins]
+[plugins.zsh-defer]
+github = "romkatv/zsh-defer"
+
+[plugins.zsh-defer.hooks]
+post = """
+  zsh-defer compinit -C
+"""
+
+[plugins.asdf]
+github = "asdf-vm/asdf"
+use = ["asdf.sh"]
+apply = ["defer"]
+
+[plugins.asdf.hooks]
+pre = """
+  export ASDF_DIR="${XDG_DATA_HOME}/sheldon/repos/github.com/asdf-vm/asdf"
+  export ASDF_DATA_DIR="${XDG_DATA_HOME}/asdf"
+"""
+post = """
+  export ASDF_CONFIG_FILE="${XDG_CONFIG_HOME}/asdf/.asdfrc"
+  export ASDF_DEFAULT_TOOL_VERSIONS_FILENAME="${XDG_CONFIG_HOME}/asdf/.tool-versions"
+"""
+
+[plugins.fzf]
+remote = "https://github.com/junegunn/fzf/raw/master/shell/key-bindings.zsh"
+apply = ["defer"]
+
+[plugins.fzf.hooks]
+post = """
+  brew require rg ripgrep || return 1
+  export FZF_DEFAULT_COMMAND='rg --hidden --no-ignore --files'
+"""
+
+[plugins.git-prompt]
+remote = "https://github.com/git/git/raw/master/contrib/completion/git-prompt.sh"
+
+[plugins.git-prompt.hooks]
+post = """
+  export GIT_PS1_SHOWUPSTREAM=1
+  export GIT_PS1_SHOWDIRTYSTATE=1
+
+  setopt prompt_subst
+  readonly local __time='%{$fg[green]%}[%*]%{${reset_color}%}'
+  readonly local __dirname='%{$fg[red]%}%c%{${reset_color}%}'
+  readonly local __gitbranch='%{$fg[yellow]%}$(__git_ps1 "(%s) ")%{${reset_color}%}'
+  readonly local __prompt='%{$fg[cyan]%}❭%{${reset_color}%}'
+  PROMPT="${__time} ${__dirname} ${__gitbranch}\n${__prompt} "
+"""
+
+[plugins."olets/zsh-abbr"]
+github = "olets/zsh-abbr"
+use = ["zsh-abbr.plugin.zsh"]
+apply = ["defer"]
+
+[plugins."olets/zsh-abbr".hooks]
+pre = """
+  export ABBR_AUTO_LOAD=1
+"""
+post = """
+  brew require eza || return 1
+"""
+
+[plugins."zsh-users/zsh-autosuggestions"]
+github = "zsh-users/zsh-autosuggestions"
+apply = ["defer"]
+
+[plugins."zsh-users/zsh-completions"]
+github = "zsh-users/zsh-completions"
+apply = ["defer"]
+
+[plugins."zsh-users/zsh-syntax-highlighting"]
+github = "zsh-users/zsh-syntax-highlighting"
+apply = ["defer"]
+
+[plugins."zsh-users/zsh-syntax-highlighting".hooks]
+post = """
+  typeset -gA ZSH_HIGHLIGHT_STYLES
+  ZSH_HIGHLIGHT_STYLES[path]='none'
+  ZSH_HIGHLIGHT_STYLES[alias]='fg=cyan,bold'
+  ZSH_HIGHLIGHT_STYLES[arg0]='fg=cyan,bold'
+"""
+
+[plugins.zle]
+local = "~/.config/zsh/zle"
+use = ["_editor", "_fzf_ghq_lookup", "_gh_copilot_suggest", "_pet_select"]
+apply = ["defer"]
+
+[plugins.zle.hooks]
+pre = """
+  brew require fzf || return 1
+  brew require gh || return 1
+  brew require ghq || return 1
+  brew require pet knqyf263/pet/pet || return 1
+
+  if [[ ! -d "${XDG_DATA_HOME}/gh/extensions/gh-copilot" ]]; then
+    log.info "Installing gh copilot extension"
+    gh extension install github/gh-copilot &> /dev/null
+    log.info "gh copilot extension installed"
+  fi
+
+  mkdir -p "${HOME}/repos"
+"""
+post = """
+  bindkey '^o' _editor
+  bindkey '^G' _fzf_ghq_lookup
+  bindkey '^s' _gh_copilot_suggest
+  bindkey '^p' _pet_select
+"""

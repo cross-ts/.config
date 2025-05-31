@@ -1,0 +1,6 @@
+#!/usr/bin/env zsh
+
+if [[ ${DOTFILES_DEBUG} != "on" ]]; then
+  return 0
+fi
+echo "\e[0;97;100m[DEBUG]\e[0m ${@}"

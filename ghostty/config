@@ -1,0 +1,24 @@
+# Application
+title = "Ghostty"
+shell-integration = zsh
+
+# Window
+window-height = 10000
+window-width = 10000
+window-padding-balance = true
+background-opacity = 0.8
+background-blur-radius = 20
+
+# Colors
+config-file = 788bc5
+bold-is-bright = true
+cursor-style = bar
+
+# Fonts
+font-size = 14
+font-family = "Hack Nerd Font"
+font-feature = -calt
+font-feature = -dlig
+
+# Mouse
+mouse-hide-while-typing = true

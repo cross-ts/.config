@@ -1,0 +1,8 @@
+#!/usr/bin/env zsh
+
+shell=${1:-sh}
+container_id=$(command docker container ls | perl -alne 'print unless $. == 1' | fzf --ansi --height 40% | perl -alne 'print $F[0]')
+if [[ ! -n $container_id ]]; then
+  return 1
+fi
+command docker exec -it ${container_id} $shell

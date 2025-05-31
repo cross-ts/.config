@@ -1,0 +1,35 @@
+#!/usr/bin/env zsh
+
+function _gh_copilot_suggest() {
+  local SUGGESTION GH_COPILOT_CMD
+
+  TEMPFILE=$(mktemp)
+  trap 'rm -f ${TEMPFILE} && unset TEMPFILE' EXIT
+
+  GH_COPILOT_CMD=$(pet search --color -t suggest)
+  if [ -z "${GH_COPILOT_CMD}" ]; then
+    CURSOR=0
+    zle reset-prompt
+    return 1
+  fi
+
+  GH_COPILOT_CMD="${GH_COPILOT_CMD} -s ${TEMPFILE}"
+  echo -n "${GH_COPILOT_CMD}\n"
+  if ! eval "${GH_COPILOT_CMD}" < /dev/tty; then
+    CURSOR=0
+    zle reset-prompt
+    return 1
+  fi
+
+  if [ -s "${TEMPFILE}" ]; then
+    SUGGESTION=$(cat "${TEMPFILE}")
+    BUFFER="${SUGGESTION}"
+    CURSOR=${#BUFFER}
+    zle redisplay
+    return 0
+  fi
+  zle reset-prompt
+  return 0
+}
+
+zle -N _gh_copilot_suggest

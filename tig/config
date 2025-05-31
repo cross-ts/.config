@@ -1,0 +1,35 @@
+# blob view
+set blob-view = line-number:interval=1 text
+
+# diff view
+# default
+
+# log view
+# default
+
+# pager view
+# default
+
+# stage-view
+set stage-view = line-number:interval=1 text
+
+# blame view
+set blame-view = date author id:yes,color line-number:interval=1 text
+
+# grep view
+# default
+
+# main view
+set main-view = line-number:interval=1 date author id commit-title:graph=yes,refs=yes
+
+# refs view
+# default
+
+# stash view
+set stash-view = line-number:interval=1 date author id:yes,color commit-title
+
+# status view
+# default
+
+# tree view
+set tree-view = mode file-size date:display=custom,format="%Y-%m-%d" file-name

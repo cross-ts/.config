@@ -1,0 +1,31 @@
+[color]
+  ui = auto
+  diff = auto
+  status = auto
+  branch = auto
+[alias]
+  br = branch
+  co = checkout
+  cm = commit
+  st = status
+  sw = switch
+  df = diff
+  cp = cherry-pick
+  wt = worktree
+  rename = rename-branch
+[core]
+  editor = nvim
+  excludesfile = ~/.config/git/ignore
+  ignorecase = false
+[push]
+  default = current
+[include]
+  path = ~/.gituser
+[merge]
+  ff = false
+[pull]
+  ff = only
+[ghq]
+  root = ~/repos
+[init]
+  defaultBranch = main

@@ -1,0 +1,19 @@
+# MacOS
+.DS_Store
+
+# Editor
+## vim
+*~
+~*
+*.swp
+*.swo
+tags
+
+## IntelliJ IDEA
+.idea/
+
+## VS Code
+.vscode/
+
+
+.cross_ts/

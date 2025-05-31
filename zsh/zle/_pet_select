@@ -1,0 +1,9 @@
+#!/usr/bin/env zsh
+
+function _pet_select() {
+  BUFFER=$(pet search --query "$LBUFFER")
+  CURSOR=$#BUFFER
+  zle redisplay
+}
+
+zle -N _pet_select

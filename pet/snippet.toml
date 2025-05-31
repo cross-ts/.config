@@ -1,0 +1,37 @@
+[[snippets]]
+tag = ["ssh"]
+command = "eval $(ssh-agent -s) && ssh-add ~/.ssh/id_rsa"
+
+[[snippets]]
+tag = ["sheldon"]
+command = "sheldon lock --update"
+
+[[snippets]]
+tag = ["ai", "copilot", "suggest"]
+command = 'gh copilot suggest "<prompt>" -t "<target=shell>"'
+
+[[snippets]]
+tag = ["ai", "copilot", "explain"]
+command = 'gh copilot explain "<prompt>"'
+
+########
+# tmux #
+########
+[[snippets]]
+tag = ["tmux", "attach", "session"]
+command = "tmux attach-session -t $(tmux list-sessions -F '#{session_name}' | fzf)"
+
+[[snippets]]
+tag = ["tmux", "new", "session"]
+command = "tmux new-session -s <session-name>"
+
+#############
+# Benchmark #
+#############
+[[snippets]]
+tag = ["benchmark", "zsh"]
+command = "hyperfine --warmup 10 --shell=none 'zsh -i -c exit' 'zsh -i --no-global-rcs -c exit' 'zsh -i --no-rcs -c exit'"
+
+[[snippets]]
+tag = ["benchmark", "neovim"]
+command = "hyperfine --warmup 10 --shell=none 'nvim --headless -c qall!' 'nvim --headless -u NONE -c qall!'"

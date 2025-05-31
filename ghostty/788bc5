@@ -1,0 +1,22 @@
+## primary
+background = #1C1C1C
+
+## normal
+palette = 0=#2c2c2c
+palette = 1=#c07c66
+palette = 2=#4d9b7b
+palette = 3=#938f53
+palette = 4=#788bc5
+palette = 5=#bb789e
+palette = 6=#0c9ab4
+palette = 7=#d3d3d3
+
+## bright
+palette = 8=#666666
+palette = 9=#de692e
+palette = 10=#009e7e
+palette = 11=#809400
+palette = 12=#6483fa
+palette = 13=#eb4f9f
+palette = 14=#0098b9
+palette = 15=#eaeaea

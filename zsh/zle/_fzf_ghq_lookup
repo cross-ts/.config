@@ -1,0 +1,14 @@
+#!/usr/bin/env zsh
+function _fzf_ghq_lookup() {
+  local selected=$(ghq list | fzf --ansi --height 40%)
+  local ret=$?
+  if [ -n "$selected" ]; then
+    cd "$(ghq root)/${selected}"
+    zle accept-line
+  else
+    zle reset-prompt
+  fi
+  return $ret
+}
+
+zle -N _fzf_ghq_lookup

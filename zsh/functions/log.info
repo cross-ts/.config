@@ -1,0 +1,3 @@
+#!/usr/bin/env zsh
+
+echo "\e[0;97;104m[INFO]\e[0m ${@}"
