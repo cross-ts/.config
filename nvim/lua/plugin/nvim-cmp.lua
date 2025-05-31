@@ -7,6 +7,7 @@ return {
     'hrsh7th/cmp-nvim-lsp',
     'hrsh7th/cmp-path',
     'onsails/lspkind.nvim',
+    'mason-org/mason-lspconfig.nvim',
     'zbirenbaum/copilot-cmp',
   },
   event = {
@@ -75,6 +76,9 @@ return {
           end,
         }),
       },
+      vim.lsp.config('*', {
+        capabilities = require('cmp_nvim_lsp').default_capabilities(),
+      }),
     })
 
     cmp.setup.cmdline('/', {
@@ -83,6 +87,7 @@ return {
         { name = 'buffer' },
       })
     })
+
     cmp.setup.cmdline(':', {
       mapping = cmp.mapping.preset.cmdline(),
       sources = cmp.config.sources({
