@@ -12,21 +12,6 @@ post = """
   zsh-defer compinit -C
 """
 
-[plugins.asdf]
-github = "asdf-vm/asdf"
-use = ["asdf.sh"]
-apply = ["defer"]
-
-[plugins.asdf.hooks]
-pre = """
-  export ASDF_DIR="${XDG_DATA_HOME}/sheldon/repos/github.com/asdf-vm/asdf"
-  export ASDF_DATA_DIR="${XDG_DATA_HOME}/asdf"
-"""
-post = """
-  export ASDF_CONFIG_FILE="${XDG_CONFIG_HOME}/asdf/.asdfrc"
-  export ASDF_DEFAULT_TOOL_VERSIONS_FILENAME="${XDG_CONFIG_HOME}/asdf/.tool-versions"
-"""
-
 [plugins.fzf]
 remote = "https://github.com/junegunn/fzf/raw/master/shell/key-bindings.zsh"
 apply = ["defer"]
