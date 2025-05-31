@@ -23,6 +23,9 @@ return {
       enable = true,
       chars = { "┊" },
       use_treesitter = true,
+      exclude_filetypes = {
+        gitcommit = true,
+      },
     },
     line_num = {
       enable = true,
