@@ -7,5 +7,5 @@ return {
   event = {
     "VimEnter",
   },
-  config = true,
+  opts = {},
 }
