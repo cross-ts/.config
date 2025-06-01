@@ -6,8 +6,9 @@ return {
     'hrsh7th/cmp-cmdline',
     'hrsh7th/cmp-nvim-lsp',
     'hrsh7th/cmp-path',
-    'onsails/lspkind.nvim',
     'mason-org/mason-lspconfig.nvim',
+    'onsails/lspkind.nvim',
+    'rachartier/tiny-inline-diagnostic.nvim',
     'zbirenbaum/copilot-cmp',
   },
   event = {
