@@ -3,6 +3,7 @@
 
 # shell
 brew 'zsh'
+brew 'starship'
 
 # My .zshrc Dependencies
 brew 'sheldon'

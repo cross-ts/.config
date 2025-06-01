@@ -44,6 +44,15 @@ fi
 source "${SHELDON_CACHE}"
 unset SHELDON_CACHE
 
+brew require starship || return 1
+STARSHIP_CACHE="${ZCACHEDIR}/starship.zsh"
+if [[ ! -f "${STARSHIP_CACHE}" || "${XDG_CONFIG_HOME}/starship.toml" -nt "${STARSHIP_CACHE}" ]]; then
+  starship init zsh > "${STARSHIP_CACHE}"
+  log.info "Cache created ${STARSHIP_CACHE}"
+fi
+source "${STARSHIP_CACHE}"
+unset STARSHIP_CACHE
+
 # Ctrl-s, Ctrl-q等をshellに食われないようにする
 stty -ixon
 
