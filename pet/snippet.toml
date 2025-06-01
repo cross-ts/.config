@@ -6,6 +6,9 @@ command = "eval $(ssh-agent -s) && ssh-add ~/.ssh/id_rsa"
 tag = ["sheldon"]
 command = "sheldon lock --update"
 
+######################
+# GitHub Copilot CLI #
+######################
 [[snippets]]
 tag = ["ai", "copilot", "suggest"]
 command = 'gh copilot suggest "<prompt>" -t "<target=shell>"'
@@ -35,3 +38,14 @@ command = "hyperfine --warmup 10 --shell=none 'zsh -i -c exit' 'zsh -i --no-glob
 [[snippets]]
 tag = ["benchmark", "neovim"]
 command = "hyperfine --warmup 10 --shell=none 'nvim --headless -c qall!' 'nvim --headless -u NONE -c qall!'"
+
+########
+# asdf #
+########
+[[snippets]]
+tag = ["asdf", "install", "all"]
+command = "cat ~/.tool-versions | xargs -IXXX bash -c 'asdf install XXX && asdf set --home XXX'"
+
+[[snippets]]
+tag = ["asdf", "update", "all"]
+command = "asdf plugin update --all"

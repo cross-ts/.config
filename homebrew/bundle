@@ -10,6 +10,7 @@ brew 'fzf'
 brew 'ripgrep'
 brew 'eza'
 brew 'git'
+brew 'asdf'
 
 # git
 brew 'gh'
@@ -37,6 +38,7 @@ brew 'jq'
 brew 'knqyf263/pet/pet'
 brew 'hyperfine'
 brew 'tmux'
+brew 'tree'
 brew 'universal-ctags'
 if OS.mac?
   brew 'coreutils'
