@@ -1,6 +1,6 @@
 -- Colors
 vim.opt.termguicolors = true
-vim.opt.guicursor = "n-i-t:ver25"
+vim.opt.guicursor = "i-t:ver25"
 
 -- Indent Settings
 vim.opt.smartindent = true
