@@ -83,6 +83,7 @@ cask 'docker'
 cask 'google-chrome'
 cask 'ghostty'
 cask 'slack'
+cask 'visual-studio-code'
 
 # Mas
 mas 'xcode', id: 497_799_835 if OS.mac?
