@@ -24,10 +24,12 @@
 [pull]
   ff = only
 [gpg]
-	format = ssh
+   format = ssh
 [init]
   defaultBranch = main
 [ghq]
   root = ~/repos
 [include]
   path = ~/.gituser
+[commit]
+  gpgsign = true
