@@ -19,13 +19,15 @@
   ignorecase = false
 [push]
   default = current
-[include]
-  path = ~/.gituser
 [merge]
   ff = false
 [pull]
   ff = only
-[ghq]
-  root = ~/repos
+[gpg]
+	format = ssh
 [init]
   defaultBranch = main
+[ghq]
+  root = ~/repos
+[include]
+  path = ~/.gituser
