@@ -29,7 +29,7 @@
   defaultBranch = main
 [ghq]
   root = ~/repos
-[include]
-  path = ~/.gituser
 [commit]
   gpgsign = true
+[include]
+  path = ~/.gitinclude

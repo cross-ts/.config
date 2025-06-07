@@ -2,18 +2,13 @@
 .DS_Store
 
 # Editor
-## vim
 *~
 ~*
 *.swp
 *.swo
 tags
-
-## IntelliJ IDEA
 .idea/
-
-## VS Code
 .vscode/
 
-
+# Private
 .cross_ts/
