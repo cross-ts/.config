@@ -37,4 +37,4 @@ jobs:
           delete-branch: true
           labels: neovim
       - if: steps.pull-request.outputs.pull-request-number
-        run: gh pr merge --merge --auto ${{ steps.pull-request.outputs.pull-request-number }}
+        run: gh pr merge --squash --auto ${{ steps.pull-request.outputs.pull-request-number }}
