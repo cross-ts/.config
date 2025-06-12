@@ -1,0 +1,13 @@
+name: Lazy Update
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  lazy-update:
+    runs-on: ubuntu-latest
+    steps:
+      - run: nvim --headless "+Lazy! sync" +qa
