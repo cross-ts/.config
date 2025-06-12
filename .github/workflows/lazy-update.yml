@@ -13,3 +13,5 @@ jobs:
       - uses: actions/checkout@v4
       - run: sudo apt-get install neovim
       - run: nvim --headless "+Lazy! sync" +qa
+        env:
+          XDG_CONFIG_HOME: ${{ github.workspace }}
