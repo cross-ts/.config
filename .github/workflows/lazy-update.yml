@@ -7,11 +7,13 @@ on:
       - main
 
 jobs:
+  timeout-minutes: 3
   lazy-update:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: sudo apt-get install neovim
+      - run: sudo apt-get install --no-install-recommends neovim
       - run: nvim --headless "+Lazy! sync" +qa
         env:
           XDG_CONFIG_HOME: ${{ github.workspace }}
+          XDG_DATA_HOME: /tmp
