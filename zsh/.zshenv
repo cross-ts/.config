@@ -6,9 +6,6 @@ unsetopt GLOBAL_RCS
 # Debugging
 export DOTFILES_DEBUG=off
 
-# Set PATH
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-
 # XDG Base Directory Specification
 # See: https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html
 export XDG_CONFIG_HOME="${HOME}/.config"
@@ -48,6 +45,27 @@ export COMPOSE_BAKE=true
 #########
 # Paths #
 #########
-export PATH="${ASDF_DATA_DIR}/shims:${HOMEBREW_PREFIX}/bin:${HOMEBREW_PREFIX}/sbin${PATH+:$PATH}"
-export MANPATH="${HOMEBREW_PREFIX}/share/man${MANPATH+:$MANPATH}:"
-export INFOPATH="${HOMEBREW_PREFIX}/share/info:${INFOPATH:-}"
+typeset -U path PATH
+path=(
+  ${ASDF_DATA_DIR}/shims(N-/)
+  ${HOMEBREW_PREFIX}/bin(N-/)
+  ${HOMEBREW_PREFIX}/sbin(N-/)
+  /usr/local/bin
+  /usr/local/sbin
+  /usr/bin
+  /usr/sbin
+  /bin
+  /sbin
+)
+
+typeset -U manpath MANPATH
+manpath=(
+  ${HOMEBREW_PREFIX}/share/man(N-/)
+  /usr/local/share/man
+  /usr/share/man
+)
+
+typeset -U infopath INFOPATH
+infopath=(
+  ${HOMEBREW_PREFIX}/share/info(N-/)
+)
