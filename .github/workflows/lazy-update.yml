@@ -12,7 +12,10 @@ jobs:
     timeout-minutes: 3
     steps:
       - uses: actions/checkout@v4
-      - run: sudo apt-get install --no-install-recommends neovim
+      - uses: rhysd/action-setup-vim@v1
+        with:
+          version: stable
+          neovim: true
       - run: nvim --headless "+Lazy! sync" +qa
         env:
           XDG_CONFIG_HOME: ${{ github.workspace }}
