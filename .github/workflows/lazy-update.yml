@@ -10,5 +10,5 @@ jobs:
   lazy-update:
     runs-on: ubuntu-latest
     steps:
-      - run: apt-get install neovim
+      - run: sudo apt-get install neovim
       - run: nvim --headless "+Lazy! sync" +qa
