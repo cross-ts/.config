@@ -5,6 +5,9 @@
 brew 'zsh'
 brew 'starship'
 
+# ai
+brew 'gemini-cli'
+
 # My .zshrc Dependencies
 brew 'sheldon'
 brew 'fzf'
