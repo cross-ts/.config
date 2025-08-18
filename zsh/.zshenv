@@ -32,8 +32,8 @@ export HOMEBREW_CELLAR="${HOMEBREW_PREFIX}/Cellar"
 export HOMEBREW_REPOSITORY="${HOMEBREW_PREFIX}"
 
 # Homebrew Bundle
-export HOMEBREW_BUNDLE_FILE="${XDG_CONFIG_HOME}/homebrew/bundle"
-export HOMEBREW_BUNDLE_FILE_GLOBAL="${XDG_CONFIG_HOME}/homebrew/bundle"
+export HOMEBREW_BUNDLE_FILE="${XDG_CONFIG_HOME}/homebrew/Brewfile"
+export HOMEBREW_BUNDLE_FILE_GLOBAL="${XDG_CONFIG_HOME}/homebrew/Brewfile"
 
 # asdf
 export ASDF_DATA_DIR="${XDG_DATA_HOME}/asdf"

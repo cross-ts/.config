@@ -7,6 +7,7 @@ brew 'starship'
 
 # ai
 brew 'gemini-cli'
+brew 'codex'
 
 # My .zshrc Dependencies
 brew 'sheldon'
@@ -47,8 +48,9 @@ brew 'tree'
 brew 'universal-ctags'
 if OS.mac?
   brew 'coreutils'
-  brew 'wget'
+  brew 'make'
   brew 'mas'
+  brew 'wget'
 end
 
 # For Build PHP (asdf)
@@ -86,6 +88,7 @@ cask 'discord'
 cask 'docker'
 cask 'google-chrome'
 cask 'ghostty'
+cask 'obsidian'
 cask 'slack'
 cask 'visual-studio-code'
 
