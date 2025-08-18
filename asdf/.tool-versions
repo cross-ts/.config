@@ -1,7 +1,7 @@
-golang 1.24.3
-lua 5.4.7
-nodejs 24.1.0
+golang 1.25.0
+lua 5.4.8
+nodejs 24.6.0
 perl 5.40.1
 php 8.4.7
-python 3.13.3
-ruby 3.4.4
+python 3.13.7
+ruby 3.4.5

@@ -84,6 +84,8 @@ cask 'font-Hack-nerd-font'
 # Cask
 cask '1password'
 cask 'alacritty'
+cask 'claude'
+cask 'claude-code'
 cask 'discord'
 cask 'docker'
 cask 'google-chrome'
