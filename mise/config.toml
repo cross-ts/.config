@@ -1,8 +1,16 @@
 [tools]
+"gem:neovim" = "latest"
 go = "1.25.0"
 lua = "5.4.8"
 node = "24.6.0"
+"npm:@anthropic-ai/claude-code" = "latest"
+"npm:aws-cdk" = "latest"
+"npm:neovim" = "latest"
 perl = "5.42.0"
 php = "8.4.11"
+"pipx:markitdown" = "latest"
 python = "3.13.7"
 ruby = "3.4.5"
+
+[settings]
+experimental = true
