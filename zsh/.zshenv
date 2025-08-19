@@ -35,9 +35,9 @@ export HOMEBREW_REPOSITORY="${HOMEBREW_PREFIX}"
 export HOMEBREW_BUNDLE_FILE="${XDG_CONFIG_HOME}/homebrew/Brewfile"
 export HOMEBREW_BUNDLE_FILE_GLOBAL="${XDG_CONFIG_HOME}/homebrew/Brewfile"
 
-# asdf
-export ASDF_DATA_DIR="${XDG_DATA_HOME}/asdf"
-export ASDF_CONFIG_FILE="${XDG_CONFIG_HOME}/asdf/.asdfrc"
+# mise
+export MISE_DATA_DIR="${XDG_DATA_HOME}/mise"
+export PHP_CONFIGURE_OPTIONS="--with-openssl=${HOMEBREW_PREFIX}/opt/openssl@3 --with-iconv=${HOMEBREW_PREFIX}/opt/libiconv --with-readline=${HOMEBREW_PREFIX}/opt/readline"
 
 # Docker Compose
 export COMPOSE_BAKE=true
@@ -47,7 +47,7 @@ export COMPOSE_BAKE=true
 #########
 typeset -U path PATH
 path=(
-  ${ASDF_DATA_DIR}/shims(N-/)
+  ${MISE_DATA_DIR}/shims(N-/)
   ${HOMEBREW_PREFIX}/bin(N-/)
   ${HOMEBREW_PREFIX}/sbin(N-/)
   /usr/local/bin

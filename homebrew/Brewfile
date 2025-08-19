@@ -15,7 +15,7 @@ brew 'fzf'
 brew 'ripgrep'
 brew 'eza'
 brew 'git'
-brew 'asdf'
+brew 'mise'
 
 # git
 brew 'gh'
@@ -53,7 +53,7 @@ if OS.mac?
   brew 'wget'
 end
 
-# For Build PHP (asdf)
+# For Build PHP
 if OS.mac?
   brew 'autoconf'
   brew 'automake'
@@ -71,6 +71,7 @@ if OS.mac?
   brew 'libzip'
   brew 'pkg-config'
   brew 're2c'
+  brew 'readline'
   brew 'zlib'
   brew 'gmp'
   brew 'libsodium'
