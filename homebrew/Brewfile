@@ -5,10 +5,6 @@
 brew 'zsh'
 brew 'starship'
 
-# ai
-brew 'gemini-cli'
-brew 'codex'
-
 # My .zshrc Dependencies
 brew 'sheldon'
 brew 'fzf'
@@ -94,7 +90,6 @@ cask 'google-chrome'
 cask 'ghostty'
 cask 'obsidian'
 cask 'slack'
-cask 'visual-studio-code'
 
 # Mas
 mas 'xcode', id: 497_799_835 if OS.mac?
