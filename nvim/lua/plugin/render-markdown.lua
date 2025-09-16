@@ -8,5 +8,10 @@ return {
   ft = {
     'markdown',
   },
-  opts = {},
+  cmd = {
+    'RenderMarkdown',
+  },
+  opts = {
+    enabled = false,
+  },
 }
