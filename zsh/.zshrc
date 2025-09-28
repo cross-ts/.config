@@ -23,8 +23,9 @@ if ! command type brew >/dev/null 2>&1; then
   return 1
 fi
 
-# TODO: この辺なんとかしたい
-source ${ZDOTDIR}/zshrc/brew.zsh
+for file in ${ZDOTDIR}/modules/*.zsh; do
+    [[ -f "$file" ]] && source "$file"
+done
 
 brew require nvim neovim || return 1
 export EDITOR="nvim"
