@@ -2,12 +2,18 @@
 if [[ ${DOTFILES_DEBUG} == "on" ]]; then
   zmodload zsh/zprof && zprof
 fi
+
+# Zsh Directories
 mkdir -p "${ZDOTDIR}" "${ZCACHEDIR}" "${ZSTATEDIR}"
 
-# autoload
+# Load Core modules
 autoload -Uz compinit ${ZDOTDIR}/functions/*
 
-# Z shell
+for file in ${ZDOTDIR}/modules/*.zsh; do
+    [[ -f "$file" ]] && source "$file"
+done
+
+# Z shell options
 setopt share_history
 setopt hist_ignore_all_dups
 setopt hist_ignore_space
@@ -22,10 +28,6 @@ if ! command type brew >/dev/null 2>&1; then
   log.error "Homebrew is not installed"
   return 1
 fi
-
-for file in ${ZDOTDIR}/modules/*.zsh; do
-    [[ -f "$file" ]] && source "$file"
-done
 
 brew require nvim neovim || return 1
 export EDITOR="nvim"
@@ -56,9 +58,6 @@ unset STARSHIP_CACHE
 
 # Ctrl-s, Ctrl-q等をshellに食われないようにする
 stty -ixon
-
-# Distinct PATH
-typeset -U PATH
 
 ZSHRC="${(%):-%x}"
 if [[ ${ZSHRC} -nt ${ZSHRC}.zwc ]]; then
