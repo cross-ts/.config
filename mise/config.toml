@@ -1,8 +1,8 @@
 [tools]
 "gem:neovim" = "latest"
-go = "1.25.1"
+go = "1.25.3"
 lua = "5.4.8"
-node = "24.9.0"
+node = "25.0.0"
 "npm:@anthropic-ai/claude-code" = "latest"
 "npm:@github/copilot" = "latest"
 "npm:@google/gemini-cli" = "latest"
@@ -15,8 +15,8 @@ perl = "5.42.0"
 php = "8.4.13"
 "pipx:markitdown" = "latest"
 "pipx:pip" = "latest"
-python = "3.13.7"
-ruby = "3.4.6"
+python = "3.14.0"
+ruby = "3.4.7"
 
 [settings]
 experimental = true
