@@ -7,7 +7,6 @@ on:
 
 env:
   GH_TOKEN: ${{ github.token }}
-  XDG_CONFIG_HOME: ${{ github.workspace }}
 
 permissions:
   contents: write
@@ -25,8 +24,12 @@ jobs:
           sudo apt-get install -y autoconf bison build-essential curl gettext git libgd-dev libcurl4-openssl-dev libedit-dev libicu-dev libjpeg-dev libmysqlclient-dev libonig-dev libpng-dev libpq-dev libreadline-dev libsqlite3-dev libssl-dev libxml2-dev libzip-dev openssl pkg-config re2c zlib1g-dev
 
       - uses: jdx/mise-action@e3d7b8d67a7958d1207f6ed871e83b1ea780e7b0 # v3.3.1
+        env:
+          XDG_CONFIG_HOME: ${{ github.workspace }}
 
       - run: mise upgrade --bump
+        env:
+          XDG_CONFIG_HOME: ${{ github.workspace }}
 
       - id: pull-request
         uses: peter-evans/create-pull-request@271a8d0340265f705b14b6d32b9829c1cb33d45e # v7.0.8
