@@ -18,5 +18,34 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+      - name: Install PHP dependencies
+        run : |
+          apt-get update
+          apt-get install -y \
+            autoconf \
+            bison \
+            build-essential \
+            curl \
+            gettext \
+            git \
+            libgd-dev \
+            libcurl4-openssl-dev \
+            libedit-dev \
+            libicu-dev \
+            libjpeg-dev \
+            libmysqlclient-dev \
+            libonig-dev \
+            libpng-dev \
+            libpq-dev \
+            libreadline-dev \
+            libsqlite3-dev \
+            libssl-dev \
+            libxml2-dev \
+            libzip-dev \
+            openssl \
+            pkg-config \
+            re2c \
+            zlib1g-dev
+
       - uses: jdx/mise-action@e3d7b8d67a7958d1207f6ed871e83b1ea780e7b0 # v3.3.1
       - run: mise upgrade --bump
