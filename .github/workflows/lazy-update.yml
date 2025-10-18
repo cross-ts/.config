@@ -7,7 +7,6 @@ on:
 
 env:
   GH_TOKEN: ${{ github.token }}
-  XDG_CONFIG_HOME: ${{ github.workspace }}
 
 permissions:
   contents: write
