@@ -85,10 +85,11 @@ cask '1password'
 cask 'alacritty'
 cask 'claude'
 cask 'discord'
-cask 'docker'
+cask 'docker-desktop'
 cask 'google-chrome'
 cask 'ghostty'
 cask 'obsidian'
+cask 'steam'
 cask 'slack'
 
 # Mas
