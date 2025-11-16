@@ -25,11 +25,13 @@
   ff = only
 [gpg]
    format = ssh
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+[commit]
+  gpgsign = true
 [init]
   defaultBranch = main
 [ghq]
   root = ~/repos
-[commit]
-  gpgsign = true
 [include]
   path = ~/.gitinclude
