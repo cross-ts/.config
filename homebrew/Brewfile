@@ -1,6 +1,10 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
+# Tap
+tap 'dbt-labs/dbt-cli'
+tap 'homebrew/cask-fonts'
+
 # shell
 brew 'zsh'
 brew 'starship'
@@ -35,6 +39,7 @@ brew 'terraform'
 # CLI tools
 brew 'alp'
 brew 'bat'
+brew 'dbt'
 brew 'duckdb'
 brew 'jq'
 brew 'knqyf263/pet/pet'
@@ -76,10 +81,6 @@ if OS.mac?
   brew 'imagemagick'
 end
 
-# Font
-tap 'homebrew/cask-fonts'
-cask 'font-Hack-nerd-font'
-
 # Cask
 cask '1password'
 cask '1password-cli'
@@ -88,6 +89,7 @@ cask 'claude'
 cask 'claude-code'
 cask 'discord'
 cask 'docker-desktop'
+cask 'font-Hack-nerd-font'
 cask 'google-chrome'
 cask 'ghostty'
 cask 'obsidian'
