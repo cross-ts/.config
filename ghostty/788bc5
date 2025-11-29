@@ -1,22 +1,23 @@
 ## primary
-background = #1C1C1C
+background = #161011
+foreground = #e4dbdd
 
 ## normal
-palette = 0=#2c2c2c
-palette = 1=#c07c66
-palette = 2=#4d9b7b
-palette = 3=#938f53
+palette = 0=#2d2728
+palette = 1=#be796c
+palette = 2=#679d6e
+palette = 3=#998f4b
 palette = 4=#788bc5
-palette = 5=#bb789e
-palette = 6=#0c9ab4
-palette = 7=#d3d3d3
+palette = 5=#aa7aab
+palette = 6=#3c9ea4
+palette = 7=#c4bbbd
 
 ## bright
-palette = 8=#666666
-palette = 9=#de692e
-palette = 10=#009e7e
-palette = 11=#809400
-palette = 12=#6483fa
-palette = 13=#eb4f9f
-palette = 14=#0098b9
-palette = 15=#eaeaea
+palette = 8=#554e4f
+palette = 9=#e57461
+palette = 10=#52b264
+palette = 11=#ae9b00
+palette = 12=#7793f2
+palette = 13=#c778c9
+palette = 14=#00b3be
+palette = 15=#e4dbdd
