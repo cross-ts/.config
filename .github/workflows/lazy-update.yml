@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 3
     steps:
-      - uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
+      - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
       - uses: rhysd/action-setup-vim@19e3dd31a84dbc2c5445d65e9b363f616cab96c1 # v1.6.0
         with:
           version: stable
@@ -27,7 +27,7 @@ jobs:
           XDG_CONFIG_HOME: ${{ github.workspace }}
           XDG_DATA_HOME: /tmp
       - id: pull-request
-        uses: peter-evans/create-pull-request@84ae59a2cdc2258d6fa0732dd66352dddae2a412 # v7.0.9
+        uses: peter-evans/create-pull-request@22a9089034f40e5a961c8808d113e2c98fb63676 # v7.0.11
         with:
           branch: lazy-update/${{ github.run_id }}
           title: 'Lazy Update'
