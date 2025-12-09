@@ -1,21 +1,24 @@
 [tools]
-"gem:neovim" = "latest"
 go = "1.25.4"
 lua = "5.4.8"
 node = "25.2.1"
-"npm:@github/copilot" = "latest"
-"npm:@google/gemini-cli" = "latest"
 "npm:aws-cdk" = "latest"
 "npm:difit" = "latest"
-"npm:neovim" = "latest"
 "npm:npm-check-updates" = "latest"
-"npm:pnpm" = "latest"
 perl = "5.42.0"
 php = "8.5.0"
 "pipx:markitdown" = "latest"
-"pipx:pip" = "latest"
+pnpm = "latest"
 python = "3.14.0"
 ruby = "3.4.7"
 
+[tools."github:php/pie"]
+version = "latest"
+asset_pattern = "pie.phar"
+bin = "pie"
+
 [settings]
 experimental = true
+
+[settings.npm]
+package_manager = "pnpm"

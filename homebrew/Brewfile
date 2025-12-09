@@ -36,6 +36,12 @@ brew 'aws2-wrap'
 brew 'ansible'
 brew 'terraform'
 
+# AI Agents
+brew 'gemini-cli'
+cask 'claude-code'
+cask 'codex'
+cask 'copilot-cli'
+
 # CLI tools
 brew 'alp'
 brew 'bat'
@@ -87,8 +93,6 @@ cask '1password'
 cask '1password-cli'
 cask 'alacritty'
 cask 'claude'
-cask 'claude-code'
-cask 'codex'
 cask 'discord'
 cask 'docker-desktop'
 cask 'font-Hack-nerd-font'
