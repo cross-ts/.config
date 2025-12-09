@@ -1,5 +1,5 @@
 [tools]
-go = "1.25.4"
+go = "1.25.5"
 lua = "5.4.8"
 node = "25.2.1"
 "npm:aws-cdk" = "latest"
@@ -7,10 +7,10 @@ node = "25.2.1"
 "npm:npm-check-updates" = "latest"
 perl = "5.42.0"
 php = "8.5.0"
-"pipx:markitdown" = "latest"
 pnpm = "latest"
-python = "3.14.0"
 ruby = "3.4.7"
+uv = "latest"
+python = "3.14.0"
 
 [tools."github:php/pie"]
 version = "latest"
@@ -22,3 +22,6 @@ experimental = true
 
 [settings.npm]
 package_manager = "pnpm"
+
+[settings.python]
+default_packages_file = "~/.config/mise/.default-python-packages"
