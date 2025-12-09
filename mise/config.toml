@@ -1,16 +1,17 @@
 [tools]
 go = "1.25.5"
 lua = "5.4.8"
-node = "25.2.1"
 "npm:aws-cdk" = "latest"
 "npm:difit" = "latest"
 "npm:npm-check-updates" = "latest"
 perl = "5.42.0"
 php = "8.5.0"
 pnpm = "latest"
-ruby = "3.4.7"
 uv = "latest"
-python = "3.14.0"
+python = "3.14.2"
+ruby = "3.4.7"
+node = "25.2.1"
+rust = "1.91.1"
 
 [tools."github:php/pie"]
 version = "latest"
@@ -23,5 +24,11 @@ experimental = true
 [settings.npm]
 package_manager = "pnpm"
 
+#[settings.node]
+#default_packages_file = "~/.config/mise/.default-npm-packages"
+
 [settings.python]
 default_packages_file = "~/.config/mise/.default-python-packages"
+
+[settings.ruby]
+default_packages_file = "~/.config/mise/.default-gems"
