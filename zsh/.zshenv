@@ -42,6 +42,9 @@ export PHP_CONFIGURE_OPTIONS="--with-openssl=${HOMEBREW_PREFIX}/opt/openssl@3 --
 # Docker Compose
 export COMPOSE_BAKE=true
 
+# AI Agents Home Directory
+export CODEX_HOME=${XDG_CONFIG_HOME}/codex
+
 #########
 # Paths #
 #########
