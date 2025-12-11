@@ -1,0 +1,24 @@
+{
+  "mcpServers": {
+    "github": {
+      "type": "local",
+      "command": "mise",
+      "tools": [
+        "*"
+      ],
+      "args": [
+        "mcp:github"
+      ]
+    },
+    "serena": {
+      "type": "local",
+      "command": "mise",
+      "tools": [
+        "*"
+      ],
+      "args": [
+        "mcp:serena"
+      ]
+    }
+  }
+}
