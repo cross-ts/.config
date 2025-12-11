@@ -14,11 +14,12 @@ uv = "latest"
 python = "3.14.2"
 ruby = "3.4.7"
 node = "25.2.1"
-rust = "1.91.1"
+rust = "1.92.0"
 
 # MCP Servers
 "github:github/github-mcp-server" = "latest"
 "pipx:oraios/serena" = "latest"
+"pipx:mcp-server-git" = "latest"
 
 [tools."github:php/pie"]
 version = "latest"
@@ -46,6 +47,10 @@ default_packages_file = "~/.config/mise/.default-gems"
 #########
 # Tasks #
 #########
+# MCP Server Tasks
+[tasks."mcp:git"]
+run = "mcp-server-git --repository ."
+
 [tasks."mcp:github"]
 run = "github-mcp-server stdio"
 env = { GITHUB_PERSONAL_ACCESS_TOKEN = "{{ exec(command='gh auth token') }}" }
