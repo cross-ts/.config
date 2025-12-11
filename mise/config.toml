@@ -1,3 +1,6 @@
+#########
+# Tools #
+#########
 [tools]
 go = "1.25.5"
 lua = "5.4.8"
@@ -22,6 +25,9 @@ version = "latest"
 asset_pattern = "pie.phar"
 bin = "pie"
 
+############
+# Settings #
+############
 [settings]
 experimental = true
 
@@ -36,3 +42,13 @@ default_packages_file = "~/.config/mise/.default-python-packages"
 
 [settings.ruby]
 default_packages_file = "~/.config/mise/.default-gems"
+
+#########
+# Tasks #
+#########
+[tasks."mcp:github"]
+run = "github-mcp-server stdio"
+env = { GITHUB_PERSONAL_ACCESS_TOKEN = "{{ exec(command='gh auth token') }}" }
+
+[tasks."mcp:serena"]
+run = "serena start-mcp-server --transport stdio"
