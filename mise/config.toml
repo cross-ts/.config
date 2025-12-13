@@ -52,7 +52,7 @@ default_packages_file = "~/.config/mise/.default-gems"
 #########
 # MCP Server Tasks
 [tasks."mcp:git"]
-run = "mcp-server-git --repository ."
+run = "mcp-server-git --repository $(git rev-parse --show-toplevel)"
 
 [tasks."mcp:github"]
 run = "github-mcp-server stdio"
