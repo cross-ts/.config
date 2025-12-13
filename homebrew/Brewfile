@@ -97,6 +97,7 @@ cask 'discord'
 cask 'docker-desktop'
 cask 'font-Hack-nerd-font'
 cask 'google-chrome'
+cask "google-chrome@canary"
 cask 'ghostty'
 cask 'obsidian'
 cask 'steam'
