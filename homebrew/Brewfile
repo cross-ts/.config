@@ -3,6 +3,7 @@
 
 # Tap
 tap 'dbt-labs/dbt-cli'
+tap 'hashicorp/tap'
 tap 'homebrew/cask-fonts'
 
 # shell
@@ -34,7 +35,7 @@ brew 'aws2-wrap'
 
 # IaC tools
 brew 'ansible'
-brew 'terraform'
+brew 'hashicorp/tap/terraform'
 
 # AI Agents
 brew 'gemini-cli'
