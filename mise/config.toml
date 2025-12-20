@@ -52,11 +52,14 @@ default_packages_file = "~/.config/mise/.default-gems"
 #########
 # MCP Server Tasks
 [tasks."mcp:git"]
+description = "A Model Context Protocol server for Git repository interaction and automation."
 run = "mcp-server-git --repository $(git rev-parse --show-toplevel)"
 
 [tasks."mcp:github"]
+description = "GitHub's official MCP Server"
 run = "github-mcp-server stdio"
 env = { GITHUB_PERSONAL_ACCESS_TOKEN = "{{ exec(command='gh auth token') }}" }
 
 [tasks."mcp:serena"]
+description = "A powerful coding agent toolkit providing semantic retrieval and editing capabilities (MCP server & other integrations)"
 run = "serena start-mcp-server --transport stdio"
