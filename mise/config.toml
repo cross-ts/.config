@@ -12,7 +12,7 @@ php = "8.5.1"
 pnpm = "latest"
 uv = "latest"
 python = "3.14.2"
-ruby = "3.4.8"
+ruby = "4.0.0"
 node = "25.2.1"
 rust = "1.92.0"
 
