@@ -2,6 +2,13 @@
 tag = ["ssh"]
 command = "eval $(ssh-agent -s) && ssh-add ~/.ssh/id_rsa"
 
+############################
+# Version Manager Snippets #
+############################
+[[snippets]]
+tag = ["mise"]
+command = "mise up --bump"
+
 [[snippets]]
 tag = ["sheldon"]
 command = "sheldon lock --update"
