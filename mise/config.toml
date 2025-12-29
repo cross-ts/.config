@@ -16,8 +16,9 @@ ruby = "4.0.0"
 node = "25.2.1"
 rust = "1.92.0"
 
-# LSP Servers
+# Language Servers
 "npm:intelephense" = "latest"
+"aqua:LuaLS/lua-language-server" = "latest"
 
 # MCP Servers
 "github:github/github-mcp-server" = "latest"
