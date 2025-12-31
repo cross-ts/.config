@@ -18,7 +18,7 @@ rust = "1.92.0"
 
 # Language Servers
 "npm:intelephense" = "latest"
-"aqua:LuaLS/lua-language-server" = "latest"
+"github:LuaLS/lua-language-server" = "latest"
 
 # MCP Servers
 "github:github/github-mcp-server" = "latest"
@@ -51,6 +51,15 @@ default_packages_file = "~/.config/mise/.default-gems"
 #########
 # Tasks #
 #########
+# Language Server Tasks
+[tasks."lsp:php"]
+description = "PHP intellisense for Visual Studio Code"
+run = "intelephense --stdio"
+
+[tasks."lsp:lua"]
+description = "A language server that offers Lua language support - programmed in Lua"
+run = "lua-language-server"
+
 # MCP Server Tasks
 [tasks."mcp:git"]
 description = "A Model Context Protocol server for Git repository interaction and automation."
