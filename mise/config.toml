@@ -17,8 +17,9 @@ node = "25.2.1"
 rust = "1.92.0"
 
 # Language Servers
-"npm:intelephense" = "latest"
 "github:LuaLS/lua-language-server" = "latest"
+"npm:intelephense" = "latest"
+"npm:typescript-language-server" = "latest"
 
 # MCP Servers
 "github:github/github-mcp-server" = "latest"
@@ -29,6 +30,11 @@ rust = "1.92.0"
 version = "latest"
 asset_pattern = "pie.phar"
 bin = "pie"
+
+[tools."http:terraform-ls"]
+version = "0.38.3"
+url = "https://releases.hashicorp.com/terraform-ls/{{version}}/terraform-ls_{{version}}_{{ exec(command='uname -s') | lower }}_{{ exec(command='uname -m') }}.zip"
+version_list_url = "https://api.github.com/repos/hashicorp/terraform-ls/releases"
 
 ############
 # Settings #
@@ -52,13 +58,21 @@ default_packages_file = "~/.config/mise/.default-gems"
 # Tasks #
 #########
 # Language Server Tasks
+[tasks."lsp:lua"]
+description = "A language server that offers Lua language support - programmed in Lua"
+run = "lua-language-server"
+
 [tasks."lsp:php"]
 description = "PHP intellisense for Visual Studio Code"
 run = "intelephense --stdio"
 
-[tasks."lsp:lua"]
-description = "A language server that offers Lua language support - programmed in Lua"
-run = "lua-language-server"
+[tasks."lsp:terraform"]
+description = "Terraform Language Server"
+run = "terraform-ls serve"
+
+[tasks."lsp:typescript"]
+description = "TypeScript & JavaScript Language Server"
+run = "typescript-language-server --stdio"
 
 # MCP Server Tasks
 [tasks."mcp:git"]

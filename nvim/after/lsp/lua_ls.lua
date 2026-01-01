@@ -1,7 +1,6 @@
 --- @type vim.lsp.Config
 return {
   cmd = { 'mise', 'run', 'lsp:lua' },
-  filetypes = { 'lua' },
   settings = {
     Lua = {
       runtime = {
