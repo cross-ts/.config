@@ -1,5 +1,5 @@
 vim.filetype.add({
   pattern = {
-    [".*/%.github/workflows/.*%.ya?ml"] = "yaml.ghactions",
+    [".*/%.github/workflows/.*%.ya?ml"] = "yaml.github-actions",
   },
 })
