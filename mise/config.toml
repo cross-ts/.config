@@ -24,10 +24,15 @@ uv = "latest"
 
 # Language Servers
 "github:LuaLS/lua-language-server" = "latest"
+"go:github.com/docker/docker-language-server/cmd/docker-language-server" = "latest"
 "npm:bash-language-server" = "latest"
 "npm:intelephense" = "latest"
 "npm:tombi" = "latest"
 "npm:typescript-language-server" = "latest"
+"npm:vscode-json-languageserver" = "latest"
+"npm:yaml-language-server" = "latest"
+"npm:@actions/languageserver" = "latest"
+"npm:@ansible/ansible-language-server" = "latest"
 
 # MCP Servers
 "github:github/github-mcp-server" = "latest"
@@ -66,9 +71,25 @@ default_packages_file = "~/.config/mise/.default-gems"
 # Tasks #
 #########
 # Language Server Tasks
+[tasks."lsp:ansible"]
+description = "Ansible Language Server"
+run = "ansible-language-server --stdio"
+
 [tasks."lsp:bash"]
 description = "A language server for Bash"
 run = "bash-language-server start"
+
+[tasks."lsp:docker"]
+description = "Language server for Dockerfiles, Compose files, and Bake files"
+run = "docker-language-server start --stdio"
+
+[tasks."lsp:github-actions"]
+description = "GitHub Actions Language Server"
+run = "actions-languageserver --stdio"
+
+[tasks."lsp:json"]
+description = "VSCode JSON Language Server"
+run = "vscode-json-languageserver --stdio"
 
 [tasks."lsp:lua"]
 description = "A language server that offers Lua language support - programmed in Lua"
@@ -89,6 +110,10 @@ run = "tombi lsp"
 [tasks."lsp:typescript"]
 description = "TypeScript & JavaScript Language Server"
 run = "typescript-language-server --stdio"
+
+[tasks."lsp:yaml"]
+description = "Language Server for YAML Files"
+run = "yaml-language-server --stdio"
 
 # MCP Server Tasks
 [tasks."mcp:git"]
