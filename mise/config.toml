@@ -19,6 +19,7 @@ rust = "1.92.0"
 # Language Servers
 "github:LuaLS/lua-language-server" = "latest"
 "npm:intelephense" = "latest"
+"npm:tombi" = "latest"
 "npm:typescript-language-server" = "latest"
 
 # MCP Servers
@@ -69,6 +70,10 @@ run = "intelephense --stdio"
 [tasks."lsp:terraform"]
 description = "Terraform Language Server"
 run = "terraform-ls serve"
+
+[tasks."lsp:toml"]
+description = "TOML Formatter / Linter / Language Server"
+run = "tombi lsp"
 
 [tasks."lsp:typescript"]
 description = "TypeScript & JavaScript Language Server"
