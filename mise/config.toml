@@ -2,22 +2,29 @@
 # Tools #
 #########
 [tools]
+
+# Language Runtimes
 go = "1.25.5"
 lua = "5.4.8"
-"npm:aws-cdk" = "latest"
-"npm:difit" = "latest"
-"npm:npm-check-updates" = "latest"
 perl = "5.42.0"
 php = "8.5.1"
-pnpm = "latest"
-uv = "latest"
 python = "3.14.2"
 ruby = "4.0.0"
 node = "25.2.1"
 rust = "1.92.0"
 
+# Package Managers
+pnpm = "latest"
+uv = "latest"
+
+# CLI Tools
+"npm:aws-cdk" = "latest"
+"npm:difit" = "latest"
+"npm:npm-check-updates" = "latest"
+
 # Language Servers
 "github:LuaLS/lua-language-server" = "latest"
+"npm:bash-language-server" = "latest"
 "npm:intelephense" = "latest"
 "npm:tombi" = "latest"
 "npm:typescript-language-server" = "latest"
@@ -59,6 +66,10 @@ default_packages_file = "~/.config/mise/.default-gems"
 # Tasks #
 #########
 # Language Server Tasks
+[tasks."lsp:bash"]
+description = "A language server for Bash"
+run = "bash-language-server start"
+
 [tasks."lsp:lua"]
 description = "A language server that offers Lua language support - programmed in Lua"
 run = "lua-language-server"
