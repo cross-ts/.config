@@ -1,5 +1,5 @@
 -- colorscheme
-vim.cmd.colorscheme('habamax') -- Use built-in colorscheme
+vim.cmd.colorscheme('habamax') -- Set Default Colorscheme
 
 vim.api.nvim_set_hl(0, 'VertSplit', { bg = 'NONE' })
 vim.api.nvim_set_hl(0, 'Normal', { ctermbg = 'NONE' })

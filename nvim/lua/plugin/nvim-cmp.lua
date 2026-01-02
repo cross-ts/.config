@@ -6,10 +6,8 @@ return {
     'hrsh7th/cmp-cmdline',
     'hrsh7th/cmp-nvim-lsp',
     'hrsh7th/cmp-path',
-    'mason-org/mason-lspconfig.nvim',
-    'onsails/lspkind.nvim',
-    'rachartier/tiny-inline-diagnostic.nvim',
     'zbirenbaum/copilot-cmp',
+    'onsails/lspkind.nvim',
   },
   event = {
     'InsertEnter',
@@ -29,8 +27,7 @@ return {
     end
 
     cmp.setup({
-      window = {
-      },
+      window = {},
       mapping = {
         ['<Tab>'] = cmp.mapping(function(fallback)
           if cmp.visible() and has_words_before() then
@@ -77,16 +74,13 @@ return {
           end,
         }),
       },
-      vim.lsp.config('*', {
-        capabilities = require('cmp_nvim_lsp').default_capabilities(),
-      }),
     })
 
-    cmp.setup.cmdline('/', {
+    cmp.setup.cmdline({ '/', '?' }, {
       mapping = cmp.mapping.preset.cmdline(),
-      sources = cmp.config.sources({
+      sources = {
         { name = 'buffer' },
-      })
+      }
     })
 
     cmp.setup.cmdline(':', {
@@ -97,6 +91,11 @@ return {
         { name = 'cmdline' }
       }),
       matching = { disallow_symbol_nonprefix_matching = false }
+    })
+
+    local capabilities = require('cmp_nvim_lsp').default_capabilities()
+    vim.lsp.config('*', {
+      capabilities = capabilities,
     })
   end,
 }
