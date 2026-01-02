@@ -8,50 +8,6 @@ return {
     'nvim-telescope/telescope-fzf-native.nvim',
   },
   cmd = { 'Telescope' },
-  config = function()
-    local telescope = require('telescope')
-    telescope.setup {
-      defaults = {
-        vimgrep_arguments = {
-          'rg',
-          '--color=never',
-          '--no-heading',
-          '--with-filename',
-          '--line-number',
-          '--column',
-          '--smart-case',
-          '--hidden',
-          '--glob', '!**/.git/*',
-        },
-      },
-      pickers = {
-        find_files = {
-          find_command = { 'rg', '--files', '--hidden', '--glob', '!**/.git/*' },
-        },
-      },
-      extensions = {
-        file_browser = {
-          hijack_netrw = true,
-          auto_depth = true,
-          hidden = {
-            file_browser = true,
-            folder_browser = true,
-          },
-          git_status = false,
-          hide_parent_dir = true,
-        },
-        fzf = {
-          fuzzy = true,
-          override_generic_sorter = true,
-          override_file_sorter = true,
-          case_mode = 'smart_case',
-        },
-      }
-    }
-    telescope.load_extension('file_browser')
-    telescope.load_extension('frecency')
-    telescope.load_extension('fzf')
-  end,
   keys = function()
     return {
       { '<leader>ff', '<cmd>Telescope find_files<cr>', { silent = true } },
@@ -87,5 +43,52 @@ return {
       },
       { '<leader>fr', '<cmd>Telescope frecency workspace=CWD path_display={"shorten"}<cr>', { silent = true } },
     }
+  end,
+  config = function()
+    local telescope = require('telescope')
+    telescope.setup {
+      defaults = {
+        vimgrep_arguments = {
+          'rg',
+          '--color=never',
+          '--no-heading',
+          '--with-filename',
+          '--line-number',
+          '--column',
+          '--smart-case',
+          '--hidden',
+          '--glob', '!**/.git/*',
+        },
+      },
+      pickers = {
+        find_files = {
+          find_command = { 'fd', '--hidden' },
+        },
+      },
+      extensions = {
+        file_browser = {
+          hijack_netrw = true,
+          auto_depth = true,
+          hidden = {
+            file_browser = true,
+            folder_browser = true,
+          },
+          git_status = false,
+          hide_parent_dir = true,
+        },
+        frecency = {
+          matcher = "fuzzy",
+        },
+        fzf = {
+          fuzzy = true,
+          override_generic_sorter = true,
+          override_file_sorter = true,
+          case_mode = 'smart_case',
+        },
+      }
+    }
+    telescope.load_extension('file_browser')
+    telescope.load_extension('frecency')
+    telescope.load_extension('fzf')
   end,
 }
