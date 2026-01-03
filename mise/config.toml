@@ -47,7 +47,7 @@ uv = "latest"
 
 # Language Servers
 "gem:ruby-lsp" = "latest"
-"github:LuaLS/lua-language-server" = "latest"
+"github:LuaLS/lua-language-server" = "3.16.3"
 "go:github.com/docker/docker-language-server/cmd/docker-language-server" = "latest"
 "npm:bash-language-server" = "latest"
 "npm:intelephense" = "latest"

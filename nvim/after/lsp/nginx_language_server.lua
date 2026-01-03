@@ -1,4 +1,4 @@
 --- @type vim.lsp.Config
 return {
-  cmd = { 'mise', 'run', 'lsp:nginx' },
+  cmd = { 'mise', 'run', '-q', 'lsp:nginx' },
 }

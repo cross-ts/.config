@@ -1,4 +1,4 @@
 --- @type vim.lsp.Config
 return {
-  cmd = { 'mise', 'run', 'lsp:docker' },
+  cmd = { 'mise', 'run', '-q', 'lsp:docker' },
 }
