@@ -1,3 +1,24 @@
+############
+# Settings #
+############
+[settings]
+experimental = true
+
+[settings.npm]
+package_manager = "pnpm"
+
+#[settings.node]
+#default_packages_file = "~/.config/mise/.default-npm-packages"
+
+[settings.python]
+default_packages_file = "~/.config/mise/.default-python-packages"
+
+[settings.pipx]
+uvx = true
+
+[settings.ruby]
+default_packages_file = "~/.config/mise/.default-gems"
+
 #########
 # Tools #
 #########
@@ -16,6 +37,8 @@ rust = "1.92.0"
 # Package Managers
 pnpm = "latest"
 uv = "latest"
+"github:composer/composer" = { version = "latest", asset_pattern = "composer.phar", bin = "composer" }
+"github:php/pie" = { version = "latest", asset_pattern = "pie.phar", bin = "pie" }
 
 # CLI Tools
 "npm:aws-cdk" = "latest"
@@ -41,36 +64,10 @@ uv = "latest"
 "pipx:oraios/serena" = "latest"
 "pipx:mcp-server-git" = "latest"
 
-[tools."github:php/pie"]
-version = "latest"
-asset_pattern = "pie.phar"
-bin = "pie"
-
 [tools."http:terraform-ls"]
 version = "0.38.3"
 url = "https://releases.hashicorp.com/terraform-ls/{{version}}/terraform-ls_{{version}}_{{ exec(command='uname -s') | lower }}_{{ exec(command='uname -m') }}.zip"
 version_list_url = "https://api.github.com/repos/hashicorp/terraform-ls/releases"
-
-############
-# Settings #
-############
-[settings]
-experimental = true
-
-[settings.npm]
-package_manager = "pnpm"
-
-#[settings.node]
-#default_packages_file = "~/.config/mise/.default-npm-packages"
-
-[settings.python]
-default_packages_file = "~/.config/mise/.default-python-packages"
-
-[settings.pipx]
-uvx = true
-
-[settings.ruby]
-default_packages_file = "~/.config/mise/.default-gems"
 
 #########
 # Tasks #
