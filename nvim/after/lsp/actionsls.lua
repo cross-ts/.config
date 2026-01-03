@@ -78,7 +78,6 @@ end
 
 --- @type vim.lsp.Config
 return {
-  cmd = { "mise", "run", "-q", "lsp:github-actions" },
   filetypes = { "yaml.github-actions" },
   root_markers = { ".git" },
   init_options = {
