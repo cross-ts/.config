@@ -1,4 +1,5 @@
 -- Nvim Treesitter configurations and abstraction layer
+---@type LazyPluginSpec
 return {
   'nvim-treesitter/nvim-treesitter',
   dependencies = {

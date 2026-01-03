@@ -1,4 +1,5 @@
 -- 👌 Support for --remote and friends.
+---@type LazyPluginSpec
 return {
   'mhinz/neovim-remote',
   event = 'TermOpen',

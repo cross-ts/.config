@@ -22,6 +22,7 @@ return {
         checkThirdParty = false,
         library = {
           vim.env.VIMRUNTIME,
+          vim.fn.stdpath('data') .. '/lazy/lazy.nvim',
         },
       },
     },

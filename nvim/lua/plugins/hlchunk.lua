@@ -1,4 +1,5 @@
 -- This is the lua implementation of nvim-hlchunk, you can use this neovim plugin to highlight your indent line and the current chunk (context) your cursor stayed
+---@type LazyPluginSpec
 return {
   "shellRaining/hlchunk.nvim",
   dependencies = {

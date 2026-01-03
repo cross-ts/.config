@@ -1,4 +1,5 @@
 -- Wrapper of some vim/neovim's :terminal functions.
+---@type LazyPluginSpec
 return {
   "kassio/neoterm",
   cmd = { "Tnew", "Ttoggle" },

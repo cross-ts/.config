@@ -1,4 +1,5 @@
 -- A completion plugin for neovim coded in Lua.
+---@type LazyPluginSpec
 return {
   'hrsh7th/nvim-cmp',
   dependencies = {

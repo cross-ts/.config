@@ -1,4 +1,5 @@
 -- Find, Filter, Preview, Pick. All lua, all the time.
+---@type LazyPluginSpec
 return {
   'nvim-telescope/telescope.nvim',
   dependencies = {

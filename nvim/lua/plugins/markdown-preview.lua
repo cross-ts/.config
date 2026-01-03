@@ -1,4 +1,5 @@
 -- markdown preview plugin for (neo)vim
+---@type LazyPluginSpec
 return {
   "iamcco/markdown-preview.nvim",
   cmd = {

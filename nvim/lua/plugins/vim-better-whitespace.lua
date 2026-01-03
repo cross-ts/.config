@@ -1,4 +1,5 @@
 -- Better whitespace highlighting for Vim
+---@type LazyPluginSpec
 return {
   'ntpeters/vim-better-whitespace',
   event = 'BufRead',

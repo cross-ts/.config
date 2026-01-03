@@ -1,4 +1,5 @@
 -- A Neovim plugin that display prettier diagnostic messages. Display diagnostic messages where the cursor is, with icons and colors.
+---@type LazyPluginSpec
 return {
   "rachartier/tiny-inline-diagnostic.nvim",
   event = "VeryLazy",

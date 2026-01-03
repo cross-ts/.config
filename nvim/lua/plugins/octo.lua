@@ -1,4 +1,5 @@
 -- Edit and review GitHub issues and pull requests from the comfort of your favorite editor
+---@type LazyPluginSpec
 return {
   'pwntester/octo.nvim',
   dependencies = {

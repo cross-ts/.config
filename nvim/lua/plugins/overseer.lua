@@ -1,4 +1,5 @@
 -- A task runner and job management plugin for Neovim
+---@type LazyPluginSpec
 return {
   'stevearc/overseer.nvim',
   cmd = {

@@ -1,4 +1,5 @@
 -- A blazing fast and easy to configure neovim statusline plugin written in pure lua.
+---@type LazyPluginSpec
 return {
   'nvim-lualine/lualine.nvim',
   dependencies = {

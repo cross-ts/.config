@@ -1,4 +1,5 @@
 -- a lua powered greeter like vim-startify / dashboard-nvim
+---@type LazyPluginSpec
 return {
   'goolord/alpha-nvim',
   dependencies = {

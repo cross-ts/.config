@@ -1,4 +1,5 @@
 -- Plugin to improve viewing Markdown files in Neovim
+---@type LazyPluginSpec
 return {
   'MeanderingProgrammer/render-markdown.nvim',
   dependencies = {

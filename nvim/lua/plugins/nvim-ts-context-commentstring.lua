@@ -1,4 +1,5 @@
 -- Neovim treesitter plugin for setting the commentstring based on the cursor location in a file.
+---@type LazyPluginSpec
 return {
   'JoosepAlviste/nvim-ts-context-commentstring',
   dependencies = {

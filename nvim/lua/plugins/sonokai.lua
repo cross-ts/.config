@@ -1,4 +1,5 @@
 -- High Contrast & Vivid Color Scheme based on Monokai Pro
+---@type LazyPluginSpec
 return {
   "sainnhe/sonokai",
   init = function()

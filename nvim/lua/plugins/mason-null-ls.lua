@@ -1,4 +1,5 @@
 -- mason-null-ls bridges mason.nvim with the null-ls plugin - making it easier to use both plugins together.
+---@type LazyPluginSpec
 return {
   'jay-babu/mason-null-ls.nvim',
   dependencies = {

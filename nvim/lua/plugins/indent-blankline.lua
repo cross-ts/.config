@@ -1,4 +1,5 @@
 -- Indent guides for Neovim
+---@type LazyPluginSpec
 return {
   'lukas-reineke/indent-blankline.nvim',
   enabled = false,

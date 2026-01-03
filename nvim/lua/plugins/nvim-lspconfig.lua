@@ -1,4 +1,5 @@
 -- Quickstart configs for Nvim LSP
+---@type LazyPluginSpec
 return {
   'neovim/nvim-lspconfig',
   cmd = {
