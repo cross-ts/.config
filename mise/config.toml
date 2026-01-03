@@ -8,16 +8,16 @@ experimental = true
 package_manager = "pnpm"
 
 #[settings.node]
-#default_packages_file = "~/.config/mise/.default-npm-packages"
+#default_packages_file = "{{ xdg_config_home }}/mise/.default-npm-packages"
 
 [settings.python]
-default_packages_file = "~/.config/mise/.default-python-packages"
+default_packages_file = "{{ xdg_config_home }}/mise/.default-python-packages"
 
 [settings.pipx]
 uvx = true
 
 [settings.ruby]
-default_packages_file = "~/.config/mise/.default-gems"
+default_packages_file = "{{ xdg_config_home }}/mise/.default-gems"
 
 #########
 # Tools #
