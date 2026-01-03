@@ -1,2 +1,3 @@
-require('init')
-require('lazy/setup')
+require('init.before')
+require('init.settings')
+require('init.after')
