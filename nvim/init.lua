@@ -1,4 +1,3 @@
-require('init')
-require('lazy/setup')
-
-vim.cmd.colorscheme('sonokai')
+require('init.before')
+require('init.settings')
+require('init.after')
