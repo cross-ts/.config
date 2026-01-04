@@ -47,7 +47,7 @@ uv = "latest"
 
 # Language Servers
 "gem:ruby-lsp" = "latest"
-"github:LuaLS/lua-language-server" = "3.16.3"
+"github:LuaLS/lua-language-server" = "3.16.4"
 "go:github.com/docker/docker-language-server/cmd/docker-language-server" = "latest"
 "npm:bash-language-server" = "latest"
 "npm:intelephense" = "latest"
@@ -73,6 +73,10 @@ uv = "latest"
 "pipx:yamllint" = "latest"
 
 # Formatter
+"cargo:shellharden" = "latest"
+"cargo:stylua" = "latest"
+"go:golang.org/x/tools/cmd/goimports" = "latest"
+"pipx:isort" = "latest"
 
 # MCP Servers
 "github:github/github-mcp-server" = "latest"
