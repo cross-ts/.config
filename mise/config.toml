@@ -57,7 +57,12 @@ uv = "latest"
 "npm:yaml-language-server" = "latest"
 "npm:@actions/languageserver" = "latest"
 "npm:@ansible/ansible-language-server" = "latest"
+"npm:@github/copilot-language-server" = "latest"
 "pipx:nginx-language-server" = "latest"
+
+# Linting / Formatting Tools
+"github:phpstan/phpstan" = { version = "latest", asset_pattern = "phpstan.phar", bin = "phpstan" }
+"go:github.com/rhysd/actionlint/cmd/actionlint" = "latest"
 
 # MCP Servers
 "github:github/github-mcp-server" = "latest"

@@ -2,6 +2,7 @@
 ---@type LazyPluginSpec
 return {
   'mason-org/mason.nvim',
+  enabled = false,
   cmd = {
     'Mason',
     'MasonUpdate',
