@@ -3,7 +3,7 @@ local function get_github_token()
   local handle = io.popen("gh auth token 2>/dev/null")
   if not handle then return nil end
 
-  local token = handle: read("*a"):gsub("%s+", "")
+  local token = handle:read("*a"):gsub("%s+", "")
   handle:close()
   return token ~= "" and token or nil
 end
@@ -14,7 +14,7 @@ local function parse_github_remote(url)
   -- SSH format: git@github.com:owner/repo.git
   local owner, repo = url:match("git@github%.com:([^/]+)/([^/%.]+)")
   if owner and repo then
-    return owner, repo: gsub("%.git$", "")
+    return owner, repo:gsub("%.git$", "")
   end
 
   -- HTTPS format: https://github.com/owner/repo.git
@@ -34,7 +34,7 @@ local function get_repo_info(owner, repo)
   )
   local handle = io.popen(cmd)
   if not handle then return nil end
-  local result = handle: read("*a"):gsub("%s+$", "")
+  local result = handle:read("*a"):gsub("%s+$", "")
   handle:close()
 
   local id, owner_type = result:match("^(%d+)\t(.+)$")
@@ -50,7 +50,7 @@ end
 local function get_repos_config()
   local handle = io.popen("git rev-parse --show-toplevel 2>/dev/null")
   if not handle then return nil end
-  local git_root = handle: read("*a"):gsub("%s+", "")
+  local git_root = handle:read("*a"):gsub("%s+", "")
   handle:close()
 
   if git_root == "" then return nil end
