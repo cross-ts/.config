@@ -60,9 +60,19 @@ uv = "latest"
 "npm:@github/copilot-language-server" = "latest"
 "pipx:nginx-language-server" = "latest"
 
-# Linting / Formatting Tools
+# Linter
+"github:hadolint/hadolint" = "latest"
 "github:phpstan/phpstan" = { version = "latest", asset_pattern = "phpstan.phar", bin = "phpstan" }
+"github:squizlabs/PHP_CodeSniffer" = { version = "latest", asset_pattern = "phpcs.phar", bin = "phpcs" }
+"go:github.com/mrtazz/checkmake/cmd/checkmake" = "latest"
 "go:github.com/rhysd/actionlint/cmd/actionlint" = "latest"
+"npm:markdownlint-cli2" = "latest"
+"npm:@quobix/vacuum" = "latest"
+"pipx:ansible-lint" = "latest"
+"pipx:mypy" = "latest"
+"pipx:yamllint" = "latest"
+
+# Formatter
 
 # MCP Servers
 "github:github/github-mcp-server" = "latest"
