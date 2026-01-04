@@ -11,12 +11,14 @@ return {
     'BufNewFile',
   },
   config = function()
-    local null_ls = require('null-ls')
-    null_ls.setup({
-      sources = {
-        require('configs.none-ls.actionlint'),
-        require('configs.none-ls.phpstan'),
-      },
+    local sources = {}
+    for _, source in ipairs(vim.api.nvim_get_runtime_file('lua/configs/none-ls/*.lua', true)) do
+      local source_name = vim.fn.fnamemodify(source, ':t:r')
+      table.insert(sources, require('configs.none-ls.' .. source_name))
+    end
+
+    require('null-ls').setup({
+      sources = sources,
     })
   end,
 }

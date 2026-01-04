@@ -16,7 +16,7 @@ return {
   config = function()
     -- after/lsp/*.lua ベースでLSPサーバーを自動有効化 (mason-lspconfig相当)
     local servers = {}
-    for _, server in ipairs(vim.api.nvim_get_runtime_file('after/lsp/*.lua', true)) do
+    for _, server in ipairs(vim.api.nvim_get_runtime_file('lua/configs/lsp/*.lua', true)) do
       local server_name = vim.fn.fnamemodify(server, ':t:r')
       servers[server_name] = true
     end
