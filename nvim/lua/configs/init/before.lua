@@ -17,3 +17,6 @@ if not vim.loop.fs_stat(lazypath) then
   end
 end
 vim.opt.rtp:prepend(lazypath)
+
+-- Set Default Colorscheme
+vim.cmd.colorscheme('habamax')

@@ -1,6 +1,3 @@
--- My Settings
-vim.cmd.colorscheme('habamax') -- Set Default Colorscheme
-
 -- Leader Key
 vim.g.mapleader = ' '
 
