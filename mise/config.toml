@@ -53,7 +53,7 @@ uv = "latest"
 "npm:intelephense" = "latest"
 "npm:tombi" = "latest"
 "npm:typescript-language-server" = "latest"
-"npm:vscode-json-languageserver" = "latest"
+"npm:vscode-langservers-extracted" = "latest"
 "npm:yaml-language-server" = "latest"
 "npm:@actions/languageserver" = "latest"
 "npm:@ansible/ansible-language-server" = "latest"
@@ -91,7 +91,7 @@ run = "actions-languageserver --stdio"
 
 [tasks."lsp:json"]
 description = "VSCode JSON Language Server"
-run = "vscode-json-languageserver --stdio"
+run = "vscode-json-language-server --stdio"
 
 [tasks."lsp:lua"]
 description = "A language server that offers Lua language support - programmed in Lua"
