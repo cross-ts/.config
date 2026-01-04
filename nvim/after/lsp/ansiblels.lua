@@ -1,3 +1,2 @@
---- @type vim.lsp.Config
-return {
-}
+--- @see configs.lsp.ansiblels
+return require("configs.lsp.ansiblels")

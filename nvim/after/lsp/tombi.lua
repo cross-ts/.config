@@ -1,3 +1,2 @@
---- @type vim.lsp.Config
-return {
-}
+--- @see configs.lsp.tombi
+return require("configs.lsp.tombi")

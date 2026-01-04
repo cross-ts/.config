@@ -1,3 +1,2 @@
---- @type vim.lsp.Config
-return {
-}
+--- @see configs.lsp.ruby_lsp
+return require("configs.lsp.ruby_lsp")

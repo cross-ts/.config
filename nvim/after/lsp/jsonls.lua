@@ -1,3 +1,2 @@
---- @type vim.lsp.Config
-return {
-}
+--- @see configs.lsp.jsonls
+return require("configs.lsp.jsonls")

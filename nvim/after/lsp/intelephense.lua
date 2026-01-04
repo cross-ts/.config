@@ -1,4 +1,2 @@
---- @type vim.lsp.Config
-return {
-  filetypes = { 'php', 'php.stub' },
-}
+--- @see configs.lsp.intelephense
+return require("configs.lsp.intelephense")
