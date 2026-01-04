@@ -1,0 +1,5 @@
+-- Show code context
+---@type LazyPluginSpec
+return {
+  'nvim-treesitter/nvim-treesitter-context',
+}

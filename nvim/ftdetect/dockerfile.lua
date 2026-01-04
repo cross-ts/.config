@@ -1,9 +1,9 @@
-vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
-  pattern = {
-    "*.dockerfile",
-    "Dockerfile.*"
+vim.filetype.add({
+  extension = {
+    dockerfile = "dockerfile",
   },
-  callback = function()
-    vim.bo.filetype = "dockerfile"
-  end,
+
+  pattern = {
+    ["Dockerfile.*"] = "dockerfile",
+  },
 })
