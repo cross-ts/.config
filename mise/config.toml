@@ -61,10 +61,10 @@ uv = "latest"
 "pipx:nginx-language-server" = "latest"
 
 # Linter
+"github:checkmake/checkmake" = "latest"
 "github:hadolint/hadolint" = "latest"
 "github:phpstan/phpstan" = { version = "latest", asset_pattern = "phpstan.phar", bin = "phpstan" }
 "github:squizlabs/PHP_CodeSniffer" = { version = "latest", asset_pattern = "phpcs.phar", bin = "phpcs" }
-"go:github.com/mrtazz/checkmake/cmd/checkmake" = "latest"
 "go:github.com/rhysd/actionlint/cmd/actionlint" = "latest"
 "npm:markdownlint-cli2" = "latest"
 "npm:@quobix/vacuum" = "latest"
