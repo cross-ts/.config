@@ -5,6 +5,7 @@
 tap 'dbt-labs/dbt-cli'
 tap 'hashicorp/tap'
 tap 'homebrew/cask-fonts'
+tap 'hanasuke/moralerspace'
 
 # shell
 brew 'zsh'
@@ -98,6 +99,7 @@ cask 'claude'
 cask 'discord'
 cask 'docker-desktop'
 cask 'font-Hack-nerd-font'
+cask 'font-moralerspace'
 cask 'google-chrome'
 cask "google-chrome@canary"
 cask 'ghostty'

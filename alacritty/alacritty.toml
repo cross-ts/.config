@@ -14,10 +14,10 @@ history = 10000
 
 [font]
 size = 14.0
-normal = { family = "Hack Nerd Font", style = "Regular" }
-bold = { family = "Hack Nerd Font", style = "Bold" }
-italic = { family = "Hack Nerd Font", style = "Italic" }
-bold_italic = { family = "Hack Nerd Font", style = "Bold Italic" }
+normal = { family = "Moralerspace Neon", style = "Regular" }
+bold = { family = "Moralerspace Neon", style = "Bold" }
+italic = { family = "Moralerspace Neon", style = "Italic" }
+bold_italic = { family = "Moralerspace Neon", style = "Bold Italic" }
 
 [colors]
 # See: 788bc5.toml
@@ -27,9 +27,7 @@ draw_bold_text_with_bright_colors = true
 style = { shape = "Beam", blinking = "Off" }
 
 [terminal]
-[terminal.shell]
-program = "/opt/homebrew/bin/zsh"
-args = ["--no-global-rcs"]
+shell = { program = "/opt/homebrew/bin/zsh", args = ["--no-global-rcs"] }
 
 [mouse]
 hide_when_typing = true
