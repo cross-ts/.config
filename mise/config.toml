@@ -31,8 +31,8 @@ perl = "5.42.0"
 php = "8.5.2"
 python = "3.14.2"
 ruby = "4.0.1"
-node = "25.3.0"
-rust = "1.92.0"
+node = "25.4.0"
+rust = "1.93.0"
 
 # Package Managers
 pnpm = "latest"
@@ -47,7 +47,7 @@ uv = "latest"
 
 # Language Servers
 "gem:ruby-lsp" = "latest"
-"github:LuaLS/lua-language-server" = "3.17.0"
+"github:LuaLS/lua-language-server" = "3.17.1"
 "go:github.com/docker/docker-language-server/cmd/docker-language-server" = "latest"
 "npm:bash-language-server" = "latest"
 "npm:intelephense" = "latest"
