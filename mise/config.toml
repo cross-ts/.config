@@ -25,14 +25,14 @@ default_packages_file = "{{ xdg_config_home }}/mise/.default-gems"
 [tools]
 
 # Language Runtimes
-go = "1.25.7"
+go = "1.26.1"
 lua = "5.4.8"
 perl = "5.42.0"
-php = "8.5.2"
+php = "8.5.3"
 python = "3.14.3"
 ruby = "4.0.1"
-node = "25.6.0"
-rust = "1.93.0"
+node = "25.8.0"
+rust = "1.94.0"
 
 # Package Managers
 pnpm = "latest"
