@@ -11,7 +11,7 @@ return {
     vim.env.VISUAL = 'nvr --remote-wait'
   end,
   config = function()
-    vim.api.nvim_create_autocmd('Filetype', {
+    vim.api.nvim_create_autocmd('FileType', {
       pattern = 'gitcommit,gitrebase,gitconfig',
       callback = function()
         vim.bo.bufhidden = 'delete'

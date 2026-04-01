@@ -8,5 +8,13 @@ return {
     'RRethy/nvim-treesitter-endwise',
   },
   lazy = false,
-  opts = {}
+  config = function()
+    require('nvim-treesitter.config').setup({})
+    vim.api.nvim_create_autocmd('FileType', {
+      group = vim.api.nvim_create_augroup("vim-treesitter-start", {}),
+      callback = function()
+        pcall(vim.treesitter.start)
+      end,
+    })
+  end
 }

@@ -9,33 +9,35 @@ return {
     "BufNewFile",
     "BufReadPre",
   },
-  opts = {
-    chunk = {
-      enable = true,
-      use_treesitter = true,
-      style = {
-        ("#%06x"):format(vim.api.nvim_get_hl(0, { name = "Debug" }).fg),
-        ("#%06x"):format(vim.api.nvim_get_hl(0, { name = "Error" }).fg),
+  opts = function()
+    return {
+      chunk = {
+        enable = true,
+        use_treesitter = true,
+        style = {
+          ("#%06x"):format(vim.api.nvim_get_hl(0, { name = "Green" }).fg),
+          ("#%06x"):format(vim.api.nvim_get_hl(0, { name = "Error" }).fg),
+        },
+        duration = 100,
+        delay = 100,
       },
-      duration = 100,
-      delay = 100,
-    },
-    indent = {
-      enable = true,
-      chars = { "┊" },
-      use_treesitter = true,
-      exclude_filetypes = {
-        gitcommit = true,
+      indent = {
+        enable = true,
+        chars = { "┊" },
+        use_treesitter = true,
+        exclude_filetypes = {
+          gitcommit = true,
+        },
       },
-    },
-    line_num = {
-      enable = true,
-      style = ("#%06x"):format(vim.api.nvim_get_hl(0, { name = "CursorLineNr" }).fg),
-      use_treesitter = true,
-    },
-    blank = {
-      enable = true,
-      chars = { "⋅" },
-    },
-  },
+      line_num = {
+        enable = true,
+        style = ("#%06x"):format(vim.api.nvim_get_hl(0, { name = "CursorLineNr" }).fg),
+        use_treesitter = true,
+      },
+      blank = {
+        enable = true,
+        chars = { "⋅" },
+      },
+    }
+  end,
 }
