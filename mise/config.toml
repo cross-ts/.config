@@ -3,6 +3,7 @@
 ############
 [settings]
 experimental = true
+install_before = "7d"
 
 [settings.npm]
 package_manager = "pnpm"
