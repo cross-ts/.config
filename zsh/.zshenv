@@ -51,6 +51,7 @@ export SERENA_HOME=${XDG_DATA_HOME}/serena
 #########
 typeset -U path PATH
 path=(
+  ${ZDOTDIR}/bin(N-/)
   ${MISE_DATA_DIR}/shims(N-/)
   ${HOMEBREW_PREFIX}/bin(N-/)
   ${HOMEBREW_PREFIX}/sbin(N-/)
