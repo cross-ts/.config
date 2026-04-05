@@ -32,7 +32,7 @@ perl = "5.42.2"
 php = "8.5.4"
 python = "3.14.3"
 ruby = "4.0.2"
-node = "25.8.2"
+node = "25.9.0"
 rust = "1.94.1"
 
 # Package Managers
@@ -48,7 +48,7 @@ uv = "latest"
 
 # Language Servers
 "gem:ruby-lsp" = "latest"
-"github:LuaLS/lua-language-server" = "3.17.1"
+"github:LuaLS/lua-language-server" = "3.18.0"
 "go:github.com/docker/docker-language-server/cmd/docker-language-server" = "latest"
 "npm:bash-language-server" = "latest"
 "npm:intelephense" = "latest"
