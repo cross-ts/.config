@@ -27,11 +27,11 @@ default_packages_file = "{{ xdg_config_home }}/mise/.default-gems"
 [tools]
 
 # Language Runtimes
-go = "1.26.1"
+go = "1.26.2"
 lua = "5.4.8"
 perl = "5.42.2"
-php = "8.5.4"
-python = "3.14.3"
+php = "8.5.5"
+python = "3.14.4"
 ruby = "4.0.2"
 node = "25.9.0"
 rust = "1.94.1"
@@ -49,7 +49,7 @@ uv = "latest"
 
 # Language Servers
 "gem:ruby-lsp" = "latest"
-"github:LuaLS/lua-language-server" = "3.18.0"
+"github:LuaLS/lua-language-server" = "3.18.1"
 "go:github.com/docker/docker-language-server/cmd/docker-language-server" = "latest"
 "npm:bash-language-server" = "latest"
 "npm:intelephense" = "latest"
