@@ -1,0 +1,5 @@
+name: user-dependencies
+version: 0.0.0
+dependencies:
+  apm:
+    - anthropics/claude-plugins-official/plugins/skill-creator

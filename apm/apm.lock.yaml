@@ -1,0 +1,14 @@
+lockfile_version: '1'
+generated_at: '2026-04-16T16:32:26.665523+00:00'
+apm_version: 0.8.11
+dependencies:
+- repo_url: anthropics/claude-plugins-official
+  host: github.com
+  resolved_commit: 48aa43517886014e90ee80a6461f9de75045369d
+  virtual_path: plugins/skill-creator
+  is_virtual: true
+  package_type: marketplace_plugin
+  deployed_files:
+  - .claude/skills/skill-creator
+  - .copilot/skills/skill-creator
+  content_hash: sha256:eb6bd12617ecd6d7a3e14ec4b50436b30c345c0276fc04706d7da5787e687325
