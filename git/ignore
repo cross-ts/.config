@@ -11,4 +11,7 @@ tags
 .idea
 .vscode
 
-# Private
+# Claude Code
+CLAUDE.local.md
+settings.local.json
+plans
