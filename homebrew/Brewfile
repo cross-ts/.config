@@ -39,6 +39,7 @@ brew 'ansible'
 brew 'hashicorp/tap/terraform'
 
 # AI Agents
+brew 'microsoft/apm/apm'
 brew 'gemini-cli'
 cask 'claude-code'
 cask 'codex'
@@ -62,7 +63,6 @@ brew 'universal-ctags'
 if OS.mac?
   brew 'coreutils'
   brew 'make'
-  brew 'mas'
   brew 'wget'
 end
 
@@ -106,6 +106,3 @@ cask 'ghostty'
 cask 'obsidian'
 cask 'steam'
 cask 'slack'
-
-# Mas
-mas 'xcode', id: 497_799_835 if OS.mac?
