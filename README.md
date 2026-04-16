@@ -3,9 +3,8 @@
 ## Install
 
 ```bash
+cd ~
 git clone git@github.com:cross-ts/.config.git
-ln -fnsv .config/zsh/.zshenv ~/.zshenv
-
-ln -fnsv .config/claude ~/.claude
-ln -fnsv .config/gemini ~/.gemini
+cd .config
+make install
 ```

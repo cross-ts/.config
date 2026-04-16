@@ -6,9 +6,9 @@
 ~*
 *.swp
 *.swo
+.null-ls*
 tags
-.idea/
-.vscode/
+.idea
+.vscode
 
 # Private
-.cross_ts/
