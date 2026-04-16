@@ -44,7 +44,6 @@ export COMPOSE_BAKE=true
 
 # AI Agents Home Directory
 export CODEX_HOME=${XDG_CONFIG_HOME}/codex
-export SERENA_HOME=${XDG_DATA_HOME}/serena
 
 #########
 # Paths #
