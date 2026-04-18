@@ -1,22 +1,20 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
-  "language": "japanese",
   "env": {
     "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "0",
     "ENABLE_LSP_TOOL": "1"
   },
   "permissions": {
-    "allow": [
-    ],
-    "ask": [
-    ],
+    "allow": [],
     "deny": [
       "Read(.env)",
       "Read(auth.json)",
       "Read(~/.aws/*)",
       "Read(~/.ssh/*)"
     ],
+    "ask": [],
     "defaultMode": "plan"
   },
+  "language": "japanese",
   "plansDirectory": "./plans"
 }
