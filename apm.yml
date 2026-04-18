@@ -1,0 +1,9 @@
+name: dotfiles
+version: 1.0.0
+description: APM project for .config
+author: cross-ts
+dependencies:
+  apm:
+  - ./agents/skills/nvim-lsp-add
+  mcp: []
+scripts: {}
