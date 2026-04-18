@@ -34,7 +34,7 @@ php = "8.5.5"
 python = "3.14.4"
 ruby = "4.0.2"
 node = "25.9.0"
-rust = "1.94.1"
+rust = "1.95.0"
 
 # Package Managers
 pnpm = "latest"
