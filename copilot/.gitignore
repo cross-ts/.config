@@ -1,0 +1,5 @@
+config.json
+command-history-state.json
+history-session-state/*
+logs/*
+session-state/*
