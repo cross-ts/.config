@@ -1,37 +1,48 @@
-[color]
-  ui = auto
-  diff = auto
-  status = auto
-  branch = auto
-[alias]
-  br = branch
-  co = checkout
-  cm = commit
-  st = status
-  sw = switch
-  df = diff
-  cp = cherry-pick
-  wt = worktree
-  rename = rename-branch
-[core]
-  editor = nvim
-  excludesfile = ~/.config/git/ignore
-  ignorecase = false
-[push]
-  default = current
-[merge]
-  ff = false
-[pull]
-  ff = only
-[gpg]
-   format = ssh
-[gpg "ssh"]
-  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
-[commit]
-  gpgsign = true
-[init]
-  defaultBranch = main
-[ghq]
-  root = ~/repos
 [include]
-  path = ~/.gitinclude
+path = ~/.config/git/user
+
+[core]
+editor = nvim
+excludesfile = ~/.config/git/ignore
+ignorecase = false
+
+[init]
+defaultBranch = main
+
+[push]
+default = current
+
+[pull]
+ff = only
+
+[merge]
+ff = false
+
+[commit]
+gpgsign = true
+
+[gpg]
+format = ssh
+
+[gpg "ssh"]
+program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+
+[color]
+ui = auto
+diff = auto
+status = auto
+branch = auto
+
+[alias]
+br = branch
+co = checkout
+cm = commit
+st = status
+sw = switch
+df = diff
+cp = cherry-pick
+wt = worktree
+rename = rename-branch
+
+[ghq]
+root = ~/repos
