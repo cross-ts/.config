@@ -3,9 +3,3 @@ composer
 configstore
 github-copilot
 pie
-
-apm_modules/
-.agents/skills
-.claude/skills
-.codex/skills
-.github/skills

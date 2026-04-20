@@ -2,4 +2,5 @@ name: user-dependencies
 version: 0.0.0
 dependencies:
   apm:
-    - anthropics/claude-plugins-official/plugins/skill-creator
+  - anthropics/claude-plugins-official/plugins/skill-creator
+  - mizchi/chezmoi-dotfiles/dot_claude/skills/empirical-prompt-tuning
