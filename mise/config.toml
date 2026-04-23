@@ -3,6 +3,7 @@
 # Settings #
 ############
 [settings]
+lockfile = true
 experimental = true
 install_before = "7d"
 
