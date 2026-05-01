@@ -1,6 +1,6 @@
 lockfile_version: '1'
-generated_at: '2026-04-20T14:30:23.720601+00:00'
-apm_version: 0.8.11
+generated_at: '2026-05-01T15:24:17.015456+00:00'
+apm_version: 0.11.0
 dependencies:
 - repo_url: anthropics/claude-plugins-official
   host: github.com
@@ -9,8 +9,10 @@ dependencies:
   is_virtual: true
   package_type: marketplace_plugin
   deployed_files:
+  - .agents/skills/skill-creator
   - .claude/skills/skill-creator
   - .copilot/skills/skill-creator
+  - .gemini/skills/skill-creator
   content_hash: sha256:eb6bd12617ecd6d7a3e14ec4b50436b30c345c0276fc04706d7da5787e687325
 - repo_url: mizchi/chezmoi-dotfiles
   host: github.com
@@ -19,6 +21,8 @@ dependencies:
   is_virtual: true
   package_type: claude_skill
   deployed_files:
+  - .agents/skills/empirical-prompt-tuning
   - .claude/skills/empirical-prompt-tuning
   - .copilot/skills/empirical-prompt-tuning
+  - .gemini/skills/empirical-prompt-tuning
   content_hash: sha256:70e5a20153bc46d173d91ef0f5786972427afb85c971329731711c814b9c9911
