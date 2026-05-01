@@ -5,7 +5,7 @@
 [settings]
 lockfile = true
 experimental = true
-install_before = "7d"
+minimum_release_age = "7d"
 
 [settings.npm]
 package_manager = "pnpm"
@@ -33,7 +33,7 @@ lua = "5.4.8"
 perl = "5.42.2"
 php = "8.5.5"
 python = "3.14.4"
-ruby = "4.0.2"
+ruby = "4.0.3"
 node = "25.9.0"
 rust = "1.95.0"
 
@@ -47,6 +47,7 @@ uv = "latest"
 "npm:aws-cdk" = "latest"
 "npm:difit" = "latest"
 "npm:npm-check-updates" = "latest"
+"pipx:markitdown" = { version = "latest", extras = "all" }
 
 # Language Servers
 "gem:ruby-lsp" = "latest"
