@@ -47,6 +47,7 @@ uv = "latest"
 "npm:aws-cdk" = "latest"
 "npm:difit" = "latest"
 "npm:npm-check-updates" = "latest"
+"npm:@playwright/cli" = "latest"
 "pipx:markitdown" = { version = "latest", extras = "all" }
 
 # Language Servers
