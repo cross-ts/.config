@@ -1,10 +1,29 @@
 # Forbidden
+## HomeBrew
 prefix_rule(pattern = ["brew", "install"], decision = "forbidden")
 prefix_rule(pattern = ["brew", "upgrade"], decision = "forbidden")
+
+## Mise
 prefix_rule(pattern = ["mise", "use"], decision = "forbidden")
 prefix_rule(pattern = ["mise", "install"], decision = "forbidden")
 
 # Allow
+prefix_rule(pattern = ["eza"], decision = "allow")
+prefix_rule(pattern = ["rg"], decision = "allow")
+prefix_rule(pattern = ["fd"], decision = "allow")
+prefix_rule(pattern = ["jq"], decision = "allow")
+prefix_rule(pattern = ["difit"], decision = "allow")
+prefix_rule(pattern = ["marp"], decision = "allow")
+prefix_rule(pattern = ["markitdown"], decision = "allow")
+prefix_rule(pattern = ["obsidian"], decision = "allow")
+
+## Git
+prefix_rule(pattern = ["git", "log"], decision = "allow")
+prefix_rule(pattern = ["git", "status"], decision = "allow")
+prefix_rule(pattern = ["git", "diff"], decision = "allow")
+prefix_rule(pattern = ["git", "history"], decision = "allow")
+
+## GitHub CLI
 prefix_rule(pattern = ["gh", "pr", "view"], decision = "allow")
 prefix_rule(pattern = ["gh", "pr", "list"], decision = "allow")
 prefix_rule(pattern = ["gh", "pr", "status"], decision = "allow")
