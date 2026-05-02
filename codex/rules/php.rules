@@ -1,3 +1,5 @@
+prefix_rule(pattern = ["php"], decision = "forbidden")
+prefix_rule(pattern = ["composer", "require"], decision = "forbidden")
 prefix_rule(
     pattern = ["composer", "run"],
     decision = "allow",

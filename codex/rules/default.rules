@@ -1,0 +1,13 @@
+# Forbidden
+prefix_rule(pattern = ["brew", "install"], decision = "forbidden")
+prefix_rule(pattern = ["brew", "upgrade"], decision = "forbidden")
+prefix_rule(pattern = ["mise", "use"], decision = "forbidden")
+prefix_rule(pattern = ["mise", "install"], decision = "forbidden")
+
+# Allow
+prefix_rule(pattern = ["gh", "pr", "view"], decision = "allow")
+prefix_rule(pattern = ["gh", "pr", "list"], decision = "allow")
+prefix_rule(pattern = ["gh", "pr", "status"], decision = "allow")
+prefix_rule(pattern = ["gh", "issue", "view"], decision = "allow")
+prefix_rule(pattern = ["gh", "issue", "list"], decision = "allow")
+prefix_rule(pattern = ["gh", "issue", "status"], decision = "allow")
