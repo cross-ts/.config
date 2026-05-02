@@ -8,6 +8,8 @@ prefix_rule(pattern = ["mise", "use"], decision = "forbidden")
 prefix_rule(pattern = ["mise", "install"], decision = "forbidden")
 
 # Allow
+prefix_rule(pattern = ["ls"], decision = "allow")
+prefix_rule(pattern = ["make"], decision = "allow")
 prefix_rule(pattern = ["eza"], decision = "allow")
 prefix_rule(pattern = ["rg"], decision = "allow")
 prefix_rule(pattern = ["fd"], decision = "allow")
@@ -16,6 +18,14 @@ prefix_rule(pattern = ["difit"], decision = "allow")
 prefix_rule(pattern = ["marp"], decision = "allow")
 prefix_rule(pattern = ["markitdown"], decision = "allow")
 prefix_rule(pattern = ["obsidian"], decision = "allow")
+prefix_rule(pattern = ["duckdb"], decision = "allow")
+prefix_rule(pattern = ["sqlite3"], decision = "allow")
+
+## Linter
+prefix_rule(pattern = ["actionlint"], decision = "allow")
+prefix_rule(pattern = ["ansible-lint"], decision = "allow")
+prefix_rule(pattern = ["hadolint"], decision = "allow")
+prefix_rule(pattern = ["yamllint"], decision = "allow")
 
 ## Git
 prefix_rule(pattern = ["git", "log"], decision = "allow")
@@ -30,3 +40,7 @@ prefix_rule(pattern = ["gh", "pr", "status"], decision = "allow")
 prefix_rule(pattern = ["gh", "issue", "view"], decision = "allow")
 prefix_rule(pattern = ["gh", "issue", "list"], decision = "allow")
 prefix_rule(pattern = ["gh", "issue", "status"], decision = "allow")
+
+## Terraform
+prefix_rule(pattern = ["terraform", "fmt"], decision = "allow")
+prefix_rule(pattern = ["terraform", "validate"], decision = "allow")
