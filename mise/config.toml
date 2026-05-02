@@ -22,6 +22,9 @@ uvx = true
 [settings.ruby]
 default_packages_file = "{{ xdg_config_home }}/mise/.default-gems"
 
+[settings.github]
+credential_command = "gh auth token"
+
 #########
 # Tools #
 #########
