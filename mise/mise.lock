@@ -12,6 +12,45 @@ backend = "cargo:stylua"
 version = "0.26.9"
 backend = "gem:ruby-lsp"
 
+[[tools."github:AJenbo/phpantom_lsp"]]
+version = "0.7.0"
+backend = "github:AJenbo/phpantom_lsp"
+
+[tools."github:AJenbo/phpantom_lsp"."platforms.linux-arm64"]
+checksum = "sha256:8a307b76c3743089fe3830ffc83040a03c3ce41399774731f51d3e754a492cf1"
+url = "https://github.com/AJenbo/phpantom_lsp/releases/download/0.7.0/phpantom_lsp-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/AJenbo/phpantom_lsp/releases/assets/391327569"
+
+[tools."github:AJenbo/phpantom_lsp"."platforms.linux-arm64-musl"]
+checksum = "sha256:8a307b76c3743089fe3830ffc83040a03c3ce41399774731f51d3e754a492cf1"
+url = "https://github.com/AJenbo/phpantom_lsp/releases/download/0.7.0/phpantom_lsp-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/AJenbo/phpantom_lsp/releases/assets/391327569"
+
+[tools."github:AJenbo/phpantom_lsp"."platforms.linux-x64"]
+checksum = "sha256:a593da7e62adcef3ec63ca273f855ae269d55f2eed1f5d01ea0e3347f1597a5c"
+url = "https://github.com/AJenbo/phpantom_lsp/releases/download/0.7.0/phpantom_lsp-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/AJenbo/phpantom_lsp/releases/assets/391327589"
+
+[tools."github:AJenbo/phpantom_lsp"."platforms.linux-x64-musl"]
+checksum = "sha256:a593da7e62adcef3ec63ca273f855ae269d55f2eed1f5d01ea0e3347f1597a5c"
+url = "https://github.com/AJenbo/phpantom_lsp/releases/download/0.7.0/phpantom_lsp-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/AJenbo/phpantom_lsp/releases/assets/391327589"
+
+[tools."github:AJenbo/phpantom_lsp"."platforms.macos-arm64"]
+checksum = "sha256:f70e3ecf174df0776fd9f0f98447dc2d735018603b71e1620929dc92967b9aa0"
+url = "https://github.com/AJenbo/phpantom_lsp/releases/download/0.7.0/phpantom_lsp-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/AJenbo/phpantom_lsp/releases/assets/391327560"
+
+[tools."github:AJenbo/phpantom_lsp"."platforms.macos-x64"]
+checksum = "sha256:c4c4da8db230c8f0bf0e489d149f1ace04062a169a61ca23b33674de0c69e3f6"
+url = "https://github.com/AJenbo/phpantom_lsp/releases/download/0.7.0/phpantom_lsp-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/AJenbo/phpantom_lsp/releases/assets/391327579"
+
+[tools."github:AJenbo/phpantom_lsp"."platforms.windows-x64"]
+checksum = "sha256:8edf146e18f93f6a1846909288b8b726c466fec82452971ba42410d742b2c0c5"
+url = "https://github.com/AJenbo/phpantom_lsp/releases/download/0.7.0/phpantom_lsp-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/AJenbo/phpantom_lsp/releases/assets/391327585"
+
 [[tools."github:LuaLS/lua-language-server"]]
 version = "3.18.2"
 backend = "github:LuaLS/lua-language-server"
