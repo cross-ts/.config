@@ -15,10 +15,15 @@ return {
   },
   config = function()
     -- lua/configs/lsp/*.lua ベースでLSPサーバーを自動有効化 (mason-lspconfig相当)
+    local disabled_servers = {
+      intelephense = true,
+    }
     local servers = {}
     for _, server in ipairs(vim.api.nvim_get_runtime_file('lua/configs/lsp/*.lua', true)) do
       local server_name = vim.fn.fnamemodify(server, ':t:r')
-      servers[server_name] = true
+      if not disabled_servers[server_name] then
+        servers[server_name] = true
+      end
     end
     vim.lsp.enable(vim.tbl_keys(servers))
   end,

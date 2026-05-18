@@ -125,8 +125,8 @@ description = "Language server for nginx.conf"
 run = "nginx-language-server"
 
 [tasks."lsp:php"]
-description = "PHP intellisense for Visual Studio Code"
-run = "intelephense --stdio"
+description = "Fast PHP language server with deep type intelligence"
+run = "phpantom_lsp"
 
 [tasks."lsp:python"]
 description = "Fork of the python-language-server project, maintained by the Spyder IDE team and the community"
