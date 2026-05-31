@@ -1,4 +1,14 @@
 # Forbidden
+## pip
+prefix_rule(pattern = ["pip", "install"], decision = "forbidden")
+
+## npm
+prefix_rule(pattern = ["npm"], decision = "forbidden")
+prefix_rule(pattern = ["npx"], decision = "forbidden")
+
+## gem
+prefix_rule(pattern = ["gem", "install"], decision = "forbidden")
+
 ## HomeBrew
 prefix_rule(pattern = ["brew", "install"], decision = "forbidden")
 prefix_rule(pattern = ["brew", "upgrade"], decision = "forbidden")
@@ -28,6 +38,8 @@ prefix_rule(pattern = ["hadolint"], decision = "allow")
 prefix_rule(pattern = ["yamllint"], decision = "allow")
 
 ## Git
+prefix_rule(pattern = ["git", "add"], decision="allow")
+prefix_rule(pattern = ["git", "commit"], decision="allow")
 prefix_rule(pattern = ["git", "log"], decision = "allow")
 prefix_rule(pattern = ["git", "status"], decision = "allow")
 prefix_rule(pattern = ["git", "diff"], decision = "allow")
