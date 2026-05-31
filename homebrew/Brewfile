@@ -47,6 +47,7 @@ cask 'copilot-cli'
 
 # CLI tools
 brew 'alp'
+brew 'apfel'
 brew 'bat'
 brew 'dbt'
 brew 'duckdb'
@@ -104,7 +105,6 @@ cask 'docker-desktop'
 cask 'font-Hack-nerd-font'
 cask 'font-moralerspace'
 cask 'google-chrome'
-cask "google-chrome@canary"
 cask 'ghostty'
 cask 'obsidian'
 cask 'steam'

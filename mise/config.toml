@@ -34,10 +34,10 @@ credential_command = "gh auth token"
 go = "1.26.3"
 lua = "5.4.8"
 perl = "5.42.2"
-php = "8.5.6"
+php = "8.5.7RC1"
 python = "3.14.5"
-ruby = "4.0.3"
-node = "26.1.0"
+ruby = "4.0.5"
+node = "26.2.0"
 rust = "1.95.0"
 
 # Package Managers
