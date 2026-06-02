@@ -2,6 +2,13 @@
 ## pip
 prefix_rule(pattern = ["pip", "install"], decision = "forbidden")
 
+## Python
+prefix_rule(pattern = ["python"], decision = "forbidden")
+
+## PHP
+prefix_rule(pattern = ["php"], decision = "forbidden")
+prefix_rule(pattern = ["composer", "require"], decision = "forbidden")
+
 ## npm
 prefix_rule(pattern = ["npm"], decision = "forbidden")
 prefix_rule(pattern = ["npx"], decision = "forbidden")
@@ -17,8 +24,11 @@ prefix_rule(pattern = ["brew", "upgrade"], decision = "forbidden")
 prefix_rule(pattern = ["mise", "use"], decision = "forbidden")
 prefix_rule(pattern = ["mise", "install"], decision = "forbidden")
 
+prefix_rule(pattern = ["ls"], decision = "forbidden", justification = "Use `eza` insteadof `ls`.")
+prefix_rule(pattern = ["grep", decision = "forbidden", justification = "Use `rg` insteadof `grep`."])
+prefix_rule(pattern = ["find", decision = "forbidden", justification = "Use `fd` insteadof `find`."])
+
 # Allow
-prefix_rule(pattern = ["ls"], decision = "allow")
 prefix_rule(pattern = ["make"], decision = "allow")
 prefix_rule(pattern = ["eza"], decision = "allow")
 prefix_rule(pattern = ["rg"], decision = "allow")
@@ -44,15 +54,22 @@ prefix_rule(pattern = ["git", "log"], decision = "allow")
 prefix_rule(pattern = ["git", "status"], decision = "allow")
 prefix_rule(pattern = ["git", "diff"], decision = "allow")
 prefix_rule(pattern = ["git", "history"], decision = "allow")
+prefix_rule(pattern = ["git", "switch"], decision="allow")
+prefix_rule(pattern = ["git", "fetch"], decision="allow")
 
 ## GitHub CLI
 prefix_rule(pattern = ["gh", "pr", "view"], decision = "allow")
 prefix_rule(pattern = ["gh", "pr", "list"], decision = "allow")
 prefix_rule(pattern = ["gh", "pr", "status"], decision = "allow")
+prefix_rule(pattern = ["gh", "pr", "create"], decision = "allow")
 prefix_rule(pattern = ["gh", "issue", "view"], decision = "allow")
 prefix_rule(pattern = ["gh", "issue", "list"], decision = "allow")
 prefix_rule(pattern = ["gh", "issue", "status"], decision = "allow")
+prefix_rule(pattern = ["gh", "issue", "create"], decision = "allow")
 
 ## Terraform
 prefix_rule(pattern = ["terraform", "fmt"], decision = "allow")
 prefix_rule(pattern = ["terraform", "validate"], decision = "allow")
+
+## Composer
+prefix_rule(pattern = ["composer", "run"], decision = "allow", match = ["composer run --quite --list"])
