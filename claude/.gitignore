@@ -1,0 +1,9 @@
+.claude.json
+history.jsonl
+mcp-needs-auth-cache.json
+
+backups
+cache
+plugins
+projects
+sessions

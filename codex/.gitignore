@@ -1,0 +1,9 @@
+.personality_migration
+.tmp
+installation_id
+
+plugins/cache
+skills/.system
+
+*.sqlite*
+*.json*

@@ -21,40 +21,22 @@
       "Bash(hadolint:*)",
       "Bash(yamllint:*)",
       "Bash(git:*)",
-      "Bash(gh:*)",
-      "Bash(terraform fmt:*)",
-      "Bash(terraform validate:*)"
-    ],
-    "ask": [
-      "Bash(php:*)",
-      "Bash(python:*)",
-      "Bash(ruby:*)",
-      "Bash(gh api:*)"
+      "Bash(gh:*)"
     ],
     "deny": [
       "Bash(npm:*)",
       "Bash(npx:*)",
-      "Bash(pnpm install:*)",
-      "Bash(composer require:*)",
-      "Bash(pip install:*)",
-      "Bash(gem install:*)",
       "Bash(brew:*)",
-      "Bash(mise use:*)",
-      "Bash(mise up:*)",
-      "Bash(sheldon:*)",
-      "Bash(apm:*)",
-      "Bash(ls:*)",
-      "Bash(grep:*)",
-      "Bash(find:*)",
       "Bash(git config:*)",
       "Bash(gh auth:*)",
-      "Read(.env)",
-      "Read(auth.json)",
-      "Read(~/.aws/*)",
-      "Read(~/.ssh/*)"
+      "Read(auth.json)"
+    ],
+    "ask": [
+      "Bash(gh api:*)"
     ],
     "defaultMode": "plan"
   },
   "language": "japanese",
-  "plansDirectory": "./plans"
+  "plansDirectory": "./plans",
+  "theme": "auto"
 }
