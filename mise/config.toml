@@ -1,4 +1,6 @@
 #:schema https://mise.jdx.dev/schema/mise.json
+#:tombi toml-version = "v1.1.0"
+#:tombi schema.strict = true
 ############
 # Settings #
 ############
@@ -10,17 +12,8 @@ minimum_release_age = "7d"
 [settings.npm]
 package_manager = "pnpm"
 
-[settings.node]
-default_packages_file = "{{ xdg_config_home }}/mise/.default-npm-packages"
-
-[settings.python]
-default_packages_file = "{{ xdg_config_home }}/mise/.default-python-packages"
-
 [settings.pipx]
 uvx = true
-
-[settings.ruby]
-default_packages_file = "{{ xdg_config_home }}/mise/.default-gems"
 
 [settings.github]
 credential_command = "gh auth token"
@@ -31,14 +24,17 @@ credential_command = "gh auth token"
 [tools]
 
 # Language Runtimes
-go = "1.26.3"
+go = "1.26.4"
 lua = "5.4.8"
 perl = "5.42.2"
-php = "8.5.7RC1"
-python = "3.14.5"
+php = "8.5.7"
+python = {
+  version = "3.14.6",
+  postinstall = "$MISE_TOOL_INSTALL_PATH/bin/python -m pip install pyyaml"
+}
 ruby = "4.0.5"
-node = "26.2.0"
-rust = "1.95.0"
+node = "26.3.0"
+rust = "1.96.0"
 
 # Package Managers
 pnpm = "latest"
@@ -51,7 +47,6 @@ uv = "latest"
 "npm:difit" = "latest"
 "npm:npm-check-updates" = "latest"
 "npm:@playwright/cli" = "latest"
-"pipx:markitdown" = { version = "latest", extras = "all" }
 
 # Language Servers
 "gem:ruby-lsp" = "latest"
@@ -69,6 +64,11 @@ uv = "latest"
 "npm:@github/copilot-language-server" = "latest"
 "pipx:nginx-language-server" = "latest"
 "pipx:python-lsp-server" = "latest"
+"http:terraform-ls" = {
+  version = "0.38.3",
+  url = "https://releases.hashicorp.com/terraform-ls/{{version}}/terraform-ls_{{version}}_{{ exec(command='uname -s') | lower }}_{{ exec(command='uname -m') }}.zip",
+  version_list_url = "https://api.github.com/repos/hashicorp/terraform-ls/releases",
+}
 
 # Linter
 "github:checkmake/checkmake" = "latest"
@@ -86,11 +86,6 @@ uv = "latest"
 "cargo:shellharden" = "latest"
 "cargo:stylua" = "latest"
 "pipx:isort" = "latest"
-
-[tools."http:terraform-ls"]
-version = "0.38.3"
-url = "https://releases.hashicorp.com/terraform-ls/{{version}}/terraform-ls_{{version}}_{{ exec(command='uname -s') | lower }}_{{ exec(command='uname -m') }}.zip"
-version_list_url = "https://api.github.com/repos/hashicorp/terraform-ls/releases"
 
 #########
 # Tasks #
