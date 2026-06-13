@@ -4,12 +4,10 @@
 # Node.js
 prefix_rule(pattern = ["npm"], decision = "forbidden", justification = "Use `pnpm` insteadof `npm`.")
 prefix_rule(pattern = ["npx"], decision = "forbidden")
-prefix_rule(pattern = ["pnpm", "install"], decision = "forbidden")
 
 # PHP
 prefix_rule(pattern = ["composer", "run"], decision = "allow", match = ["composer run --quite --list"])
 prefix_rule(pattern = ["composer", "require"], decision = "forbidden")
-prefix_rule(pattern = ["composer", "install"], decision = "forbidden")
 prefix_rule(pattern = ["composer", "update"], decision = "forbidden")
 
 # Python
@@ -25,8 +23,10 @@ prefix_rule(pattern = ["gem", "install"], decision = "forbidden")
 prefix_rule(pattern = ["brew"], decision = "forbidden")
 
 # Mise
+prefix_rule(pattern = ["mise", "u"], decision = "forbidden")
 prefix_rule(pattern = ["mise", "use"], decision = "forbidden")
 prefix_rule(pattern = ["mise", "up"], decision = "forbidden")
+prefix_rule(pattern = ["mise", "upgrade"], decision = "forbidden")
 
 # Sheldon
 prefix_rule(pattern = ["sheldon"], decision = "forbidden")
@@ -38,7 +38,6 @@ prefix_rule(pattern = ["apm"], decision = "forbidden")
 # Tools Settings #
 ##################
 # Linux Commands
-prefix_rule(pattern = ["ls"], decision = "forbidden", justification = "Use `eza` insteadof `ls`.")
 prefix_rule(pattern = ["grep"], decision = "forbidden", justification = "Use `rg` insteadof `grep`.")
 prefix_rule(pattern = ["find"], decision = "forbidden", justification = "Use `fd` insteadof `find`.")
 
@@ -68,12 +67,9 @@ prefix_rule(pattern = ["gh"], decision = "allow")
 prefix_rule(pattern = ["gh", "api"], decision = "prompt")
 prefix_rule(pattern = ["gh", "auth"], decision = "forbidden")
 
-## Terraform
-prefix_rule(pattern = ["terraform", "fmt"], decision = "allow")
-prefix_rule(pattern = ["terraform", "validate"], decision = "allow")
-
 ## Linter
 prefix_rule(pattern = ["actionlint"], decision = "allow")
 prefix_rule(pattern = ["ansible-lint"], decision = "allow")
 prefix_rule(pattern = ["hadolint"], decision = "allow")
+prefix_rule(pattern = ["tombi", "lint"], decision = "allow")
 prefix_rule(pattern = ["yamllint"], decision = "allow")

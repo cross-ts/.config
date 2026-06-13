@@ -30,7 +30,7 @@ perl = "5.42.2"
 php = "8.5.7"
 python = {
   version = "3.14.6",
-  postinstall = "$MISE_TOOL_INSTALL_PATH/bin/python -m pip install pyyaml"
+  postinstall = "$MISE_TOOL_INSTALL_PATH/bin/python -m pip install pyyaml",
 }
 ruby = "4.0.5"
 node = "26.3.0"
@@ -86,63 +86,3 @@ uv = "latest"
 "cargo:shellharden" = "latest"
 "cargo:stylua" = "latest"
 "pipx:isort" = "latest"
-
-#########
-# Tasks #
-#########
-# Language Server Tasks
-[tasks."lsp:ansible"]
-description = "Ansible Language Server"
-run = "ansible-language-server --stdio"
-
-[tasks."lsp:bash"]
-description = "A language server for Bash"
-run = "bash-language-server start"
-
-[tasks."lsp:docker"]
-description = "Language server for Dockerfiles, Compose files, and Bake files"
-run = "docker-language-server start --stdio"
-
-[tasks."lsp:github-actions"]
-description = "GitHub Actions Language Server"
-run = "actions-languageserver --stdio"
-
-[tasks."lsp:json"]
-description = "VSCode JSON Language Server"
-run = "vscode-json-language-server --stdio"
-
-[tasks."lsp:lua"]
-description = "A language server that offers Lua language support - programmed in Lua"
-run = "lua-language-server"
-
-[tasks."lsp:nginx"]
-description = "Language server for nginx.conf"
-run = "nginx-language-server"
-
-[tasks."lsp:php"]
-description = "Fast PHP language server with deep type intelligence"
-run = "phpantom_lsp"
-
-[tasks."lsp:python"]
-description = "Fork of the python-language-server project, maintained by the Spyder IDE team and the community"
-run = "pylsp"
-
-[tasks."lsp:ruby"]
-description = "An opinionated language server for Ruby"
-run = "ruby-lsp"
-
-[tasks."lsp:terraform"]
-description = "Terraform Language Server"
-run = "terraform-ls serve"
-
-[tasks."lsp:toml"]
-description = "TOML Formatter / Linter / Language Server"
-run = "tombi lsp"
-
-[tasks."lsp:typescript"]
-description = "TypeScript & JavaScript Language Server"
-run = "typescript-language-server --stdio"
-
-[tasks."lsp:yaml"]
-description = "Language Server for YAML Files"
-run = "yaml-language-server --stdio"
