@@ -62,6 +62,7 @@ if OS.mac?
   brew 'coreutils'
   brew 'make'
   brew 'wget'
+  brew 'yap'
 end
 
 # For Build PHP

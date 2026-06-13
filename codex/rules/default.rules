@@ -7,20 +7,15 @@ prefix_rule(pattern = ["npx"], decision = "forbidden")
 prefix_rule(pattern = ["pnpm", "install"], decision = "forbidden")
 
 # PHP
-prefix_rule(pattern = ["php"], decision = "prompt")
-prefix_rule(
-    pattern = ["composer", "run"],
-    decision = "allow",
-    match = ["composer run --quite --list"],
-)
+prefix_rule(pattern = ["composer", "run"], decision = "allow", match = ["composer run --quite --list"])
 prefix_rule(pattern = ["composer", "require"], decision = "forbidden")
+prefix_rule(pattern = ["composer", "install"], decision = "forbidden")
+prefix_rule(pattern = ["composer", "update"], decision = "forbidden")
 
 # Python
-prefix_rule(pattern = ["python"], decision = "prompt")
 prefix_rule(pattern = ["pip", "install"], decision = "forbidden")
 
 # Ruby
-prefix_rule(pattern = ["ruby"], decision = "prompt")
 prefix_rule(pattern = ["gem", "install"], decision = "forbidden")
 
 ##################################
@@ -47,6 +42,9 @@ prefix_rule(pattern = ["ls"], decision = "forbidden", justification = "Use `eza`
 prefix_rule(pattern = ["grep"], decision = "forbidden", justification = "Use `rg` insteadof `grep`.")
 prefix_rule(pattern = ["find"], decision = "forbidden", justification = "Use `fd` insteadof `find`.")
 
+# Other AI
+prefix_rule(pattern = ["claude", "-p"], decision = "forbidden")
+
 # Utilities
 prefix_rule(pattern = ["eza"], decision = "allow")
 prefix_rule(pattern = ["rg"], decision = "allow")
@@ -59,6 +57,7 @@ prefix_rule(pattern = ["markitdown"], decision = "allow")
 prefix_rule(pattern = ["obsidian"], decision = "allow")
 prefix_rule(pattern = ["duckdb"], decision = "allow")
 prefix_rule(pattern = ["sqlite3"], decision = "allow")
+prefix_rule(pattern = ["yap"], decision = "allow")
 
 ## Git
 prefix_rule(pattern = ["git"], decision = "allow")
@@ -67,7 +66,7 @@ prefix_rule(pattern = ["git", "config"], decision = "forbidden")
 ## GitHub CLI
 prefix_rule(pattern = ["gh"], decision = "allow")
 prefix_rule(pattern = ["gh", "api"], decision = "prompt")
-prefix_rule(pattern = ["gh", "auth"], decision = "forbidden")
+prefix_rule(pattern = ["gh", "auth"], decision = "forbidden", justification = "Restricted. Don't use `gh auth`.")
 
 ## Terraform
 prefix_rule(pattern = ["terraform", "fmt"], decision = "allow")
