@@ -4,13 +4,12 @@
 DOTFILES_DIR := $(shell pwd)
 HOME_DIR     := $(HOME)
 
-LEGACY_DIRS  := agents apm codex copilot claude gemini
+LEGACY_DIRS  := apm codex claude
 
 ## install: Create symbolic links for legacy tools and .zshenv
 .PHONY: install
 install:
 	@echo "🚀 Creating symbolic links..."
-	@# Claude, Gemini
 	@$(foreach dir, $(LEGACY_DIRS), \
 		ln -sfn $(DOTFILES_DIR)/$(dir) $(HOME_DIR)/.$(dir); \
 		echo "Linked: $(HOME_DIR)/.$(dir) -> $(DOTFILES_DIR)/$(dir)"; \

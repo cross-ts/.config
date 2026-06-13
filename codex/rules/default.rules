@@ -66,7 +66,7 @@ prefix_rule(pattern = ["git", "config"], decision = "forbidden")
 ## GitHub CLI
 prefix_rule(pattern = ["gh"], decision = "allow")
 prefix_rule(pattern = ["gh", "api"], decision = "prompt")
-prefix_rule(pattern = ["gh", "auth"], decision = "forbidden", justification = "Restricted. Don't use `gh auth`.")
+prefix_rule(pattern = ["gh", "auth"], decision = "forbidden")
 
 ## Terraform
 prefix_rule(pattern = ["terraform", "fmt"], decision = "allow")
