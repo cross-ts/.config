@@ -1,0 +1,9 @@
+{
+  "trustedformulae": [
+    "hashicorp/tap/terraform",
+    "microsoft/apm/apm"
+  ],
+  "trustedtaps": [
+    "hanasuke/moralerspace"
+  ]
+}

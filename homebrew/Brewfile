@@ -2,9 +2,7 @@
 # frozen_string_literal: true
 
 # Tap
-tap 'dbt-labs/dbt-cli'
 tap 'hashicorp/tap'
-tap 'homebrew/cask-fonts'
 tap 'hanasuke/moralerspace'
 
 # shell
@@ -32,7 +30,6 @@ brew 'neovim-remote'
 # AWS
 brew 'awscli'
 brew 'aws-sam-cli'
-brew 'aws2-wrap'
 
 # IaC tools
 brew 'ansible'
@@ -49,11 +46,10 @@ cask 'copilot-cli'
 brew 'alp'
 brew 'apfel'
 brew 'bat'
-brew 'dbt'
 brew 'duckdb'
 brew 'fd'
 brew 'jq'
-brew 'knqyf263/pet/pet'
+brew 'pet'
 brew 'hyperfine'
 brew 'marp-cli'
 brew 'pinact'
@@ -96,7 +92,6 @@ end
 # Cask
 cask '1password'
 cask '1password-cli'
-cask 'alacritty'
 cask 'claude'
 cask 'cmux'
 cask 'codex-app'
