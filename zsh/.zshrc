@@ -20,6 +20,9 @@ setopt hist_ignore_space
 setopt hist_reduce_blanks
 setopt EXTENDED_HISTORY
 setopt transient_rprompt
+setopt autonamedirs
+setopt CDABLE_VARS
+setopt AUTO_CD
 
 bindkey -e
 
