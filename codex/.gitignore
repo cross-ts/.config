@@ -5,5 +5,10 @@ installation_id
 plugins/cache
 skills/.system
 
+shell_snapshots
+tmp
+sqlite
+computer-use
+
 *.sqlite*
 *.json*
