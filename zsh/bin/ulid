@@ -1,0 +1,31 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+use Time::HiRes qw(time);
+
+my $alphabet = '0123456789ABCDEFGHJKMNPQRSTVWXYZ';
+my $timestamp = int(time() * 1000);
+my @bytes;
+
+for my $index (reverse 0 .. 5) {
+    $bytes[$index] = $timestamp & 0xff;
+    $timestamp >>= 8;
+}
+
+open my $random, '<:raw', '/dev/urandom' or die "$0: /dev/urandom: $!\n";
+read($random, my $data, 10) == 10 or die "$0: failed to read random data\n";
+push @bytes, unpack 'C*', $data;
+
+my ($ulid, $buffer, $bits) = ('', 0, 2);
+for my $byte (@bytes) {
+    $buffer = ($buffer << 8) | $byte;
+    $bits += 8;
+
+    while ($bits >= 5) {
+        $bits -= 5;
+        $ulid .= substr $alphabet, ($buffer >> $bits) & 31, 1;
+    }
+}
+
+print "$ulid\n";
