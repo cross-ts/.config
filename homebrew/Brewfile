@@ -62,6 +62,7 @@ brew 'yq'
 if OS.mac?
   brew 'coreutils'
   brew 'make'
+  brew 'watch'
   brew 'wget'
   brew 'yap'
 end
