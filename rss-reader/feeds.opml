@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>rss-reader subscriptions</title>
+  </head>
+  <body>
+    <outline text="MIXI DEVELOPERS - Medium" title="MIXI DEVELOPERS - Medium" type="rss" xmlUrl="https://medium.com/feed/mixi-developers" htmlUrl="https://mixi-developers.mixi.co.jp?source=rss----bc6b0ae5a97c---4"></outline>
+    <outline text="DevelopersIO" title="DevelopersIO" type="rss" xmlUrl="https://dev.classmethod.jp/feed/" htmlUrl="https://dev.classmethod.jp"></outline>
+    <outline text="Hatena Developer Blog" title="Hatena Developer Blog" type="rss" xmlUrl="https://developer.hatenastaff.com/rss" htmlUrl="https://developer.hatenastaff.com/"></outline>
+    <outline text="クックパッド開発者ブログ" title="クックパッド開発者ブログ" type="rss" xmlUrl="https://techlife.cookpad.com/rss" htmlUrl="https://techlife.cookpad.com/"></outline>
+    <outline text="CyberAgent Developers Blog | サイバーエージェント デベロッパーズブログ" title="CyberAgent Developers Blog | サイバーエージェント デベロッパーズブログ" type="rss" xmlUrl="https://developers.cyberagent.co.jp/blog/feed/" htmlUrl="https://developers.cyberagent.co.jp/blog"></outline>
+    <outline text="GREE Engineering" title="GREE Engineering" type="rss" xmlUrl="https://labs.gree.jp/blog/feed/" htmlUrl="https://labs.gree.jp/blog"></outline>
+    <outline text="DeNA Engineering on DeNA Engineering" title="DeNA Engineering on DeNA Engineering" type="rss" xmlUrl="https://engineering.dena.com/index.xml" htmlUrl="https://engineering.dena.com/"></outline>
+    <outline text="LINEヤフー Tech Blog (LY Corporation Tech Blog" title="LINEヤフー Tech Blog (LY Corporation Tech Blog" type="rss" xmlUrl="https://techblog.lycorp.co.jp/ja/feed/index.xml" htmlUrl="https://techblog.lycorp.co.jp"></outline>
+    <outline text="CARTA TECH BLOG" title="CARTA TECH BLOG" type="rss" xmlUrl="https://techblog.cartaholdings.co.jp/rss" htmlUrl="https://techblog.cartaholdings.co.jp/"></outline>
+    <outline text="さくらのナレッジ" title="さくらのナレッジ" type="rss" xmlUrl="https://knowledge.sakura.ad.jp/feed/" htmlUrl="https://knowledge.sakura.ad.jp"></outline>
+    <outline text="The GitHub Blog" title="The GitHub Blog" type="rss" xmlUrl="https://github.blog/feed/" htmlUrl="https://github.blog/"></outline>
+    <outline text="Amazon Web Services ブログ" title="Amazon Web Services ブログ" type="rss" xmlUrl="https://aws.amazon.com/jp/blogs/news/feed/" htmlUrl="https://aws.amazon.com/jp/blogs/news/"></outline>
+    <outline text="日々の覚書" title="日々の覚書" type="rss" xmlUrl="https://yoku0825.blogspot.com/feeds/posts/default" htmlUrl="https://yoku0825.blogspot.com/"></outline>
+    <outline text="LayerX エンジニアブログ" title="LayerX エンジニアブログ" type="rss" xmlUrl="https://tech.layerx.co.jp/feed" htmlUrl="https://tech.layerx.co.jp/"></outline>
+    <outline text="IVRyテックブログのフィード" title="IVRyテックブログのフィード" type="rss" xmlUrl="https://zenn.dev/p/ivry/feed" htmlUrl="https://zenn.dev/p/ivry"></outline>
+    <outline text="メルカリエンジニアリングブログ" title="メルカリエンジニアリングブログ" type="rss" xmlUrl="https://engineering.mercari.com/blog/feed.xml" htmlUrl="https://engineering.mercari.com/"></outline>
+    <outline text="MonotaRO Tech Blog" title="MonotaRO Tech Blog" type="rss" xmlUrl="https://tech-blog.monotaro.com/feed" htmlUrl="https://tech-blog.monotaro.com/"></outline>
+    <outline text="ArkEdge Space Blog" title="ArkEdge Space Blog" type="rss" xmlUrl="https://blog.arkedge.space/feed" htmlUrl="https://blog.arkedge.space/"></outline>
+    <outline text="Archive: 2026 - GitHub Changelog" title="Archive: 2026 - GitHub Changelog" type="rss" xmlUrl="https://github.blog/changelog/feed/" htmlUrl="https://github.blog/changelog/"></outline>
+    <outline text="GMO Flatt Security Blog" title="GMO Flatt Security Blog" type="rss" xmlUrl="https://blog.flatt.tech/feed" htmlUrl="https://blog.flatt.tech/"></outline>
+    <outline text="LegalOn Technologies Engineering Blog" title="LegalOn Technologies Engineering Blog" type="rss" xmlUrl="https://tech.legalforce.co.jp/feed" htmlUrl="https://tech.legalforce.co.jp/"></outline>
+    <outline text="Timee Product Team Blog" title="Timee Product Team Blog" type="rss" xmlUrl="https://tech.timee.co.jp/feed" htmlUrl="https://tech.timee.co.jp/"></outline>
+  </body>
+</opml>

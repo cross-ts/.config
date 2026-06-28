@@ -32,14 +32,13 @@
       "Bash(gh auth:*)",
       "Read(auth.json)"
     ],
-    "ask": [
-      "Bash(gh api:*)"
-    ],
+    "ask": [],
     "defaultMode": "plan"
   },
   "language": "japanese",
   "plansDirectory": "./plans",
   "theme": "auto",
+  "remoteControlAtStartup": true,
   "autoMode": {
     "environment": [
       "$defaults"

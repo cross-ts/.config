@@ -64,7 +64,6 @@ prefix_rule(pattern = ["git", "config"], decision = "forbidden")
 
 ## GitHub CLI
 prefix_rule(pattern = ["gh"], decision = "allow")
-prefix_rule(pattern = ["gh", "api"], decision = "prompt")
 prefix_rule(pattern = ["gh", "auth"], decision = "forbidden")
 
 ## Linter
