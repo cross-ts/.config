@@ -178,6 +178,25 @@ url = "https://github.com/composer/composer/releases/download/2.10.1/composer.ph
 url_api = "https://api.github.com/repos/composer/composer/releases/assets/438095381"
 provenance = "github-attestations"
 
+[[tools."github:cross-ts/rss-reader"]]
+version = "0.4.7"
+backend = "github:cross-ts/rss-reader"
+
+[tools."github:cross-ts/rss-reader"."platforms.linux-x64"]
+checksum = "sha256:10f06083648328486b262be6ea7bcc7eda322387dda59b1e6eb90df090a5be3b"
+url = "https://github.com/cross-ts/rss-reader/releases/download/v0.4.7/rss-reader-v0.4.7-linux-amd64.tar.gz"
+url_api = "https://api.github.com/repos/cross-ts/rss-reader/releases/assets/460318146"
+
+[tools."github:cross-ts/rss-reader"."platforms.linux-x64-musl"]
+checksum = "sha256:10f06083648328486b262be6ea7bcc7eda322387dda59b1e6eb90df090a5be3b"
+url = "https://github.com/cross-ts/rss-reader/releases/download/v0.4.7/rss-reader-v0.4.7-linux-amd64.tar.gz"
+url_api = "https://api.github.com/repos/cross-ts/rss-reader/releases/assets/460318146"
+
+[tools."github:cross-ts/rss-reader"."platforms.macos-arm64"]
+checksum = "sha256:0af0884562d795eea4e76cbc0ebb0fbcbb9fcc05c1b10d17f07bf52bf75813b0"
+url = "https://github.com/cross-ts/rss-reader/releases/download/v0.4.7/rss-reader-v0.4.7-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/cross-ts/rss-reader/releases/assets/460318145"
+
 [[tools."github:hadolint/hadolint"]]
 version = "2.14.0"
 backend = "github:hadolint/hadolint"
