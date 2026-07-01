@@ -1,11 +1,4 @@
-.claude.json
-.last-cleanup
-history.jsonl
-mcp-needs-auth-cache.json
-
-backups
-cache
-file-history
-plugins
-projects
-sessions
+*
+!settings.json
+!CLAUDE.md
+!skills
