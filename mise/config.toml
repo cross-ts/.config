@@ -27,13 +27,13 @@ credential_command = "gh auth token"
 go = "1.26.4"
 lua = "5.4.8"
 perl = "5.42.2"
-php = "8.5.7"
+php = "8.5.8RC1"
 python = {
   version = "3.14.6",
   postinstall = "$MISE_TOOL_INSTALL_PATH/bin/python -m pip install pyyaml",
 }
 ruby = "4.0.5"
-node = "26.3.0"
+node = "26.4.0"
 rust = "1.96.0"
 
 # Package Managers
@@ -48,7 +48,7 @@ uv = "latest"
 "npm:difit" = "latest"
 "npm:npm-check-updates" = "latest"
 "npm:@playwright/cli" = "latest"
-"github:cross-ts/rss-reader" = "v0.4.12"
+"github:cross-ts/rss-reader" = "v0.4.15"
 
 # Language Servers
 "gem:ruby-lsp" = "latest"

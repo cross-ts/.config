@@ -1,4 +1,6 @@
 *
-!settings.json
 !CLAUDE.md
+!settings.json
+!agents
+!agents/*.md
 !skills
