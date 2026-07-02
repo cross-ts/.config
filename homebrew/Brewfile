@@ -58,7 +58,6 @@ brew 'tmux'
 brew 'tree'
 brew 'tree-sitter-cli'
 brew 'universal-ctags'
-brew 'yap'
 brew 'yq'
 brew 'zizmor'
 if OS.mac?
