@@ -1,6 +1,9 @@
 cagent
-composer
 configstore
 github-copilot
 op
+
+# PHP
+composer
+intelephense
 pie
