@@ -36,9 +36,12 @@
     "defaultMode": "plan"
   },
   "language": "japanese",
+  "effortLevel": "medium",
+  "advisorModel": "opus",
   "plansDirectory": "./plans",
   "theme": "auto",
   "remoteControlAtStartup": true,
+  "agentPushNotifEnabled": true,
   "autoMode": {
     "environment": [
       "$defaults"

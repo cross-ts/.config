@@ -179,23 +179,23 @@ url_api = "https://api.github.com/repos/composer/composer/releases/assets/438095
 provenance = "github-attestations"
 
 [[tools."github:cross-ts/rss-reader"]]
-version = "0.4.15"
+version = "0.4.17"
 backend = "github:cross-ts/rss-reader"
 
 [tools."github:cross-ts/rss-reader"."platforms.linux-x64"]
-checksum = "sha256:2bde3649b481fe978f4349aad0f6aba0c970c35992d1c36f5eb682eeb691d3aa"
-url = "https://github.com/cross-ts/rss-reader/releases/download/v0.4.15/rss-reader-v0.4.15-linux-amd64.tar.gz"
-url_api = "https://api.github.com/repos/cross-ts/rss-reader/releases/assets/462206494"
+checksum = "sha256:631f018947b29b6ae1c7e845a5236b4938b56e1158c437618527c1b0d444746c"
+url = "https://github.com/cross-ts/rss-reader/releases/download/v0.4.17/rss-reader-v0.4.17-linux-amd64.tar.gz"
+url_api = "https://api.github.com/repos/cross-ts/rss-reader/releases/assets/464905807"
 
 [tools."github:cross-ts/rss-reader"."platforms.linux-x64-musl"]
-checksum = "sha256:2bde3649b481fe978f4349aad0f6aba0c970c35992d1c36f5eb682eeb691d3aa"
-url = "https://github.com/cross-ts/rss-reader/releases/download/v0.4.15/rss-reader-v0.4.15-linux-amd64.tar.gz"
-url_api = "https://api.github.com/repos/cross-ts/rss-reader/releases/assets/462206494"
+checksum = "sha256:631f018947b29b6ae1c7e845a5236b4938b56e1158c437618527c1b0d444746c"
+url = "https://github.com/cross-ts/rss-reader/releases/download/v0.4.17/rss-reader-v0.4.17-linux-amd64.tar.gz"
+url_api = "https://api.github.com/repos/cross-ts/rss-reader/releases/assets/464905807"
 
 [tools."github:cross-ts/rss-reader"."platforms.macos-arm64"]
-checksum = "sha256:706d4e2d62b97b3064a91b17f81a8d056c78ffd03bd3cd391ff1bb2bf4696354"
-url = "https://github.com/cross-ts/rss-reader/releases/download/v0.4.15/rss-reader-v0.4.15-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/cross-ts/rss-reader/releases/assets/462206496"
+checksum = "sha256:71204974774b9a229ab0a24b91215ef0797a2d730f87f6971d0032e4725f7aa0"
+url = "https://github.com/cross-ts/rss-reader/releases/download/v0.4.17/rss-reader-v0.4.17-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/cross-ts/rss-reader/releases/assets/464905808"
 
 [[tools."github:hadolint/hadolint"]]
 version = "2.14.0"
@@ -451,7 +451,7 @@ version = "26.6.0"
 backend = "npm:@ansible/ansible-language-server"
 
 [[tools."npm:@github/copilot-language-server"]]
-version = "1.511.0"
+version = "1.513.0"
 backend = "npm:@github/copilot-language-server"
 
 [[tools."npm:@playwright/cli"]]
