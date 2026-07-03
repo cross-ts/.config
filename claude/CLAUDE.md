@@ -17,4 +17,5 @@
   - 知識の再利用設計と管理
 - 適切なタスク分割とサーブエージェントへの委譲
   - coding: `coding-worker`
-  - 大きな標準出力が想定されるコマンド: `output-summarizer`
+  - expected large output: `output-summarizer`
+    - example: test, lint, formatter, cat
