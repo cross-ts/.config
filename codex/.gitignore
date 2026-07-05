@@ -1,16 +1,14 @@
-.app-server-*
-.personality_migration
-.tmp
-installation_id
+*
+!.gitignore
 
-plugins/cache
+!AGENTS.md
+
+!agents
+!agents/*.toml
+
+!skills/
+!skills/*
 skills/.system
 
-shell_snapshots
-tmp
-sqlite
-computer-use
-worktrees
-
-*.sqlite*
-*.json*
+!rules
+!rules/*.rules

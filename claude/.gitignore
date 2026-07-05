@@ -1,6 +1,10 @@
 *
-!CLAUDE.md
+!.gitignore
 !settings.json
+!CLAUDE.md
+
 !agents
 !agents/*.md
+
 !skills
+!skills/*
