@@ -2,14 +2,20 @@
 .DS_Store
 
 # Editor
+## Neovim
 *.swp
 *.swo
 .null-ls*
 tags
+
+## JetBrains
 .idea
+
+## VSCode
 .vscode
 
-# Claude Code
+# AI
+## Claude Code
 CLAUDE.local.md
-settings.local.json
-plans
+.claude/plans
+.claude/settings.local.json

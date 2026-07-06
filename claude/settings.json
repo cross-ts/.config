@@ -1,6 +1,7 @@
 {
   "env": {
     "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "0",
+    "CLAUDE_CODE_ENABLE_EXPERIMENTAL_ADVISOR_TOOL": "1",
     "CLAUDE_CODE_ENABLE_AUTO_MODE": "1",
     "ENABLE_LSP_TOOL": "1"
   },
@@ -30,15 +31,17 @@
       "Bash(brew:*)",
       "Bash(git config:*)",
       "Bash(gh auth:*)",
+      "Read(./.env)",
+      "Read(./.env.*)",
       "Read(auth.json)"
     ],
     "ask": [],
     "defaultMode": "plan"
   },
   "language": "japanese",
-  "effortLevel": "medium",
   "advisorModel": "opus",
-  "plansDirectory": "./plans",
+  "plansDirectory": ".claude/plans",
+  "autoMemoryDirectory": "~/.local/share/claude/memories",
   "theme": "auto",
   "remoteControlAtStartup": true,
   "agentPushNotifEnabled": true,
