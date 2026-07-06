@@ -18,4 +18,5 @@ tags
 ## Claude Code
 CLAUDE.local.md
 .claude/plans
+.claude/worktrees
 .claude/settings.local.json
