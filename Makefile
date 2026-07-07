@@ -4,7 +4,7 @@
 DOTFILES_DIR := $(shell pwd)
 HOME_DIR     := $(HOME)
 
-LEGACY_DIRS  := apm codex claude
+LEGACY_DIRS  := apm
 
 ## install: Create symbolic links for legacy tools and .zshenv
 .PHONY: install
