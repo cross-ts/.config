@@ -42,7 +42,10 @@
   "advisorModel": "opus",
   "plansDirectory": ".claude/plans",
   "autoMemoryDirectory": "~/.local/share/claude/memories",
+  "autoMemoryEnabled": true,
+  "disableWorkflows": true,
   "theme": "auto",
+  "ultracode": false,
   "remoteControlAtStartup": true,
   "agentPushNotifEnabled": true,
   "autoMode": {
