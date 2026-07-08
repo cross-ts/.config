@@ -289,46 +289,53 @@ url_api = "https://api.github.com/repos/php/pie/releases/assets/457552269"
 provenance = "github-attestations"
 
 [[tools."github:phpstan/phpstan"]]
-version = "2.2.2"
+version = "2.2.3"
 backend = "github:phpstan/phpstan"
 
 [tools."github:phpstan/phpstan".options]
 asset_pattern = "phpstan.phar"
 
 [tools."github:phpstan/phpstan"."platforms.linux-arm64"]
-checksum = "sha256:487ab20ffe29ce405cf19b4e803933aa7dd97cdb871f457ca57fc9267f5a0f1a"
-url = "https://github.com/phpstan/phpstan/releases/download/2.2.2/phpstan.phar"
-url_api = "https://api.github.com/repos/phpstan/phpstan/releases/assets/439134185"
+checksum = "sha256:bd85c5dd6068fd081c6360885cb198971c5c7e97f7abb0beda3b62cd31ce620b"
+url = "https://github.com/phpstan/phpstan/releases/download/2.2.3/phpstan.phar"
+url_api = "https://api.github.com/repos/phpstan/phpstan/releases/assets/462530000"
+provenance = "github-attestations"
 
 [tools."github:phpstan/phpstan"."platforms.linux-arm64-musl"]
-checksum = "sha256:487ab20ffe29ce405cf19b4e803933aa7dd97cdb871f457ca57fc9267f5a0f1a"
-url = "https://github.com/phpstan/phpstan/releases/download/2.2.2/phpstan.phar"
-url_api = "https://api.github.com/repos/phpstan/phpstan/releases/assets/439134185"
+checksum = "sha256:bd85c5dd6068fd081c6360885cb198971c5c7e97f7abb0beda3b62cd31ce620b"
+url = "https://github.com/phpstan/phpstan/releases/download/2.2.3/phpstan.phar"
+url_api = "https://api.github.com/repos/phpstan/phpstan/releases/assets/462530000"
+provenance = "github-attestations"
 
 [tools."github:phpstan/phpstan"."platforms.linux-x64"]
-checksum = "sha256:487ab20ffe29ce405cf19b4e803933aa7dd97cdb871f457ca57fc9267f5a0f1a"
-url = "https://github.com/phpstan/phpstan/releases/download/2.2.2/phpstan.phar"
-url_api = "https://api.github.com/repos/phpstan/phpstan/releases/assets/439134185"
+checksum = "sha256:bd85c5dd6068fd081c6360885cb198971c5c7e97f7abb0beda3b62cd31ce620b"
+url = "https://github.com/phpstan/phpstan/releases/download/2.2.3/phpstan.phar"
+url_api = "https://api.github.com/repos/phpstan/phpstan/releases/assets/462530000"
+provenance = "github-attestations"
 
 [tools."github:phpstan/phpstan"."platforms.linux-x64-musl"]
-checksum = "sha256:487ab20ffe29ce405cf19b4e803933aa7dd97cdb871f457ca57fc9267f5a0f1a"
-url = "https://github.com/phpstan/phpstan/releases/download/2.2.2/phpstan.phar"
-url_api = "https://api.github.com/repos/phpstan/phpstan/releases/assets/439134185"
+checksum = "sha256:bd85c5dd6068fd081c6360885cb198971c5c7e97f7abb0beda3b62cd31ce620b"
+url = "https://github.com/phpstan/phpstan/releases/download/2.2.3/phpstan.phar"
+url_api = "https://api.github.com/repos/phpstan/phpstan/releases/assets/462530000"
+provenance = "github-attestations"
 
 [tools."github:phpstan/phpstan"."platforms.macos-arm64"]
-checksum = "sha256:487ab20ffe29ce405cf19b4e803933aa7dd97cdb871f457ca57fc9267f5a0f1a"
-url = "https://github.com/phpstan/phpstan/releases/download/2.2.2/phpstan.phar"
-url_api = "https://api.github.com/repos/phpstan/phpstan/releases/assets/439134185"
+checksum = "sha256:bd85c5dd6068fd081c6360885cb198971c5c7e97f7abb0beda3b62cd31ce620b"
+url = "https://github.com/phpstan/phpstan/releases/download/2.2.3/phpstan.phar"
+url_api = "https://api.github.com/repos/phpstan/phpstan/releases/assets/462530000"
+provenance = "github-attestations"
 
 [tools."github:phpstan/phpstan"."platforms.macos-x64"]
-checksum = "sha256:487ab20ffe29ce405cf19b4e803933aa7dd97cdb871f457ca57fc9267f5a0f1a"
-url = "https://github.com/phpstan/phpstan/releases/download/2.2.2/phpstan.phar"
-url_api = "https://api.github.com/repos/phpstan/phpstan/releases/assets/439134185"
+checksum = "sha256:bd85c5dd6068fd081c6360885cb198971c5c7e97f7abb0beda3b62cd31ce620b"
+url = "https://github.com/phpstan/phpstan/releases/download/2.2.3/phpstan.phar"
+url_api = "https://api.github.com/repos/phpstan/phpstan/releases/assets/462530000"
+provenance = "github-attestations"
 
 [tools."github:phpstan/phpstan"."platforms.windows-x64"]
-checksum = "sha256:487ab20ffe29ce405cf19b4e803933aa7dd97cdb871f457ca57fc9267f5a0f1a"
-url = "https://github.com/phpstan/phpstan/releases/download/2.2.2/phpstan.phar"
-url_api = "https://api.github.com/repos/phpstan/phpstan/releases/assets/439134185"
+checksum = "sha256:bd85c5dd6068fd081c6360885cb198971c5c7e97f7abb0beda3b62cd31ce620b"
+url = "https://github.com/phpstan/phpstan/releases/download/2.2.3/phpstan.phar"
+url_api = "https://api.github.com/repos/phpstan/phpstan/releases/assets/462530000"
+provenance = "github-attestations"
 
 [[tools."github:squizlabs/PHP_CodeSniffer"]]
 version = "3.7.2"
@@ -454,11 +461,11 @@ version = "26.6.0"
 backend = "npm:@ansible/ansible-language-server"
 
 [[tools."npm:@github/copilot-language-server"]]
-version = "1.513.0"
+version = "1.515.0"
 backend = "npm:@github/copilot-language-server"
 
 [[tools."npm:@playwright/cli"]]
-version = "0.1.14"
+version = "0.1.15"
 backend = "npm:@playwright/cli"
 
 [[tools."npm:@quobix/vacuum"]]
@@ -478,7 +485,7 @@ version = "20.0.14"
 backend = "npm:ccusage"
 
 [[tools."npm:difit"]]
-version = "5.0.2"
+version = "5.0.4"
 backend = "npm:difit"
 
 [[tools."npm:intelephense"]]
@@ -490,7 +497,7 @@ version = "0.22.1"
 backend = "npm:markdownlint-cli2"
 
 [[tools."npm:npm-check-updates"]]
-version = "22.2.8"
+version = "22.2.9"
 backend = "npm:npm-check-updates"
 
 [[tools."npm:tombi"]]
@@ -538,11 +545,11 @@ checksum = "sha256:3049a3304e78064a27c3a22054fb08f4c07eba97151a8c92fe9dc56e9cbca
 url = "https://github.com/skaji/relocatable-perl/releases/download/5.42.2.0/perl-darwin-amd64.tar.gz"
 
 [[tools.php]]
-version = "8.5.8RC1"
+version = "8.6.0alpha1"
 backend = "asdf:php"
 
 [[tools."pipx:ansible-lint"]]
-version = "26.4.0"
+version = "26.6.0"
 backend = "pipx:ansible-lint"
 
 [[tools."pipx:isort"]]
@@ -678,51 +685,51 @@ checksum = "sha256:7d6149079a63f8ae1d326c9fa65c6019ba2dc3155eae7b39159817911c889
 url = "https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.5.tar.gz"
 
 [[tools.rust]]
-version = "1.96.0"
+version = "1.96.1"
 backend = "core:rust"
 
 [[tools.uv]]
-version = "0.11.25"
+version = "0.11.26"
 backend = "aqua:astral-sh/uv"
 
 [tools.uv."platforms.linux-arm64"]
-checksum = "sha256:3d9c9a95f1868ff20ac880712f3a337d710ea4b65f135184b7a35635d1acbf84"
-url = "https://github.com/astral-sh/uv/releases/download/0.11.25/uv-aarch64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/459122519"
+checksum = "sha256:47418cfdb34b1ca42e503da72631ac8c475602e2411ac6c39aa84c2373fe6324"
+url = "https://github.com/astral-sh/uv/releases/download/0.11.26/uv-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/462248215"
 provenance = "github-attestations"
 
 [tools.uv."platforms.linux-arm64-musl"]
-checksum = "sha256:3d9c9a95f1868ff20ac880712f3a337d710ea4b65f135184b7a35635d1acbf84"
-url = "https://github.com/astral-sh/uv/releases/download/0.11.25/uv-aarch64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/459122519"
+checksum = "sha256:47418cfdb34b1ca42e503da72631ac8c475602e2411ac6c39aa84c2373fe6324"
+url = "https://github.com/astral-sh/uv/releases/download/0.11.26/uv-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/462248215"
 provenance = "github-attestations"
 
 [tools.uv."platforms.linux-x64"]
-checksum = "sha256:7195cfcc1785d0c559d4682ad9109f26664b8db4d828d42d66078ef454061891"
-url = "https://github.com/astral-sh/uv/releases/download/0.11.25/uv-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/459122571"
+checksum = "sha256:62bf1a53501adf4083224b69b33737450ac516935f5a5e483e9dfaf2665084de"
+url = "https://github.com/astral-sh/uv/releases/download/0.11.26/uv-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/462248297"
 provenance = "github-attestations"
 
 [tools.uv."platforms.linux-x64-musl"]
-checksum = "sha256:7195cfcc1785d0c559d4682ad9109f26664b8db4d828d42d66078ef454061891"
-url = "https://github.com/astral-sh/uv/releases/download/0.11.25/uv-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/459122571"
+checksum = "sha256:62bf1a53501adf4083224b69b33737450ac516935f5a5e483e9dfaf2665084de"
+url = "https://github.com/astral-sh/uv/releases/download/0.11.26/uv-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/462248297"
 provenance = "github-attestations"
 
 [tools.uv."platforms.macos-arm64"]
-checksum = "sha256:5fc334bb25d19806262efd1f6e7d380155c7e817d89bf426df4ba7ae873c9471"
-url = "https://github.com/astral-sh/uv/releases/download/0.11.25/uv-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/459122505"
+checksum = "sha256:8f7fbf1708399b921857bce71e1d60f0d3ccf52a30caebc1c1a2f175dce13ab6"
+url = "https://github.com/astral-sh/uv/releases/download/0.11.26/uv-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/462248188"
 provenance = "github-attestations"
 
 [tools.uv."platforms.macos-x64"]
-checksum = "sha256:65ff85b33212f75d34d7c0f0724aba9a742c74f62559f67dc0d6c543dc2fc52f"
-url = "https://github.com/astral-sh/uv/releases/download/0.11.25/uv-x86_64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/459122559"
+checksum = "sha256:922b460202707dd5f4ccacbadbe7f6a546cc46e82a99bf50ca99a7977a78eddd"
+url = "https://github.com/astral-sh/uv/releases/download/0.11.26/uv-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/462248284"
 provenance = "github-attestations"
 
 [tools.uv."platforms.windows-x64"]
-checksum = "sha256:15bfd1423b7eaa7aae949922d4712ebaac2bb44a81af64ab59bbe007090cb0d0"
-url = "https://github.com/astral-sh/uv/releases/download/0.11.25/uv-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/459122564"
+checksum = "sha256:4e1278ede866be6c0bf32d2f466cc6de7a9fb399ecf20c9ce2d186e52424be47"
+url = "https://github.com/astral-sh/uv/releases/download/0.11.26/uv-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/462248287"
 provenance = "github-attestations"

@@ -2,8 +2,6 @@ name: Mise Upgrade
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 15 * * 6' # every week on Sunday at 00:00 JST
 
 env:
   GH_TOKEN: ${{ github.token }}

@@ -27,14 +27,14 @@ credential_command = "gh auth token"
 go = "1.26.4"
 lua = "5.4.8"
 perl = "5.42.2"
-php = "8.5.8RC1"
+php = "8.6.0alpha1"
 python = {
   version = "3.14.6",
   postinstall = "$MISE_TOOL_INSTALL_PATH/bin/python -m pip install pyyaml",
 }
 ruby = "4.0.5"
 node = "26.4.0"
-rust = "1.96.0"
+rust = "1.96.1"
 
 # Package Managers
 pnpm = "latest"
@@ -75,8 +75,16 @@ uv = "latest"
 # Linter
 "github:checkmake/checkmake" = "latest"
 "github:hadolint/hadolint" = "latest"
-"github:phpstan/phpstan" = { version = "latest", asset_pattern = "phpstan.phar", bin = "phpstan" }
-"github:squizlabs/PHP_CodeSniffer" = { version = "latest", asset_pattern = "phpcs.phar", bin = "phpcs" }
+"github:phpstan/phpstan" = {
+  version = "latest",
+  asset_pattern = "phpstan.phar",
+  bin = "phpstan",
+}
+"github:squizlabs/PHP_CodeSniffer" = {
+  version = "latest",
+  asset_pattern = "phpcs.phar",
+  bin = "phpcs",
+}
 "go:github.com/rhysd/actionlint/cmd/actionlint" = "latest"
 "npm:markdownlint-cli2" = "latest"
 "npm:@quobix/vacuum" = "latest"
