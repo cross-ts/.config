@@ -41,7 +41,15 @@
   "model": "opus",
   "disableWorkflows": true,
   "enabledPlugins": {},
-  "extraKnownMarketplaces": {},
+  "extraKnownMarketplaces": {
+    "cross-ts-dotfiles": {
+      "source": {
+        "source": "github",
+        "repo": "cross-ts/.config"
+      },
+      "autoUpdate": true
+    }
+  },
   "language": "japanese",
   "ultracode": false,
   "advisorModel": "opus",
