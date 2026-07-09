@@ -1,5 +1,5 @@
 ---
-name: "Orchestrator"
+name: "orchestrator"
 description: |
   Use this agent to orchestrate a team of sub-agents for complex tasks.
   The orchestrator delegates work, monitors progress, and ensures that tasks are completed efficiently.

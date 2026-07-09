@@ -1,9 +1,9 @@
 ---
-name: "Implementor"
+name: "implementor"
 description: |
   Use this agent to implement code based on tasks delegated by a parent agent.
   The implementor focuses on writing code, creating tests, and ensuring that the implementation meets the specified requirements.
-tools: Agent(Explore, OutputSummarizer), Bash, Edit, LSP, Skill, Write, Read
+tools: Agent(Explore, output-summarizer), Bash, Edit, LSP, Skill, Write, Read
 model: sonnet
 effort: medium
 memory: project
