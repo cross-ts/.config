@@ -1,0 +1,10 @@
+{
+  "python": {
+    "command": "pylsp",
+    "extensionToLanguage": {
+      ".py": "python",
+      ".pyw": "python",
+      ".pyi": "python"
+    }
+  }
+}

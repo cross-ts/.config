@@ -1,0 +1,15 @@
+{
+  "php": {
+    "command": "intelephense",
+    "args": [
+      "--stdio"
+    ],
+    "extensionToLanguage": {
+      ".php": "php",
+      ".phtml": "php",
+      ".php3": "php",
+      ".php4": "php",
+      ".php5": "php"
+    }
+  }
+}

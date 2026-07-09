@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "html-lsp",
+  "description": "HTML LSP",
+  "version": "0.1.0",
+  "author": {
+    "name": "cross-ts",
+    "email": "ts.kouhei@gmail.com"
+  }
+}

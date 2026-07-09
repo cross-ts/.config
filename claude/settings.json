@@ -38,19 +38,20 @@
     "ask": [],
     "defaultMode": "plan"
   },
+  "disableWorkflows": true,
   "language": "japanese",
+  "ultracode": false,
   "advisorModel": "opus",
   "plansDirectory": ".claude/plans",
-  "autoMemoryDirectory": "~/.local/share/claude/memories",
   "autoMemoryEnabled": true,
-  "disableWorkflows": true,
+  "autoMemoryDirectory": "~/.local/share/claude/memories",
   "theme": "auto",
-  "ultracode": false,
   "remoteControlAtStartup": true,
   "agentPushNotifEnabled": true,
   "autoMode": {
     "environment": [
       "$defaults"
     ]
-  }
+  },
+  "model": "opus"
 }

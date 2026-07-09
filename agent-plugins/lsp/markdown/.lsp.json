@@ -1,0 +1,14 @@
+{
+  "markdown": {
+    "command": "vscode-markdown-language-server",
+    "args": [
+      "--stdio"
+    ],
+    "extensionToLanguage": {
+      ".md": "markdown",
+      ".markdown": "markdown",
+      ".mdown": "markdown",
+      ".mkd": "markdown"
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "name": "cross-ts-claude-plugins",
+  "owner": {
+    "name": "cross-ts",
+    "email": "ts.kouhei@gmail.com"
+  },
+  "description": "Claude Plugins",
+  "plugins": [
+    {
+      "name": "typescript-lsp",
+      "source": "./agent-plugins/lsp/typescript",
+      "description": "TypeScript LSP"
+    },
+    {
+      "name": "rust-lsp",
+      "source": "./agent-plugins/lsp/rust",
+      "description": "Rust LSP"
+    },
+    {
+      "name": "lua-lsp",
+      "source": "./agent-plugins/lsp/lua",
+      "description": "Lua LSP"
+    },
+    {
+      "name": "bash-lsp",
+      "source": "./agent-plugins/lsp/bash",
+      "description": "Bash LSP"
+    },
+    {
+      "name": "html-lsp",
+      "source": "./agent-plugins/lsp/html",
+      "description": "HTML LSP"
+    },
+    {
+      "name": "css-lsp",
+      "source": "./agent-plugins/lsp/css",
+      "description": "CSS LSP"
+    },
+    {
+      "name": "yaml-lsp",
+      "source": "./agent-plugins/lsp/yaml",
+      "description": "YAML LSP"
+    },
+    {
+      "name": "json-lsp",
+      "source": "./agent-plugins/lsp/json",
+      "description": "JSON LSP"
+    },
+    {
+      "name": "eslint-lsp",
+      "source": "./agent-plugins/lsp/eslint",
+      "description": "ESLint LSP"
+    },
+    {
+      "name": "ansible-lsp",
+      "source": "./agent-plugins/lsp/ansible",
+      "description": "Ansible LSP"
+    },
+    {
+      "name": "python-lsp",
+      "source": "./agent-plugins/lsp/python",
+      "description": "Python LSP"
+    },
+    {
+      "name": "ruby-lsp",
+      "source": "./agent-plugins/lsp/ruby",
+      "description": "Ruby LSP"
+    },
+    {
+      "name": "docker-lsp",
+      "source": "./agent-plugins/lsp/docker",
+      "description": "Docker LSP"
+    },
+    {
+      "name": "nginx-lsp",
+      "source": "./agent-plugins/lsp/nginx",
+      "description": "Nginx LSP"
+    },
+    {
+      "name": "php-lsp",
+      "source": "./agent-plugins/lsp/php",
+      "description": "PHP LSP"
+    },
+    {
+      "name": "markdown-lsp",
+      "source": "./agent-plugins/lsp/markdown",
+      "description": "Markdown LSP"
+    },
+    {
+      "name": "c-lsp",
+      "source": "./agent-plugins/lsp/c",
+      "description": "C LSP"
+    }
+  ]
+}

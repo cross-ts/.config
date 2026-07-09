@@ -1,0 +1,14 @@
+{
+  "css": {
+    "command": "vscode-css-language-server",
+    "args": [
+      "--stdio"
+    ],
+    "extensionToLanguage": {
+      ".css": "css",
+      ".scss": "scss",
+      ".sass": "scss",
+      ".less": "less"
+    }
+  }
+}

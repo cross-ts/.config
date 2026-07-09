@@ -1,0 +1,8 @@
+{
+  "nginx": {
+    "command": "nginx-language-server",
+    "extensionToLanguage": {
+      ".conf": "nginx"
+    }
+  }
+}
