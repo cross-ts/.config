@@ -2,7 +2,7 @@
 
 ## Tool Suggestion
 
-- Use `Lsp` Tools.
+- `LSP` enabled.
 
 ## Forbidden
 

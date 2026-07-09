@@ -2,7 +2,7 @@
 name: "OutputSummarizer"
 description: |
   Use this agent when a parent agent needs to run commands that produce rich/verbose stdout output (such as test runners, linters, formatters, build tools) and wants a concise summary instead of raw output.
-tools: Bash
+tools: Bash, LSP
 model: haiku
 effort: low
 ---
