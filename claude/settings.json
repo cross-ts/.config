@@ -38,7 +38,10 @@
     "ask": [],
     "defaultMode": "plan"
   },
+  "model": "opus",
   "disableWorkflows": true,
+  "enabledPlugins": {},
+  "extraKnownMarketplaces": {},
   "language": "japanese",
   "ultracode": false,
   "advisorModel": "opus",
@@ -52,6 +55,5 @@
     "environment": [
       "$defaults"
     ]
-  },
-  "model": "opus"
+  }
 }
