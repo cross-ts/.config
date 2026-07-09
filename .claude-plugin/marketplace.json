@@ -12,6 +12,11 @@
       "description": "TypeScript LSP"
     },
     {
+      "name": "go-lsp",
+      "source": "./agent-plugins/lsp/go",
+      "description": "Go LSP"
+    },
+    {
       "name": "rust-lsp",
       "source": "./agent-plugins/lsp/rust",
       "description": "Rust LSP"
