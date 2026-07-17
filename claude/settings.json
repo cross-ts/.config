@@ -52,7 +52,6 @@
   },
   "language": "japanese",
   "ultracode": false,
-  "advisorModel": "opus",
   "plansDirectory": ".claude/plans",
   "autoMemoryEnabled": true,
   "autoMemoryDirectory": "~/.local/share/claude/memories",
