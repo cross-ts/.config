@@ -96,9 +96,9 @@ end
 # Cask
 cask '1password'
 cask '1password-cli'
+cask 'chatgpt'
 cask 'claude'
 cask 'cmux'
-cask 'codex-app'
 cask 'discord'
 cask 'docker-desktop'
 cask 'font-Hack-nerd-font'
