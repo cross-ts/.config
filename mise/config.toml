@@ -26,15 +26,15 @@ credential_command = "gh auth token"
 # Language Runtimes
 go = "1.26.5"
 lua = "5.4.8"
-perl = "5.42.2"
+perl = "5.44.0"
 php = "8.6.0alpha1"
 python = {
   version = "3.14.6",
   postinstall = "$MISE_TOOL_INSTALL_PATH/bin/python -m pip install pyyaml",
 }
-ruby = "4.0.5"
+ruby = "4.0.6"
 node = "26.5.0"
-rust = "1.97.0"
+rust = "1.97.1"
 
 # Package Managers
 pnpm = "latest"
