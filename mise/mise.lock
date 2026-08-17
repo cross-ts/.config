@@ -201,140 +201,148 @@ url_api = "https://api.github.com/repos/cross-ts/rss-reader/releases/assets/4661
 provenance = "github-attestations"
 
 [[tools."github:hadolint/hadolint"]]
-version = "2.14.0"
+version = "2.15.1"
 backend = "github:hadolint/hadolint"
 
 [tools."github:hadolint/hadolint"."platforms.linux-arm64"]
-checksum = "sha256:331f1d3511b84a4f1e3d18d52fec284723e4019552f4f47b19322a53ce9a40ed"
-url = "https://github.com/hadolint/hadolint/releases/download/v2.14.0/hadolint-linux-arm64"
-url_api = "https://api.github.com/repos/hadolint/hadolint/releases/assets/295944081"
+checksum = "sha256:f6198ef8090f404dbb771abfee086eb8c48ac177f30da7fd3510aca35b344b5d"
+url = "https://github.com/hadolint/hadolint/releases/download/v2.15.1/hadolint-linux-arm64"
+url_api = "https://api.github.com/repos/hadolint/hadolint/releases/assets/496546507"
+provenance = "github-attestations"
 
 [tools."github:hadolint/hadolint"."platforms.linux-arm64-musl"]
-checksum = "sha256:331f1d3511b84a4f1e3d18d52fec284723e4019552f4f47b19322a53ce9a40ed"
-url = "https://github.com/hadolint/hadolint/releases/download/v2.14.0/hadolint-linux-arm64"
-url_api = "https://api.github.com/repos/hadolint/hadolint/releases/assets/295944081"
+checksum = "sha256:f6198ef8090f404dbb771abfee086eb8c48ac177f30da7fd3510aca35b344b5d"
+url = "https://github.com/hadolint/hadolint/releases/download/v2.15.1/hadolint-linux-arm64"
+url_api = "https://api.github.com/repos/hadolint/hadolint/releases/assets/496546507"
+provenance = "github-attestations"
 
 [tools."github:hadolint/hadolint"."platforms.linux-x64"]
-checksum = "sha256:6bf226944684f56c84dd014e8b979d27425c0148f61b3bd99bcc6f39e9dc5a47"
-url = "https://github.com/hadolint/hadolint/releases/download/v2.14.0/hadolint-linux-x86_64"
-url_api = "https://api.github.com/repos/hadolint/hadolint/releases/assets/295944080"
+checksum = "sha256:c7187db94eeeeca956519a6af171adc31453941a1e777961f6e680f697c8c507"
+url = "https://github.com/hadolint/hadolint/releases/download/v2.15.1/hadolint-linux-x86_64"
+url_api = "https://api.github.com/repos/hadolint/hadolint/releases/assets/496546506"
+provenance = "github-attestations"
 
 [tools."github:hadolint/hadolint"."platforms.linux-x64-musl"]
-checksum = "sha256:6bf226944684f56c84dd014e8b979d27425c0148f61b3bd99bcc6f39e9dc5a47"
-url = "https://github.com/hadolint/hadolint/releases/download/v2.14.0/hadolint-linux-x86_64"
-url_api = "https://api.github.com/repos/hadolint/hadolint/releases/assets/295944080"
+checksum = "sha256:c7187db94eeeeca956519a6af171adc31453941a1e777961f6e680f697c8c507"
+url = "https://github.com/hadolint/hadolint/releases/download/v2.15.1/hadolint-linux-x86_64"
+url_api = "https://api.github.com/repos/hadolint/hadolint/releases/assets/496546506"
+provenance = "github-attestations"
 
 [tools."github:hadolint/hadolint"."platforms.macos-arm64"]
-checksum = "sha256:3625e2e9f43dcfe7bd38738a5f5520ed50ce39ed28485266e6803dd7bc197b10"
-url = "https://github.com/hadolint/hadolint/releases/download/v2.14.0/hadolint-macos-arm64"
-url_api = "https://api.github.com/repos/hadolint/hadolint/releases/assets/295944077"
+checksum = "sha256:5c09f3213f8e40406abe048233d985eebef336d4a6a20021be47fadb6cf480a2"
+url = "https://github.com/hadolint/hadolint/releases/download/v2.15.1/hadolint-macos-arm64"
+url_api = "https://api.github.com/repos/hadolint/hadolint/releases/assets/496546505"
+provenance = "github-attestations"
 
 [tools."github:hadolint/hadolint"."platforms.macos-x64"]
-checksum = "sha256:2b69a853433f1eca522ffb921cd490bd1321424d03331fd8390f93b7fb4a02e9"
-url = "https://github.com/hadolint/hadolint/releases/download/v2.14.0/hadolint-macos-x86_64"
-url_api = "https://api.github.com/repos/hadolint/hadolint/releases/assets/295944082"
+checksum = "sha256:ffe9bb18b23d5ed1eae50237aecdbb523d016e96da0bd4e7aa432040acfc3fde"
+url = "https://github.com/hadolint/hadolint/releases/download/v2.15.1/hadolint-macos-x86_64"
+url_api = "https://api.github.com/repos/hadolint/hadolint/releases/assets/496546509"
+provenance = "github-attestations"
 
 [tools."github:hadolint/hadolint"."platforms.windows-x64"]
-checksum = "sha256:8e0ee174f88edb14f207a68430c7a53c2883ed509cdbde9a3a26fffa140fa5e4"
-url = "https://github.com/hadolint/hadolint/releases/download/v2.14.0/hadolint-windows-x86_64.exe"
-url_api = "https://api.github.com/repos/hadolint/hadolint/releases/assets/295944079"
+checksum = "sha256:01d927294962b5387f9ead4f18679158452be4f17c765ad0bdffe5264b9c7b0a"
+url = "https://github.com/hadolint/hadolint/releases/download/v2.15.1/hadolint-windows-x86_64.exe"
+url_api = "https://api.github.com/repos/hadolint/hadolint/releases/assets/496546508"
+provenance = "github-attestations"
 
 [[tools."github:php/pie"]]
-version = "1.4.8"
+version = "1.4.9"
 backend = "github:php/pie"
 
 [tools."github:php/pie".options]
 asset_pattern = "pie.phar"
 
 [tools."github:php/pie"."platforms.linux-arm64"]
-checksum = "sha256:ef9f19c2698334aa8ce8fc458c8cf2a31a2fd6a29230216dbde3422343cf952d"
-url = "https://github.com/php/pie/releases/download/1.4.8/pie.phar"
-url_api = "https://api.github.com/repos/php/pie/releases/assets/467987395"
+checksum = "sha256:19a31ddd4bfd08b9eb5eaad2e5f63e76e7919cae7683852da41c80da704ad6c0"
+url = "https://github.com/php/pie/releases/download/1.4.9/pie.phar"
+url_api = "https://api.github.com/repos/php/pie/releases/assets/483821541"
 provenance = "github-attestations"
 
 [tools."github:php/pie"."platforms.linux-arm64-musl"]
-checksum = "sha256:ef9f19c2698334aa8ce8fc458c8cf2a31a2fd6a29230216dbde3422343cf952d"
-url = "https://github.com/php/pie/releases/download/1.4.8/pie.phar"
-url_api = "https://api.github.com/repos/php/pie/releases/assets/467987395"
+checksum = "sha256:19a31ddd4bfd08b9eb5eaad2e5f63e76e7919cae7683852da41c80da704ad6c0"
+url = "https://github.com/php/pie/releases/download/1.4.9/pie.phar"
+url_api = "https://api.github.com/repos/php/pie/releases/assets/483821541"
 provenance = "github-attestations"
 
 [tools."github:php/pie"."platforms.linux-x64"]
-checksum = "sha256:ef9f19c2698334aa8ce8fc458c8cf2a31a2fd6a29230216dbde3422343cf952d"
-url = "https://github.com/php/pie/releases/download/1.4.8/pie.phar"
-url_api = "https://api.github.com/repos/php/pie/releases/assets/467987395"
+checksum = "sha256:19a31ddd4bfd08b9eb5eaad2e5f63e76e7919cae7683852da41c80da704ad6c0"
+url = "https://github.com/php/pie/releases/download/1.4.9/pie.phar"
+url_api = "https://api.github.com/repos/php/pie/releases/assets/483821541"
 provenance = "github-attestations"
 
 [tools."github:php/pie"."platforms.linux-x64-musl"]
-checksum = "sha256:ef9f19c2698334aa8ce8fc458c8cf2a31a2fd6a29230216dbde3422343cf952d"
-url = "https://github.com/php/pie/releases/download/1.4.8/pie.phar"
-url_api = "https://api.github.com/repos/php/pie/releases/assets/467987395"
+checksum = "sha256:19a31ddd4bfd08b9eb5eaad2e5f63e76e7919cae7683852da41c80da704ad6c0"
+url = "https://github.com/php/pie/releases/download/1.4.9/pie.phar"
+url_api = "https://api.github.com/repos/php/pie/releases/assets/483821541"
 provenance = "github-attestations"
 
 [tools."github:php/pie"."platforms.macos-arm64"]
-checksum = "sha256:ef9f19c2698334aa8ce8fc458c8cf2a31a2fd6a29230216dbde3422343cf952d"
-url = "https://github.com/php/pie/releases/download/1.4.8/pie.phar"
-url_api = "https://api.github.com/repos/php/pie/releases/assets/467987395"
+checksum = "sha256:19a31ddd4bfd08b9eb5eaad2e5f63e76e7919cae7683852da41c80da704ad6c0"
+url = "https://github.com/php/pie/releases/download/1.4.9/pie.phar"
+url_api = "https://api.github.com/repos/php/pie/releases/assets/483821541"
 provenance = "github-attestations"
 
 [tools."github:php/pie"."platforms.macos-x64"]
-checksum = "sha256:ef9f19c2698334aa8ce8fc458c8cf2a31a2fd6a29230216dbde3422343cf952d"
-url = "https://github.com/php/pie/releases/download/1.4.8/pie.phar"
-url_api = "https://api.github.com/repos/php/pie/releases/assets/467987395"
+checksum = "sha256:19a31ddd4bfd08b9eb5eaad2e5f63e76e7919cae7683852da41c80da704ad6c0"
+url = "https://github.com/php/pie/releases/download/1.4.9/pie.phar"
+url_api = "https://api.github.com/repos/php/pie/releases/assets/483821541"
 provenance = "github-attestations"
 
 [tools."github:php/pie"."platforms.windows-x64"]
-checksum = "sha256:ef9f19c2698334aa8ce8fc458c8cf2a31a2fd6a29230216dbde3422343cf952d"
-url = "https://github.com/php/pie/releases/download/1.4.8/pie.phar"
-url_api = "https://api.github.com/repos/php/pie/releases/assets/467987395"
+checksum = "sha256:19a31ddd4bfd08b9eb5eaad2e5f63e76e7919cae7683852da41c80da704ad6c0"
+url = "https://github.com/php/pie/releases/download/1.4.9/pie.phar"
+url_api = "https://api.github.com/repos/php/pie/releases/assets/483821541"
 provenance = "github-attestations"
 
 [[tools."github:phpstan/phpstan"]]
-version = "2.2.5"
+version = "2.2.8"
 backend = "github:phpstan/phpstan"
 
 [tools."github:phpstan/phpstan".options]
 asset_pattern = "phpstan.phar"
 
 [tools."github:phpstan/phpstan"."platforms.linux-arm64"]
-checksum = "sha256:1b2f03384ebcfd67053b06b69cbc0b9f62bf239349f69eaf723649409789e2e6"
-url = "https://github.com/phpstan/phpstan/releases/download/2.2.5/phpstan.phar"
-url_api = "https://api.github.com/repos/phpstan/phpstan/releases/assets/466941905"
+checksum = "sha256:ab9ea72523fe453b9f4dd19f12b1e403a91efa894cd25d9b0cb3ef62b7d20bf2"
+url = "https://github.com/phpstan/phpstan/releases/download/2.2.8/phpstan.phar"
+url_api = "https://api.github.com/repos/phpstan/phpstan/releases/assets/501884066"
 provenance = "github-attestations"
 
 [tools."github:phpstan/phpstan"."platforms.linux-arm64-musl"]
-checksum = "sha256:1b2f03384ebcfd67053b06b69cbc0b9f62bf239349f69eaf723649409789e2e6"
-url = "https://github.com/phpstan/phpstan/releases/download/2.2.5/phpstan.phar"
-url_api = "https://api.github.com/repos/phpstan/phpstan/releases/assets/466941905"
+checksum = "sha256:ab9ea72523fe453b9f4dd19f12b1e403a91efa894cd25d9b0cb3ef62b7d20bf2"
+url = "https://github.com/phpstan/phpstan/releases/download/2.2.8/phpstan.phar"
+url_api = "https://api.github.com/repos/phpstan/phpstan/releases/assets/501884066"
 provenance = "github-attestations"
 
 [tools."github:phpstan/phpstan"."platforms.linux-x64"]
-checksum = "sha256:1b2f03384ebcfd67053b06b69cbc0b9f62bf239349f69eaf723649409789e2e6"
-url = "https://github.com/phpstan/phpstan/releases/download/2.2.5/phpstan.phar"
-url_api = "https://api.github.com/repos/phpstan/phpstan/releases/assets/466941905"
+checksum = "sha256:ab9ea72523fe453b9f4dd19f12b1e403a91efa894cd25d9b0cb3ef62b7d20bf2"
+url = "https://github.com/phpstan/phpstan/releases/download/2.2.8/phpstan.phar"
+url_api = "https://api.github.com/repos/phpstan/phpstan/releases/assets/501884066"
 provenance = "github-attestations"
 
 [tools."github:phpstan/phpstan"."platforms.linux-x64-musl"]
-checksum = "sha256:1b2f03384ebcfd67053b06b69cbc0b9f62bf239349f69eaf723649409789e2e6"
-url = "https://github.com/phpstan/phpstan/releases/download/2.2.5/phpstan.phar"
-url_api = "https://api.github.com/repos/phpstan/phpstan/releases/assets/466941905"
+checksum = "sha256:ab9ea72523fe453b9f4dd19f12b1e403a91efa894cd25d9b0cb3ef62b7d20bf2"
+url = "https://github.com/phpstan/phpstan/releases/download/2.2.8/phpstan.phar"
+url_api = "https://api.github.com/repos/phpstan/phpstan/releases/assets/501884066"
 provenance = "github-attestations"
 
 [tools."github:phpstan/phpstan"."platforms.macos-arm64"]
-checksum = "sha256:1b2f03384ebcfd67053b06b69cbc0b9f62bf239349f69eaf723649409789e2e6"
-url = "https://github.com/phpstan/phpstan/releases/download/2.2.5/phpstan.phar"
-url_api = "https://api.github.com/repos/phpstan/phpstan/releases/assets/466941905"
+checksum = "sha256:ab9ea72523fe453b9f4dd19f12b1e403a91efa894cd25d9b0cb3ef62b7d20bf2"
+url = "https://github.com/phpstan/phpstan/releases/download/2.2.8/phpstan.phar"
+url_api = "https://api.github.com/repos/phpstan/phpstan/releases/assets/501884066"
 provenance = "github-attestations"
+provenance_verified = true
 
 [tools."github:phpstan/phpstan"."platforms.macos-x64"]
-checksum = "sha256:1b2f03384ebcfd67053b06b69cbc0b9f62bf239349f69eaf723649409789e2e6"
-url = "https://github.com/phpstan/phpstan/releases/download/2.2.5/phpstan.phar"
-url_api = "https://api.github.com/repos/phpstan/phpstan/releases/assets/466941905"
+checksum = "sha256:ab9ea72523fe453b9f4dd19f12b1e403a91efa894cd25d9b0cb3ef62b7d20bf2"
+url = "https://github.com/phpstan/phpstan/releases/download/2.2.8/phpstan.phar"
+url_api = "https://api.github.com/repos/phpstan/phpstan/releases/assets/501884066"
 provenance = "github-attestations"
 
 [tools."github:phpstan/phpstan"."platforms.windows-x64"]
-checksum = "sha256:1b2f03384ebcfd67053b06b69cbc0b9f62bf239349f69eaf723649409789e2e6"
-url = "https://github.com/phpstan/phpstan/releases/download/2.2.5/phpstan.phar"
-url_api = "https://api.github.com/repos/phpstan/phpstan/releases/assets/466941905"
+checksum = "sha256:ab9ea72523fe453b9f4dd19f12b1e403a91efa894cd25d9b0cb3ef62b7d20bf2"
+url = "https://github.com/phpstan/phpstan/releases/download/2.2.8/phpstan.phar"
+url_api = "https://api.github.com/repos/phpstan/phpstan/releases/assets/501884066"
 provenance = "github-attestations"
 
 [[tools."github:squizlabs/PHP_CodeSniffer"]]
@@ -446,39 +454,39 @@ version = "5.4.8"
 backend = "asdf:lua"
 
 [[tools.node]]
-version = "26.5.0"
+version = "26.7.0"
 backend = "core:node"
 
 [tools.node."platforms.linux-arm64"]
-checksum = "sha256:308e5fe89a82461ba5a6cf15ff5221b2cdbd7ae87600aa72bb3c3fbdc66412d1"
-url = "https://nodejs.org/dist/v26.5.0/node-v26.5.0-linux-arm64.tar.gz"
+checksum = "sha256:925aa6157dd37542d0d7f2e28b7bf61e7b39284411210b0498bc3788db4aef68"
+url = "https://nodejs.org/dist/v26.7.0/node-v26.7.0-linux-arm64.tar.gz"
 
 [tools.node."platforms.linux-arm64-musl"]
-checksum = "sha256:1ab31aef6561191693f366cacd75bbcefa0301e49a18bc05554c21893bbdb490"
-url = "https://unofficial-builds.nodejs.org/download/release/v26.5.0/node-v26.5.0-linux-arm64-musl.tar.gz"
+checksum = "sha256:1f16cc0f6febcb1bed1d4550306806dbcfbaf5c1bc2f44f3c5c8b5d22a4cc27a"
+url = "https://unofficial-builds.nodejs.org/download/release/v26.7.0/node-v26.7.0-linux-arm64-musl.tar.gz"
 
 [tools.node."platforms.linux-x64"]
-checksum = "sha256:22b5f47ad6ae78837e4c2b846019965ce1a06ba143de176102294a1bf44fc677"
-url = "https://nodejs.org/dist/v26.5.0/node-v26.5.0-linux-x64.tar.gz"
+checksum = "sha256:bd6b6c31e377bad9ad579bed72e5bc11f4c879ac9452ad51d30e646ea3d828df"
+url = "https://nodejs.org/dist/v26.7.0/node-v26.7.0-linux-x64.tar.gz"
 
 [tools.node."platforms.linux-x64-musl"]
-checksum = "sha256:00f1398411a4216c5a6ecaad3b825a0da5ec00e79ee8c173ab65a094d97b9ad8"
-url = "https://unofficial-builds.nodejs.org/download/release/v26.5.0/node-v26.5.0-linux-x64-musl.tar.gz"
+checksum = "sha256:5dc0180e7684ede6fc9d9e6333da45686f4b5a7820729d33c68335b283337295"
+url = "https://unofficial-builds.nodejs.org/download/release/v26.7.0/node-v26.7.0-linux-x64-musl.tar.gz"
 
 [tools.node."platforms.macos-arm64"]
-checksum = "sha256:ee920559aaa2391569cff4d737e3b83963430e3a14dedd91bfe0ff53171b5af9"
-url = "https://nodejs.org/dist/v26.5.0/node-v26.5.0-darwin-arm64.tar.gz"
+checksum = "sha256:7ee659a7768e641bbfd5360940660b8e8fd0052f77488f365562bac522fc15d4"
+url = "https://nodejs.org/dist/v26.7.0/node-v26.7.0-darwin-arm64.tar.gz"
 
 [tools.node."platforms.macos-x64"]
-checksum = "sha256:98293394c945a24e64e00b4177bf075ec963ea70b34d1d2e24bd4a71716d334f"
-url = "https://nodejs.org/dist/v26.5.0/node-v26.5.0-darwin-x64.tar.gz"
+checksum = "sha256:f279d1ed28ce57f7788bf23435d2ad7fdd7438904ad5c4d8a1081a7cde3d4b96"
+url = "https://nodejs.org/dist/v26.7.0/node-v26.7.0-darwin-x64.tar.gz"
 
 [tools.node."platforms.windows-x64"]
-checksum = "sha256:d3b2277dbcccfdf24ef6302928f64f484cff1d77a6d3caa3a28f4d20ce9158f6"
-url = "https://nodejs.org/dist/v26.5.0/node-v26.5.0-win-x64.zip"
+checksum = "sha256:d3bd72755141ed32bbcd841228ee81897c8a98d50dfa7dae2179399a0a7c90f8"
+url = "https://nodejs.org/dist/v26.7.0/node-v26.7.0-win-x64.zip"
 
 [[tools."npm:@actions/languageserver"]]
-version = "0.3.60"
+version = "0.3.61"
 backend = "npm:@actions/languageserver"
 
 [[tools."npm:@ansible/ansible-language-server"]]
@@ -486,15 +494,15 @@ version = "26.6.0"
 backend = "npm:@ansible/ansible-language-server"
 
 [[tools."npm:@github/copilot-language-server"]]
-version = "1.523.0"
+version = "1.528.0"
 backend = "npm:@github/copilot-language-server"
 
 [[tools."npm:@playwright/cli"]]
-version = "0.1.17"
+version = "0.1.18"
 backend = "npm:@playwright/cli"
 
 [[tools."npm:@quobix/vacuum"]]
-version = "0.29.10"
+version = "0.30.0"
 backend = "npm:@quobix/vacuum"
 
 [[tools."npm:aws-cdk"]]
@@ -506,11 +514,11 @@ version = "5.6.0"
 backend = "npm:bash-language-server"
 
 [[tools."npm:ccusage"]]
-version = "20.0.17"
+version = "20.0.19"
 backend = "npm:ccusage"
 
 [[tools."npm:difit"]]
-version = "5.0.8"
+version = "5.0.11"
 backend = "npm:difit"
 
 [[tools."npm:intelephense"]]
@@ -518,15 +526,15 @@ version = "1.18.5"
 backend = "npm:intelephense"
 
 [[tools."npm:markdownlint-cli2"]]
-version = "0.23.1"
+version = "0.23.2"
 backend = "npm:markdownlint-cli2"
 
 [[tools."npm:npm-check-updates"]]
-version = "22.2.9"
+version = "23.0.2"
 backend = "npm:npm-check-updates"
 
 [[tools."npm:tombi"]]
-version = "1.2.4"
+version = "1.2.10"
 backend = "npm:tombi"
 
 [[tools."npm:typescript-language-server"]]
@@ -602,7 +610,7 @@ version = "0.9.0"
 backend = "pipx:nginx-language-server"
 
 [[tools."pipx:python-lsp-server"]]
-version = "1.14.0"
+version = "1.15.0"
 backend = "pipx:python-lsp-server"
 
 [[tools."pipx:yamllint"]]
@@ -610,82 +618,82 @@ version = "1.38.0"
 backend = "pipx:yamllint"
 
 [[tools.pnpm]]
-version = "11.15.0"
+version = "11.21.0"
 backend = "aqua:pnpm/pnpm"
 
 [tools.pnpm."platforms.linux-arm64"]
-checksum = "sha256:d0c62d5953a9ba168267d81d178edf0fcdd9ea947da7b3e21ff8f65a679dd4ba"
-url = "https://github.com/pnpm/pnpm/releases/download/v11.15.0/pnpm-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/481462338"
+checksum = "sha256:64eb219b008f7a4c176d81fbce919c20b0b7e093e815cbb669d46e681451f43b"
+url = "https://github.com/pnpm/pnpm/releases/download/v11.21.0/pnpm-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/507585528"
 provenance = "github-attestations"
 
 [tools.pnpm."platforms.linux-arm64-musl"]
-checksum = "sha256:04efd75a46b7d79dda92dbddaed729c4b54cc50d2ca836cb0f24f1f591387916"
-url = "https://github.com/pnpm/pnpm/releases/download/v11.15.0/pnpm-linux-arm64-musl.tar.gz"
-url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/481462341"
+checksum = "sha256:43587a1f3d26ee009c640378ef377cac3531990579acf0f35646531b7832831d"
+url = "https://github.com/pnpm/pnpm/releases/download/v11.21.0/pnpm-linux-arm64-musl.tar.gz"
+url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/507585511"
 provenance = "github-attestations"
 
 [tools.pnpm."platforms.linux-x64"]
-checksum = "sha256:f9fb813541b04a9c63f0b87d4116794b24ecf6c61f1c0757f3f32b03bb3b55b3"
-url = "https://github.com/pnpm/pnpm/releases/download/v11.15.0/pnpm-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/481462340"
+checksum = "sha256:aadc489ce4473c2af0fec06a5c19e113b5793d404eac49853c8153bf4b0d8263"
+url = "https://github.com/pnpm/pnpm/releases/download/v11.21.0/pnpm-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/507585503"
 provenance = "github-attestations"
 
 [tools.pnpm."platforms.linux-x64-musl"]
-checksum = "sha256:1a8ad7bbf355dc37d516d443e3de0768920fc22a03761ac7ff02a790a55ffb2d"
-url = "https://github.com/pnpm/pnpm/releases/download/v11.15.0/pnpm-linux-x64-musl.tar.gz"
-url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/481462339"
+checksum = "sha256:8cad0a4d20318c0445d992630ace51edc0853fd259573f50ee5d0216dce9b420"
+url = "https://github.com/pnpm/pnpm/releases/download/v11.21.0/pnpm-linux-x64-musl.tar.gz"
+url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/507585524"
 provenance = "github-attestations"
 
 [tools.pnpm."platforms.macos-arm64"]
-checksum = "sha256:662da4d7515b268c20fae097147a0ddcb91f9eba23b79c1c8d403e0d6fea1900"
-url = "https://github.com/pnpm/pnpm/releases/download/v11.15.0/pnpm-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/481462336"
+checksum = "sha256:860a96978a79ca5132bdc247375f94150a3c98edbecbee36e9f8e0c9e2f7f056"
+url = "https://github.com/pnpm/pnpm/releases/download/v11.21.0/pnpm-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/507585526"
 provenance = "github-attestations"
 
 [tools.pnpm."platforms.windows-x64"]
-checksum = "sha256:da333ad91f95ee97caf9bb66a5a100f328d42b72a39007d4f3f2639a2b4166e7"
-url = "https://github.com/pnpm/pnpm/releases/download/v11.15.0/pnpm-win32-x64.zip"
-url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/481465354"
+checksum = "sha256:6643043caa3b01c65c431039926a2af954326d5cefbdb4da7baceceb17f5051f"
+url = "https://github.com/pnpm/pnpm/releases/download/v11.21.0/pnpm-win32-x64.zip"
+url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/507585516"
 provenance = "github-attestations"
 
 [[tools.python]]
-version = "3.14.6"
+version = "3.14.7"
 backend = "core:python"
 
 [tools.python."platforms.linux-arm64"]
-checksum = "sha256:9124d5c41739d78a446f1f29c1953bf41071abcbf18e6daec201a27608648195"
-url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260610/cpython-3.14.6+20260610-aarch64-unknown-linux-gnu-install_only_stripped.tar.gz"
+checksum = "sha256:86dfb106b303fa6a1991f7da42ced3e11576f777be299b3162e06617b6d22542"
+url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260814/cpython-3.14.7+20260814-aarch64-unknown-linux-gnu-install_only_stripped.tar.gz"
 provenance = "github-attestations"
 
 [tools.python."platforms.linux-arm64-musl"]
-checksum = "sha256:5c75bea22f425ebc94912c618518a5aa4753eedeea6b5da5939f027d3a9c0fec"
-url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260610/cpython-3.14.6+20260610-aarch64-unknown-linux-musl-install_only_stripped.tar.gz"
+checksum = "sha256:1bdbb1d5267120b5ba8531332be695693ba49567d28c40dd670545b6a25b70a7"
+url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260814/cpython-3.14.7+20260814-aarch64-unknown-linux-musl-install_only_stripped.tar.gz"
 provenance = "github-attestations"
 
 [tools.python."platforms.linux-x64"]
-checksum = "sha256:0881fbde2c78605720fb2e240d1a6df38652a896e40a5fce2e10908dbee5f5b7"
-url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260610/cpython-3.14.6+20260610-x86_64-unknown-linux-gnu-install_only_stripped.tar.gz"
+checksum = "sha256:cefba034445d2875408d1fd4d5700ae6731563aeb54dcb39fd8164ab5c457533"
+url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260814/cpython-3.14.7+20260814-x86_64-unknown-linux-gnu-install_only_stripped.tar.gz"
 provenance = "github-attestations"
 
 [tools.python."platforms.linux-x64-musl"]
-checksum = "sha256:54eca143d09ed3c596ecad5e3bfcb7724387818f8f984f44f3d8c0e9f36681d3"
-url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260610/cpython-3.14.6+20260610-x86_64-unknown-linux-musl-install_only_stripped.tar.gz"
+checksum = "sha256:d92793e7c75f88e0ebfe3f6dc9a80b1571e287537938c536b07c60f9c23d6360"
+url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260814/cpython-3.14.7+20260814-x86_64-unknown-linux-musl-install_only_stripped.tar.gz"
 provenance = "github-attestations"
 
 [tools.python."platforms.macos-arm64"]
-checksum = "sha256:875516e13be36296f8f7dd0972b22ba3bed069ed08d27d5f0069caf227522921"
-url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260610/cpython-3.14.6+20260610-aarch64-apple-darwin-install_only_stripped.tar.gz"
+checksum = "blake3:2658330816d6c6b6f99a4b92c24c14a1fef09caa072952e799815d01e60e2911"
+url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260814/cpython-3.14.7+20260814-aarch64-apple-darwin-install_only_stripped.tar.gz"
 provenance = "github-attestations"
 
 [tools.python."platforms.macos-x64"]
-checksum = "sha256:6f85cbb2a0fef4b90fc63aadcfe383c22db5eb7933066ca6ea384828a6b3f2d2"
-url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260610/cpython-3.14.6+20260610-x86_64-apple-darwin-install_only_stripped.tar.gz"
+checksum = "sha256:e085b44e21d9c60acd866680747e1f82800cf9a1630a369da1723976d87bead1"
+url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260814/cpython-3.14.7+20260814-x86_64-apple-darwin-install_only_stripped.tar.gz"
 provenance = "github-attestations"
 
 [tools.python."platforms.windows-x64"]
-checksum = "sha256:49f0c7e8d1c2eaba70c5516ca6c01b6b766f6ff473f1209a76fd01783e7c75ae"
-url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260610/cpython-3.14.6+20260610-x86_64-pc-windows-msvc-install_only_stripped.tar.gz"
+checksum = "sha256:649e1eebf754a5ca76ddfda8c498ff25c574599408b8a52b6a2c24265fd6314c"
+url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260814/cpython-3.14.7+20260814-x86_64-pc-windows-msvc-install_only_stripped.tar.gz"
 provenance = "github-attestations"
 
 [[tools.ruby]]
@@ -740,47 +748,47 @@ version = "1.97.1"
 backend = "core:rust"
 
 [[tools.uv]]
-version = "0.11.29"
+version = "0.12.0"
 backend = "aqua:astral-sh/uv"
 
 [tools.uv."platforms.linux-arm64"]
-checksum = "sha256:593d79a797ece3f1dfaaf3e0a973263422a135d9262c7dbc6cd75d9c11acc0b4"
-url = "https://github.com/astral-sh/uv/releases/download/0.11.29/uv-aarch64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/478261262"
+checksum = "sha256:936fbbf20188a2b1c66bce3dca3f4009a5c9cdf12bb2bbd084e71926f75d6a15"
+url = "https://github.com/astral-sh/uv/releases/download/0.12.0/uv-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/493071360"
 provenance = "github-attestations"
 
 [tools.uv."platforms.linux-arm64-musl"]
-checksum = "sha256:593d79a797ece3f1dfaaf3e0a973263422a135d9262c7dbc6cd75d9c11acc0b4"
-url = "https://github.com/astral-sh/uv/releases/download/0.11.29/uv-aarch64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/478261262"
+checksum = "sha256:936fbbf20188a2b1c66bce3dca3f4009a5c9cdf12bb2bbd084e71926f75d6a15"
+url = "https://github.com/astral-sh/uv/releases/download/0.12.0/uv-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/493071360"
 provenance = "github-attestations"
 
 [tools.uv."platforms.linux-x64"]
-checksum = "sha256:46711858adb2a3acaa9cee00f9060688ad1fd5706aecc005b96a6a7f285a00b7"
-url = "https://github.com/astral-sh/uv/releases/download/0.11.29/uv-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/478261352"
+checksum = "sha256:3340a9d8cffc4d801bc1a7459ebfaf5790c79400720d9b6963d806f058526684"
+url = "https://github.com/astral-sh/uv/releases/download/0.12.0/uv-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/493071451"
 provenance = "github-attestations"
 
 [tools.uv."platforms.linux-x64-musl"]
-checksum = "sha256:46711858adb2a3acaa9cee00f9060688ad1fd5706aecc005b96a6a7f285a00b7"
-url = "https://github.com/astral-sh/uv/releases/download/0.11.29/uv-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/478261352"
+checksum = "sha256:3340a9d8cffc4d801bc1a7459ebfaf5790c79400720d9b6963d806f058526684"
+url = "https://github.com/astral-sh/uv/releases/download/0.12.0/uv-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/493071451"
 provenance = "github-attestations"
 
 [tools.uv."platforms.macos-arm64"]
-checksum = "sha256:61c04acc52a33ef0f331e494bdfbedcdb6c26c6970c022ed3699e5860f8930e3"
-url = "https://github.com/astral-sh/uv/releases/download/0.11.29/uv-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/478261245"
+checksum = "sha256:2b9e582af54f84fa50c115427451a6c13e80f43b52f8282b8af5791077317bbf"
+url = "https://github.com/astral-sh/uv/releases/download/0.12.0/uv-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/493071342"
 provenance = "github-attestations"
 
 [tools.uv."platforms.macos-x64"]
-checksum = "sha256:c4c4de482da9ccdd076dc4fb5cfe7b740609029385c72f58606be3153602387d"
-url = "https://github.com/astral-sh/uv/releases/download/0.11.29/uv-x86_64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/478261331"
+checksum = "sha256:d41593beaefc54bab7d062af0ef6ca093bfb81d001d58ebbef39e44423f9c496"
+url = "https://github.com/astral-sh/uv/releases/download/0.12.0/uv-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/493071438"
 provenance = "github-attestations"
 
 [tools.uv."platforms.windows-x64"]
-checksum = "sha256:a047d55651bc3e0ca24595b25ec4cfcb10f9dca9fb56514e661269b37d4fae68"
-url = "https://github.com/astral-sh/uv/releases/download/0.11.29/uv-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/478261333"
+checksum = "sha256:68200e25de594df92387186bbfb9d9df606ec1d87efaa0ae0c7f690970e53db6"
+url = "https://github.com/astral-sh/uv/releases/download/0.12.0/uv-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/493071443"
 provenance = "github-attestations"

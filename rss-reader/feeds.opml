@@ -27,5 +27,7 @@
     <outline text="LegalOn Technologies Engineering Blog" title="LegalOn Technologies Engineering Blog" type="rss" xmlUrl="https://tech.legalforce.co.jp/feed" htmlUrl="https://tech.legalforce.co.jp/"></outline>
     <outline text="Timee Product Team Blog" title="Timee Product Team Blog" type="rss" xmlUrl="https://tech.timee.co.jp/feed" htmlUrl="https://tech.timee.co.jp/"></outline>
     <outline text="カミナシ エンジニアブログ" title="カミナシ エンジニアブログ" type="rss" xmlUrl="https://kaminashi-developer.hatenablog.jp/feed" htmlUrl="https://kaminashi-developer.hatenablog.jp/"></outline>
+    <outline text="enechain Tech Blog" title="enechain Tech Blog" type="rss" xmlUrl="https://techblog.enechain.com/feed" htmlUrl="https://techblog.enechain.com/"></outline>
+    <outline text="Cybozu Inside Out | サイボウズエンジニアのブログ" title="Cybozu Inside Out | サイボウズエンジニアのブログ" type="rss" xmlUrl="https://blog.cybozu.io/feed" htmlUrl="https://blog.cybozu.io/"></outline>
   </body>
 </opml>
