@@ -1,6 +1,3 @@
 {
-  "enabledPlugins": {
-    "lua-lsp@cross-ts-dotfiles": true,
-    "bash-lsp@cross-ts-dotfiles": true
-  }
+  "enabledPlugins": {}
 }
