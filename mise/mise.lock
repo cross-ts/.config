@@ -494,7 +494,7 @@ version = "26.6.0"
 backend = "npm:@ansible/ansible-language-server"
 
 [[tools."npm:@github/copilot-language-server"]]
-version = "1.532.0"
+version = "1.532.2"
 backend = "npm:@github/copilot-language-server"
 
 [[tools."npm:@playwright/cli"]]
