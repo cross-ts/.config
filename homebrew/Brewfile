@@ -1,74 +1,99 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-# Tap
+#######
+# Tap #
+#######
 tap 'hashicorp/tap'
 tap 'hanasuke/moralerspace'
 
-# shell
-brew 'zsh'
-brew 'starship'
+########
+# Font #
+########
+cask 'font-Hack-nerd-font'
+cask 'font-moralerspace'
 
-# My .zshrc Dependencies
-brew 'sheldon'
-brew 'fzf'
-brew 'ripgrep'
-brew 'eza'
-brew 'git'
-brew 'mise'
-
-# git
-brew 'gh'
-brew 'ghq'
-brew 'git-extras'
-brew 'tig'
-
-# editor
-brew 'neovim'
-brew 'neovim-remote'
-
-# AWS
-brew 'awscli'
-brew 'aws-sam-cli'
-
-# IaC tools
-brew 'ansible'
-brew 'hashicorp/tap/terraform'
-
-# AI Agents
-brew 'microsoft/apm/apm'
-brew 'gemini-cli'
+############
+# AI Tools #
+############
+# CLI
+cask 'antigravity-cli'
 cask 'claude-code'
 cask 'codex'
 cask 'copilot-cli'
 
-# CLI tools
-brew 'alp'
-brew 'apfel'
-brew 'bat'
-brew 'duckdb'
-brew 'fd'
-brew 'jq'
-brew 'pet'
-brew 'hyperfine'
-brew 'marp-cli'
-brew 'pinact'
-brew 'sqlite'
+# AI Apps
+cask 'antigravity'
+cask 'google-gemini'
+cask 'chatgpt'
+cask 'claude'
+
+# AI Terminal Emulator
+cask 'cmux'
+cask 'stablyai/orca/orca'
+
+############
+# Terminal #
+############
+# Emulator
+cask 'ghostty'
+
+# Multiplexer
 brew 'tmux'
-brew 'tree'
+
+# Shell
+brew 'bash'
+brew 'fish'
+brew 'zsh'
+
+# Shell Prompt
+brew 'starship'
+
+# Dependency Manager
+brew 'mise'
+brew 'sheldon'
+
+# Editor
+cask 'obsidian'
+brew 'neovim'
+brew 'neovim-remote'
 brew 'tree-sitter-cli'
 brew 'universal-ctags'
+
+# Git
+brew 'git'
+brew 'git-extras'
+brew 'ghq'
+brew 'tig'
+
+# GitHub
+brew 'gh'
+brew 'pinact'
+
+# Database
+brew 'sqlite'
+brew 'duckdb'
+
+# Utilities
+brew 'ripgrep'
+brew 'bat'
+brew 'eza'
+brew 'fd'
+brew 'fzf'
+brew 'hyperfine'
+brew 'jq'
+brew 'pet'
+brew 'marp-cli'
+brew 'tree'
 brew 'yq'
-brew 'zizmor'
 if OS.mac?
   brew 'coreutils'
   brew 'make'
   brew 'watch'
-  brew 'wget'
   brew 'yap'
 end
 
-# For Build PHP
+# Build PHP
 if OS.mac?
   brew 'autoconf'
   brew 'automake'
@@ -93,19 +118,31 @@ if OS.mac?
   brew 'imagemagick'
 end
 
-# Cask
-cask '1password'
-cask '1password-cli'
-cask 'chatgpt'
-cask 'claude'
-cask 'cmux'
-cask 'discord'
-cask 'docker-desktop'
-cask 'font-Hack-nerd-font'
-cask 'font-moralerspace'
+##################
+# Infrastructure #
+##################
+brew 'awscli'
+brew 'aws-sam-cli'
+brew 'ansible'
+brew 'hashicorp/tap/terraform'
+brew 'alp'
+
+############
+# Browsers #
+############
 cask 'google-chrome'
-cask 'ghostty'
-cask 'obsidian'
-cask 'steam'
+
+#######################
+# Communication Tools #
+#######################
+cask 'discord'
 cask 'slack'
 cask 'zoom'
+
+##############
+# Other Apps #
+##############
+cask '1password'
+cask '1password-cli'
+cask 'docker-desktop'
+cask 'steam'

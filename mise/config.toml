@@ -24,14 +24,14 @@ credential_command = "gh auth token"
 [tools]
 
 # Language Runtimes
-go = "1.27.0"
+go = "1.27.1"
 lua = "5.4.8"
 perl = "5.44.0"
 php = "8.6.0alpha1"
 python = { version = "3.14.7", postinstall = "$MISE_TOOL_INSTALL_PATH/bin/python -m pip install pyyaml" }
 ruby = "4.0.6"
 node = "26.8.1"
-rust = "1.98.0"
+rust = "1.98.1"
 
 # Package Managers
 pnpm = "latest"
@@ -88,6 +88,7 @@ uv = "latest"
 "pipx:ansible-lint" = "latest"
 "pipx:mypy" = "latest"
 "pipx:yamllint" = "latest"
+"github:zizmorcore/zizmor" = "latest"
 
 # Formatter
 "cargo:shellharden" = "latest"
