@@ -38,7 +38,7 @@
     "ask": [],
     "defaultMode": "plan"
   },
-  "model": "opus",
+  "model": "opus[1m]",
   "disableWorkflows": true,
   "enabledPlugins": {},
   "extraKnownMarketplaces": {},

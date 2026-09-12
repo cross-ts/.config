@@ -31,25 +31,20 @@ prefix_rule(pattern = ["mise", "upgrade"], decision = "forbidden")
 # Sheldon
 prefix_rule(pattern = ["sheldon"], decision = "forbidden")
 
-# APM
-prefix_rule(pattern = ["apm"], decision = "forbidden")
-
 ##################
 # Tools Settings #
 ##################
-# Linux Commands
-prefix_rule(pattern = ["grep"], decision = "forbidden", justification = "Use `rg` insteadof `grep`.")
-prefix_rule(pattern = ["find"], decision = "forbidden", justification = "Use `fd` insteadof `find`.")
+prefix_rule(pattern = ["make"], decision = "forbidden", justification = "Use `gmake` instead of `make`")
+prefix_rule(pattern = ["gmake"], decision = "allow")
 
-# Other AI
-prefix_rule(pattern = ["claude", "-p"], decision = "forbidden")
-
-# Utilities
-prefix_rule(pattern = ["eza"], decision = "allow")
+prefix_rule(pattern = ["grep"], decision = "forbidden", justification = "Use `rg` instead of `grep`.")
 prefix_rule(pattern = ["rg"], decision = "allow")
+
+prefix_rule(pattern = ["find"], decision = "forbidden", justification = "Use `fd` instead of `find`.")
 prefix_rule(pattern = ["fd"], decision = "allow")
+
+prefix_rule(pattern = ["eza"], decision = "allow")
 prefix_rule(pattern = ["jq"], decision = "allow")
-prefix_rule(pattern = ["make"], decision = "allow")
 prefix_rule(pattern = ["difit"], decision = "allow")
 prefix_rule(pattern = ["marp"], decision = "allow")
 prefix_rule(pattern = ["markitdown"], decision = "allow")
