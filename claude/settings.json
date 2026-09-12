@@ -36,12 +36,19 @@
       "Read(auth.json)"
     ],
     "ask": [],
-    "defaultMode": "plan"
+    "defaultMode": "auto"
   },
   "model": "opus[1m]",
   "disableWorkflows": true,
   "enabledPlugins": {},
-  "extraKnownMarketplaces": {},
+  "extraKnownMarketplaces": {
+    "cross-ts": {
+      "source": {
+        "source": "git",
+        "url": "git@github.com:cross-ts/agent-plugins.git"
+      }
+    }
+  },
   "language": "japanese",
   "ultracode": false,
   "plansDirectory": ".claude/plans",
