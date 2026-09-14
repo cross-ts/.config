@@ -56,6 +56,25 @@ brew require starship || return 1
 STARSHIP_CACHE="${ZCACHEDIR}/starship.zsh"
 if [[ ! -f "${STARSHIP_CACHE}" || "${XDG_CONFIG_HOME}/starship.toml" -nt "${STARSHIP_CACHE}" ]]; then
   starship init zsh > "${STARSHIP_CACHE}"
+
+  # starshipはPROMPT2を都度 `starship prompt --continuation` で生成する。
+  # これがshell起動ごとの外部プロセスが実行となるため起動に大幅な遅延が発生する。
+  # そのためcache生成時に一度だけ実行し、その結果をPROMPT2へ事前に埋め込むことで高速化する。
+  # ```
+  # 2026-09-15: `hyperfine --warmup 20 --shell=none 'zsh -i -c exit'`
+  #   before: 17.6 ms
+  #   after:  11.7 ms (-5.9 ms, -34%)
+  # ```
+  # See: https://github.com/starship/starship/issues/3546
+  STARSHIP_PROMPT2="$(starship prompt --continuation)" || return 1
+  printf -v STARSHIP_PROMPT2 '%q' "${STARSHIP_PROMPT2}"
+  perl -pi -e '
+    BEGIN { $prompt = shift @ARGV }
+    s/^PROMPT2=.*prompt --continuation.*$/PROMPT2=$prompt/
+  ' "${STARSHIP_PROMPT2}" "${STARSHIP_CACHE}"
+
+  unset STARSHIP_PROMPT2
+
   log.info "Cache created ${STARSHIP_CACHE}"
 fi
 source "${STARSHIP_CACHE}"
