@@ -4,7 +4,8 @@ if [[ ${DOTFILES_DEBUG} == "on" ]]; then
 fi
 
 # Zsh Directories
-mkdir -p "${ZDOTDIR}" "${ZCACHEDIR}" "${ZSTATEDIR}"
+[[ -d "${ZCACHEDIR}" ]] || mkdir -p "${ZCACHEDIR}"
+[[ -d "${ZSTATEDIR}" ]] || mkdir -p "${ZSTATEDIR}"
 
 # Load Core modules
 autoload -Uz compinit ${ZDOTDIR}/functions/*
@@ -23,14 +24,15 @@ setopt transient_rprompt
 setopt autonamedirs
 setopt CDABLE_VARS
 setopt AUTO_CD
+setopt NO_FLOW_CONTROL
 
 bindkey -e
 
 # Depends on: Homebrew
-if ! command type brew >/dev/null 2>&1; then
+[[ -x "${HOMEBREW_PREFIX}/bin/brew" ]] || {
   log.error "Homebrew is not installed"
   return 1
-fi
+}
 
 brew require nvim neovim || return 1
 export EDITOR="nvim"
@@ -58,9 +60,6 @@ if [[ ! -f "${STARSHIP_CACHE}" || "${XDG_CONFIG_HOME}/starship.toml" -nt "${STAR
 fi
 source "${STARSHIP_CACHE}"
 unset STARSHIP_CACHE
-
-# Ctrl-s, Ctrl-q等をshellに食われないようにする
-stty -ixon
 
 ZSHRC="${(%):-%x}"
 if [[ ${ZSHRC} -nt ${ZSHRC}.zwc ]]; then
