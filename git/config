@@ -46,3 +46,8 @@ rename = rename-branch
 
 [ghq]
 root = ~/repos
+
+[filter "codex-config"]
+clean = $XDG_CONFIG_HOME/git/filters/codex-config/clean %f
+smudge = $XDG_CONFIG_HOME/git/filters/codex-config/smudge %f
+required = true

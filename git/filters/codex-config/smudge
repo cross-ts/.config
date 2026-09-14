@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -eu
+
+state="${XDG_STATE_HOME:?}/$1"
+
+if [ -f "$state" ]; then
+  yq ea -p=toml -o=toml \
+    '. as $item ireduce ({}; . * $item)' \
+    - "$state"
+else
+  cat
+fi

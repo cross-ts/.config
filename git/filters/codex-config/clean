@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+set -eu
+
+state="${XDG_STATE_HOME:?}/$1"
+tmp="$(mktemp)"
+trap 'rm -f "$tmp"' EXIT
+
+cat > "$tmp"
+mkdir -p "${state%/*}"
+
+keys='[
+  "personality",
+  "model",
+  "model_reasoning_effort",
+  "approval_policy",
+  "approvals_reviewer",
+  "sandbox_mode",
+  "features",
+  "memories"
+]'
+
+yq -p=toml -o=toml "omit($keys)" "$tmp" > "$state"
+yq -p=toml -o=toml "pick($keys)" "$tmp"
