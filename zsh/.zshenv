@@ -55,6 +55,7 @@ path=(
   ${MISE_DATA_DIR}/shims(N-/)
   ${HOMEBREW_PREFIX}/bin(N-/)
   ${HOMEBREW_PREFIX}/sbin(N-/)
+  /Applications/1Password.app/Contents/MacOS(N-/)
   /usr/local/bin
   /usr/local/sbin
   /usr/bin
