@@ -7,6 +7,7 @@ model_reasoning_effort = "xhigh"
 approval_policy = "on-request"
 approvals_reviewer = "guardian_subagent"
 sandbox_mode = "workspace-write"
+service_tier = "default"
 
 [features]
 js_repl = false

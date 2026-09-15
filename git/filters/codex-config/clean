@@ -15,6 +15,7 @@ keys='[
   "approval_policy",
   "approvals_reviewer",
   "sandbox_mode",
+  "service_tier",
   "features",
   "memories"
 ]'

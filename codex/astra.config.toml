@@ -1,6 +1,9 @@
 #:schema https://developers.openai.com/codex/config-schema.json
 #:tombi toml-version = "v1.1.0"
 #:tombi schema.strict = true
-personality = "pragmatic"
 model = "gpt-6-astra"
 model_reasoning_effort = "low"
+service_tier = "default"
+
+[features]
+fast_mode = false
