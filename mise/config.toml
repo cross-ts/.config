@@ -29,8 +29,8 @@ lua = "5.4.8"
 perl = "5.44.0"
 php = "8.6.0alpha1"
 python = { version = "3.14.7", postinstall = "$MISE_TOOL_INSTALL_PATH/bin/python -m pip install pyyaml" }
-ruby = "4.0.6"
-node = "26.8.1"
+ruby = "4.0.7"
+node = "26.9.0"
 rust = "1.98.1"
 
 # Package Managers
@@ -45,7 +45,7 @@ uv = "latest"
 "npm:difit" = "latest"
 "npm:npm-check-updates" = "latest"
 "npm:@playwright/cli" = "latest"
-"github:cross-ts/rss-reader" = "v0.4.22"
+"github:cross-ts/rss-reader" = "v0.4.23"
 
 # Language Servers
 "gem:ruby-lsp" = "latest"
