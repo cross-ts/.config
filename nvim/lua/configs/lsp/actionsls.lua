@@ -78,6 +78,7 @@ end
 
 --- @type vim.lsp.Config
 return {
+  cmd = { "actions-languageserver", "--stdio" },
   filetypes = { "yaml.github-actions" },
   root_markers = { ".git" },
   init_options = {

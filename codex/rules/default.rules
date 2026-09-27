@@ -23,10 +23,7 @@ prefix_rule(pattern = ["gem", "install"], decision = "forbidden")
 prefix_rule(pattern = ["brew"], decision = "forbidden")
 
 # Mise
-prefix_rule(pattern = ["mise", "u"], decision = "forbidden")
-prefix_rule(pattern = ["mise", "use"], decision = "forbidden")
-prefix_rule(pattern = ["mise", "up"], decision = "forbidden")
-prefix_rule(pattern = ["mise", "upgrade"], decision = "forbidden")
+prefix_rule(pattern = ["mise"], decision = "forbidden")
 
 # Sheldon
 prefix_rule(pattern = ["sheldon"], decision = "forbidden")
@@ -34,24 +31,25 @@ prefix_rule(pattern = ["sheldon"], decision = "forbidden")
 ##################
 # Tools Settings #
 ##################
-prefix_rule(pattern = ["make"], decision = "forbidden", justification = "Use `gmake` instead of `make`")
-prefix_rule(pattern = ["gmake"], decision = "allow")
+## Linux Commands
+### Allow
+prefix_rule(pattern = ["ls"], decision = "allow")
+prefix_rule(pattern = ["mkdir"], decision = "allow")
+prefix_rule(pattern = ["awk"], decision = "allow")
+prefix_rule(pattern = ["sed"], decision = "allow")
 
+### forbidden
 prefix_rule(pattern = ["grep"], decision = "forbidden", justification = "Use `rg` instead of `grep`.")
-prefix_rule(pattern = ["rg"], decision = "allow")
-
 prefix_rule(pattern = ["find"], decision = "forbidden", justification = "Use `fd` instead of `find`.")
-prefix_rule(pattern = ["fd"], decision = "allow")
+prefix_rule(pattern = ["make"], decision = "forbidden", justification = "Use `gmake` instead of `make`")
 
-prefix_rule(pattern = ["eza"], decision = "allow")
+## Installed tools
+prefix_rule(pattern = ["rg"], decision = "allow")
+prefix_rule(pattern = ["fd"], decision = "allow")
 prefix_rule(pattern = ["jq"], decision = "allow")
-prefix_rule(pattern = ["difit"], decision = "allow")
-prefix_rule(pattern = ["marp"], decision = "allow")
-prefix_rule(pattern = ["markitdown"], decision = "allow")
 prefix_rule(pattern = ["obsidian"], decision = "allow")
 prefix_rule(pattern = ["duckdb"], decision = "allow")
 prefix_rule(pattern = ["sqlite3"], decision = "allow")
-prefix_rule(pattern = ["yap"], decision = "allow")
 
 ## Git
 prefix_rule(pattern = ["git"], decision = "allow")
@@ -61,9 +59,19 @@ prefix_rule(pattern = ["git", "config"], decision = "forbidden")
 prefix_rule(pattern = ["gh"], decision = "allow")
 prefix_rule(pattern = ["gh", "auth"], decision = "forbidden")
 
+## Docker CLI
+prefix_rule(pattern = ["docker"], decision = "allow")
+prefix_rule(pattern = ["docker", "login"], decision = "forbidden")
+prefix_rule(pattern = ["docker", "logout"], decision = "forbidden")
+
 ## Linter
 prefix_rule(pattern = ["actionlint"], decision = "allow")
 prefix_rule(pattern = ["ansible-lint"], decision = "allow")
 prefix_rule(pattern = ["hadolint"], decision = "allow")
 prefix_rule(pattern = ["tombi", "lint"], decision = "allow")
 prefix_rule(pattern = ["yamllint"], decision = "allow")
+
+## MacOS Tools
+prefix_rule(pattern = ["gmake"], decision = "allow")
+prefix_rule(pattern = ["fm"], decision = "allow")
+prefix_rule(pattern = ["yap"], decision = "allow")

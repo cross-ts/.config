@@ -27,7 +27,7 @@ credential_command = "gh auth token"
 go = "1.27.1"
 lua = "5.4.8"
 perl = "5.44.0"
-php = "8.6.0alpha1"
+php = "latest"
 python = { version = "3.14.7", postinstall = "$MISE_TOOL_INSTALL_PATH/bin/python -m pip install pyyaml" }
 ruby = "4.0.7"
 node = "26.9.0"
@@ -57,7 +57,10 @@ uv = "latest"
 "npm:tombi" = "latest"
 "npm:typescript-language-server" = "latest"
 "npm:vscode-langservers-extracted" = "latest"
-"npm:yaml-language-server" = "latest"
+"npm:yaml-language-server" = {
+  version = "latest",
+  pnpm_args = "--config.node-linker=hoisted",
+}
 "npm:@actions/languageserver" = "latest"
 "npm:@ansible/ansible-language-server" = "latest"
 "npm:@github/copilot-language-server" = "latest"
