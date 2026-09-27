@@ -2,7 +2,7 @@
 # Language Settings #
 #####################
 # Node.js
-prefix_rule(pattern = ["npm"], decision = "forbidden", justification = "Use `pnpm` insteadof `npm`.")
+prefix_rule(pattern = ["npm"], decision = "forbidden", justification = "Substitute `pnpm`")
 prefix_rule(pattern = ["npx"], decision = "forbidden")
 
 # PHP
@@ -32,16 +32,21 @@ prefix_rule(pattern = ["sheldon"], decision = "forbidden")
 # Tools Settings #
 ##################
 ## Linux Commands
-### Allow
 prefix_rule(pattern = ["ls"], decision = "allow")
 prefix_rule(pattern = ["mkdir"], decision = "allow")
+prefix_rule(pattern = ["head"], decision = "allow")
+prefix_rule(pattern = ["tail"], decision = "allow")
+prefix_rule(pattern = ["less"], decision = "allow")
+prefix_rule(pattern = ["sort"], decision = "allow")
+prefix_rule(pattern = ["strings"], decision = "allow")
+
 prefix_rule(pattern = ["awk"], decision = "allow")
 prefix_rule(pattern = ["sed"], decision = "allow")
 
-### forbidden
-prefix_rule(pattern = ["grep"], decision = "forbidden", justification = "Use `rg` instead of `grep`.")
-prefix_rule(pattern = ["find"], decision = "forbidden", justification = "Use `fd` instead of `find`.")
-prefix_rule(pattern = ["make"], decision = "forbidden", justification = "Use `gmake` instead of `make`")
+### Substitute
+prefix_rule(pattern = ["grep"], decision = "forbidden", justification = "Substitute `rg`")
+prefix_rule(pattern = ["find"], decision = "forbidden", justification = "Substitute `fd`")
+prefix_rule(pattern = ["make"], decision = "forbidden", justification = "Substitute `gmake`")
 
 ## Installed tools
 prefix_rule(pattern = ["rg"], decision = "allow")
@@ -50,6 +55,10 @@ prefix_rule(pattern = ["jq"], decision = "allow")
 prefix_rule(pattern = ["obsidian"], decision = "allow")
 prefix_rule(pattern = ["duckdb"], decision = "allow")
 prefix_rule(pattern = ["sqlite3"], decision = "allow")
+prefix_rule(pattern = ["playwright-cli"], decision = "forbidden")
+
+### Substitute
+prefix_rule(pattern = ["playwright"], decision = "forbidden", justification = "Substitute `playwright-cli`")
 
 ## Git
 prefix_rule(pattern = ["git"], decision = "allow")
