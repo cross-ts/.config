@@ -56,6 +56,7 @@ prefix_rule(pattern = ["obsidian"], decision = "allow")
 prefix_rule(pattern = ["duckdb"], decision = "allow")
 prefix_rule(pattern = ["sqlite3"], decision = "allow")
 prefix_rule(pattern = ["playwright-cli"], decision = "forbidden")
+prefix_rule(pattern = ["tmux", "rename-window"], decision = "allow")
 
 ### Substitute
 prefix_rule(pattern = ["playwright"], decision = "forbidden", justification = "Substitute `playwright-cli`")
