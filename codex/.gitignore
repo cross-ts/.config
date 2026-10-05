@@ -13,4 +13,4 @@ skills/.system
 !rules
 !rules/*.rules
 
-config.toml
+!*.config.toml

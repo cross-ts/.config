@@ -1,9 +1,16 @@
 #:schema https://developers.openai.com/codex/config-schema.json
 #:tombi toml-version = "v1.1.0"
 #:tombi schema.strict = true
-model = "gpt-6-luna"
-model_reasoning_effort = "max"
+
+personality = "pragmatic"
+model = "gpt-6.1-sol"
+model_reasoning_effort = "xhigh"
 service_tier = "default"
 
 [features]
 fast_mode = false
+
+[memories]
+use_memories = true
+generate_memories = true
+disable_on_external_context = false
