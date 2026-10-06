@@ -47,6 +47,7 @@ export PHP_CONFIGURE_OPTIONS="--with-openssl=${HOMEBREW_PREFIX}/opt/openssl@3 --
 export COMPOSE_BAKE=true
 
 # AI Agents Home Directory
+export COPILOT_HOME=${XDG_CONFIG_HOME}/copilot
 export CLAUDE_CONFIG_DIR=${XDG_CONFIG_HOME}/claude
 export CODEX_HOME=${XDG_CONFIG_HOME}/codex
 
