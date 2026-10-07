@@ -8,3 +8,7 @@
 ## Tool Suggestion
 
 - `LSP` enabled.
+
+## Workflow
+
+- 作業開始時に `/tmux:rename-window` を使用し作業内容を10文字程度にまとめtmuxのwindowを更新する

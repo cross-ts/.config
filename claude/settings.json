@@ -40,7 +40,9 @@
   },
   "model": "opus[1m]",
   "disableWorkflows": true,
-  "enabledPlugins": {},
+  "enabledPlugins": {
+    "tmux@cross-ts": true
+  },
   "extraKnownMarketplaces": {
     "cross-ts": {
       "source": {
