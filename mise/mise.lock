@@ -638,9 +638,9 @@ url_api = "https://api.github.com/repos/skaji/relocatable-perl/releases/assets/4
 provenance = "github-attestations"
 
 [[tools.php]]
-version = "8.6.0beta3"
+version = "8.5.11"
 backend = "asdf:php"
-specifiers = ["latest"]
+specifiers = ["8.5.11"]
 
 [[tools."pipx:ansible-lint"]]
 version = "26.10.0"

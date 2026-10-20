@@ -1,6 +1,7 @@
 #:schema https://mise.jdx.dev/schema/mise.json
 #:tombi toml-version = "v1.1.0"
 #:tombi schema.strict = true
+
 ############
 # Settings #
 ############
@@ -27,7 +28,7 @@ credential_command = "gh auth token"
 go = "1.27.2"
 lua = "5.4.8"
 perl = "5.44.0"
-php = "latest"
+php = "8.5.11"
 python = { version = "3.15.0", postinstall = "$MISE_TOOL_INSTALL_PATH/bin/python -m pip install pyyaml" }
 ruby = "4.0.7"
 node = "26.11.1"
