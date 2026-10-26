@@ -1,9 +1,9 @@
 version = 1
-revision = 3
+revision = 5
 requires-python = ">=3.10.0"
 
 [options]
-exclude-newer = "2026-10-12T16:03:25.477872Z"
+exclude-newer = "2026-10-19T03:24:02.842078Z"
 
 [[package]]
 name = "isort"

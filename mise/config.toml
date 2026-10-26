@@ -28,11 +28,11 @@ credential_command = "gh auth token"
 go = "1.27.2"
 lua = "5.4.8"
 perl = "5.44.0"
-php = "8.5.11"
+php = "8.5.12"
 python = { version = "3.15.0", postinstall = "$MISE_TOOL_INSTALL_PATH/bin/python -m pip install pyyaml" }
 ruby = "4.0.7"
-node = "26.11.1"
-rust = "1.99.0"
+node = "26.12.0"
+rust = "1.99.1"
 
 # Package Managers
 pnpm = "latest"
@@ -50,7 +50,7 @@ uv = "latest"
 
 # Language Servers
 "gem:ruby-lsp" = "latest"
-"github:LuaLS/lua-language-server" = "3.19.1"
+"github:LuaLS/lua-language-server" = "3.19.2"
 "go:github.com/docker/docker-language-server/cmd/docker-language-server" = "latest"
 "npm:bash-language-server" = "latest"
 "npm:intelephense" = "latest"
