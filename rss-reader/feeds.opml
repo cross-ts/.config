@@ -30,5 +30,6 @@
     <outline text="enechain Tech Blog" title="enechain Tech Blog" type="rss" xmlUrl="https://techblog.enechain.com/feed" htmlUrl="https://techblog.enechain.com/"></outline>
     <outline text="Cybozu Inside Out | サイボウズエンジニアのブログ" title="Cybozu Inside Out | サイボウズエンジニアのブログ" type="rss" xmlUrl="https://blog.cybozu.io/feed" htmlUrl="https://blog.cybozu.io/"></outline>
     <outline text="Findy Tools 技術特集記事" title="Findy Tools 技術特集記事" type="rss" xmlUrl="https://findy-tools.io/articles.rss" htmlUrl="https://findy-tools.io/articles"></outline>
+    <outline text="Engineering at Slack" title="Engineering at Slack" type="rss" xmlUrl="https://slack.engineering/feed/" htmlUrl="https://slack.engineering"></outline>
   </body>
 </opml>
