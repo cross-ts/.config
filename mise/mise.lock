@@ -184,7 +184,7 @@ backend = "npm:@ansible/ansible-language-server"
 specifiers = ["latest"]
 
 [[tools."npm:@github/copilot-language-server"]]
-version = "1.558.0"
+version = "1.560.0"
 backend = "npm:@github/copilot-language-server"
 specifiers = ["latest"]
 
@@ -209,7 +209,7 @@ backend = "npm:bash-language-server"
 specifiers = ["latest"]
 
 [[tools."npm:ccusage"]]
-version = "20.0.40"
+version = "20.0.42"
 backend = "npm:ccusage"
 specifiers = ["latest"]
 
@@ -234,7 +234,7 @@ backend = "npm:npm-check-updates"
 specifiers = ["latest"]
 
 [[tools."npm:tombi"]]
-version = "1.8.10"
+version = "1.9.1"
 backend = "npm:tombi"
 specifiers = ["latest"]
 
@@ -330,9 +330,9 @@ url = "https://github.com/astral-sh/python-build-standalone/releases/download/20
 provenance = "github-attestations"
 
 [[tools.ruby]]
-version = "4.0.8"
+version = "4.0.9"
 backend = "core:ruby"
-specifiers = ["4.0.8"]
+specifiers = ["4.0.9"]
 
 [tools.ruby.options]
 compile = "false"
@@ -341,8 +341,8 @@ ruby_build_repo = "https://github.com/rbenv/ruby-build.git"
 ruby_install = "false"
 
 [tools.ruby."platforms.macos-arm64"]
-checksum = "sha256:b5b977610dbe5a5e14c958269ec6e81825420c1b080c90b13e601b0638871a6c"
-url = "https://github.com/jdx/ruby/releases/download/4.0.8-1/ruby-4.0.8.macos.tar.gz"
+checksum = "sha256:6eca5d2aaf6bb6c805daa31b4139a3c974526f41dae990ab0cef0ee3db8ea5d1"
+url = "https://github.com/jdx/ruby/releases/download/4.0.9-1/ruby-4.0.9.macos.tar.gz"
 provenance = "github-attestations"
 
 [[tools.rust]]
