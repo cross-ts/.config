@@ -5,6 +5,10 @@
 tag = ["codex"]
 command = "codex --no-daemon --profile $(print -l ${CODEX_HOME}/*.config.toml(:t:r:r) | fzf --ansi --height 40%)"
 
+[[snippets]]
+tag = ["claude"]
+command = "claude"
+
 ###################
 # Version Manager #
 ###################

@@ -41,7 +41,8 @@
   "model": "opus[1m]",
   "disableWorkflows": true,
   "enabledPlugins": {
-    "tmux@cross-ts": true
+    "tmux@cross-ts": true,
+    "design@synced": false
   },
   "extraKnownMarketplaces": {
     "cross-ts": {
