@@ -1,5 +1,10 @@
 # CLAUDE.md
 
+## Environment
+
+- zsh
+  - nomatch: enabled
+
 ## Core Principles
 
 - 抽象的な概念はそのまま利用する
