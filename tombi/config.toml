@@ -1,0 +1,9 @@
+[[schemas]]
+path = "https://developers.openai.com/codex/config-schema.json"
+toml-version = "v1.1.0"
+include = [
+  "**/.codex/config.toml",
+  "**/.codex/*.config.toml",
+  "**/codex/config.toml",
+  "**/codex/*.config.toml",
+]

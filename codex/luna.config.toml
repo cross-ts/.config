@@ -1,7 +1,3 @@
-#:schema https://developers.openai.com/codex/config-schema.json
-#:tombi toml-version = "v1.1.0"
-#:tombi schema.strict = true
-
 personality = "pragmatic"
 model = "gpt-6-luna"
 model_reasoning_effort = "max"
@@ -9,6 +5,7 @@ service_tier = "default"
 
 [features]
 fast_mode = false
+daemon_auto_start = false
 
 [memories]
 use_memories = true
