@@ -4,6 +4,7 @@
 
 - zsh
   - nomatch: enabled
+  - nobareglobqual: enabled
 
 ## Core Principles
 
