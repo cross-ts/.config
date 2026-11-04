@@ -22,6 +22,9 @@ cask 'claude-code'
 cask 'codex'
 cask 'copilot-cli'
 
+# Plugin Manager
+brew 'apm'
+
 # AI Apps
 cask 'antigravity'
 cask 'google-gemini'
@@ -146,4 +149,3 @@ cask '1password'
 cask '1password-cli'
 cask 'docker-desktop'
 cask 'steam'
-cask 'homebrew-app'
