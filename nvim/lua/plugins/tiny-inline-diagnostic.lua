@@ -1,10 +1,11 @@
 -- A Neovim plugin that display prettier diagnostic messages. Display diagnostic messages where the cursor is, with icons and colors.
----@type LazyPluginSpec
+---@type configs.PluginSpec
 return {
-  "rachartier/tiny-inline-diagnostic.nvim",
-  event = "VeryLazy",
+  "tiny-inline-diagnostic.nvim",
+  src = "https://github.com/rachartier/tiny-inline-diagnostic.nvim",
+  event = "DeferredUIEnter",
   priority = 1000,
-  config = function()
+  after = function()
     require('tiny-inline-diagnostic').setup({
       options = {
         multilines = { enabled = true },

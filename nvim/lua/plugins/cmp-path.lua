@@ -1,5 +1,8 @@
 -- nvim-cmp source for path
----@type LazyPluginSpec
+---@type configs.PluginSpec
 return {
-  'hrsh7th/cmp-path',
+  'cmp-path',
+  src = 'https://github.com/hrsh7th/cmp-path',
+  -- nvim-cmp の after で trigger_load する
+  lazy = true,
 }

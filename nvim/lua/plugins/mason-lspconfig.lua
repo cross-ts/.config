@@ -1,11 +1,14 @@
 -- Extension to mason.nvim that makes it easier to use lspconfig with mason.nvim.
----@type LazyPluginSpec
+---@type configs.PluginSpec
 return {
-  "mason-org/mason-lspconfig.nvim",
+  "mason-lspconfig.nvim",
+  src = "https://github.com/mason-org/mason-lspconfig.nvim",
   enabled = false,
-  opts = {},
-  dependencies = {
-    { "mason-org/mason.nvim", opts = {} },
-    "neovim/nvim-lspconfig",
-  }
+  lazy = true,
+  before = function()
+    require("lz.n").trigger_load({ "mason.nvim", "nvim-lspconfig" })
+  end,
+  after = function()
+    require("mason-lspconfig").setup({})
+  end,
 }

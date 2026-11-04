@@ -1,14 +1,15 @@
 -- Edit and review GitHub issues and pull requests from the comfort of your favorite editor
----@type LazyPluginSpec
+---@type configs.PluginSpec
 return {
-  'pwntester/octo.nvim',
-  dependencies = {
-    'nvim-lua/plenary.nvim',
-    'nvim-telescope/telescope.nvim',
-    'nvim-tree/nvim-web-devicons',
-  },
+  'octo.nvim',
+  src = 'https://github.com/pwntester/octo.nvim',
   cmd = {
     'Octo',
   },
-  config = true,
+  before = function()
+    require('lz.n').trigger_load('telescope.nvim')
+  end,
+  after = function()
+    require('octo').setup({})
+  end,
 }

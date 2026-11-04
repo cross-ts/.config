@@ -1,14 +1,14 @@
 -- 🌅 Twilight is a Lua plugin for Neovim 0.5 that dims inactive portions of the code you're editing using TreeSitter.
----@type LazyPluginSpec
+---@type configs.PluginSpec
 return {
-  "folke/twilight.nvim",
-  dependencies = {
-    'nvim-treesitter/nvim-treesitter',
-  },
+  "twilight.nvim",
+  src = "https://github.com/folke/twilight.nvim",
   cmd = {
     "Twilight",
     "TwilightEnable",
     "TwilightDisable",
   },
-  opts = {},
+  after = function()
+    require("twilight").setup({})
+  end,
 }

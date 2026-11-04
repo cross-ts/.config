@@ -1,51 +1,51 @@
 -- Find, Filter, Preview, Pick. All lua, all the time.
----@type LazyPluginSpec
+---@type configs.PluginSpec
 return {
-  'nvim-telescope/telescope.nvim',
-  dependencies = {
-    'nvim-lua/plenary.nvim',
-    'nvim-telescope/telescope-file-browser.nvim',
-    'nvim-telescope/telescope-frecency.nvim',
-    'nvim-telescope/telescope-fzf-native.nvim',
-  },
+  'telescope.nvim',
+  src = 'https://github.com/nvim-telescope/telescope.nvim',
   cmd = { 'Telescope' },
-  keys = function()
-    return {
-      { '<leader>ff', '<cmd>Telescope find_files<cr>', { silent = true } },
-      {
-        '<leader>fg',
-        function()
-          require('telescope.builtin').grep_string {
-            shorten_path = true,
-            path_display = { 'hidden' },
-            word_match = '-w',
-            only_sort_text = true,
-            search = '',
-          }
-        end,
-        { silent = true },
-      },
-      {
-        '<leader>gg',
-        function()
-          require('telescope.builtin').current_buffer_fuzzy_find {
-            skip_empty_lines = true,
-            results_ts_highlight = true,
-          }
-        end,
-        { silent = true },
-      },
-      {
-        '<leader>fb',
-        function()
-          require('telescope').extensions.file_browser.file_browser()
-        end,
-        { silent = true },
-      },
-      { '<leader>fr', '<cmd>Telescope frecency workspace=CWD path_display={"shorten"}<cr>', { silent = true } },
-    }
-  end,
-  config = function()
+  keys = {
+    { '<leader>ff', '<cmd>Telescope find_files<cr>', { silent = true } },
+    {
+      '<leader>fg',
+      function()
+        require('telescope.builtin').grep_string {
+          shorten_path = true,
+          path_display = { 'hidden' },
+          word_match = '-w',
+          only_sort_text = true,
+          search = '',
+        }
+      end,
+      { silent = true },
+    },
+    {
+      '<leader>gg',
+      function()
+        require('telescope.builtin').current_buffer_fuzzy_find {
+          skip_empty_lines = true,
+          results_ts_highlight = true,
+        }
+      end,
+      { silent = true },
+    },
+    {
+      '<leader>fb',
+      function()
+        require('telescope').extensions.file_browser.file_browser()
+      end,
+      { silent = true },
+    },
+    { '<leader>fr', '<cmd>Telescope frecency workspace=CWD path_display={"shorten"}<cr>', { silent = true } },
+  },
+  after = function()
+    -- extension は telescope を require するため telescope のロード後に読み込む
+    require('lz.n').trigger_load({
+      'telescope-file-browser.nvim',
+      'telescope-frecency.nvim',
+      'telescope-fzf-native.nvim',
+    })
+
     local telescope = require('telescope')
     telescope.setup {
       defaults = {
