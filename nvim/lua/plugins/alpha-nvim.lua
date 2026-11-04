@@ -1,14 +1,12 @@
 -- a lua powered greeter like vim-startify / dashboard-nvim
----@type LazyPluginSpec
+---@type configs.PluginSpec
 return {
-  'goolord/alpha-nvim',
-  dependencies = {
-    'nvim-tree/nvim-web-devicons',
-  },
+  'alpha-nvim',
+  src = 'https://github.com/goolord/alpha-nvim',
   event = {
    'VimEnter',
   },
-  config = function ()
+  after = function ()
     local alpha = require('alpha')
     local theta = require('alpha.themes.theta')
     theta.file_icons.provider = 'devicons'

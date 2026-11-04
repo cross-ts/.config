@@ -1,18 +1,17 @@
 -- Plugin to improve viewing Markdown files in Neovim
----@type LazyPluginSpec
+---@type configs.PluginSpec
 return {
-  'MeanderingProgrammer/render-markdown.nvim',
-  dependencies = {
-    'nvim-treesitter/nvim-treesitter',
-    'nvim-tree/nvim-web-devicons',
-  },
+  'render-markdown.nvim',
+  src = 'https://github.com/MeanderingProgrammer/render-markdown.nvim',
   ft = {
     'markdown',
   },
   cmd = {
     'RenderMarkdown',
   },
-  opts = {
-    enabled = false,
-  },
+  after = function()
+    require('render-markdown').setup({
+      enabled = false,
+    })
+  end,
 }

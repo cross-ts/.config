@@ -1,20 +1,23 @@
 -- A completion plugin for neovim coded in Lua.
----@type LazyPluginSpec
+---@type configs.PluginSpec
 return {
-  'hrsh7th/nvim-cmp',
-  dependencies = {
-    'hrsh7th/cmp-buffer',
-    'hrsh7th/cmp-cmdline',
-    'hrsh7th/cmp-nvim-lsp',
-    'hrsh7th/cmp-path',
-    'zbirenbaum/copilot-cmp',
-    'onsails/lspkind.nvim',
-  },
+  'nvim-cmp',
+  src = 'https://github.com/hrsh7th/nvim-cmp',
   event = {
     'InsertEnter',
     'CmdLineEnter',
   },
-  config = function()
+  after = function()
+    -- source の after/plugin が require('cmp') するため nvim-cmp のロード後に読み込む
+    require('lz.n').trigger_load({
+      'cmp-buffer',
+      'cmp-cmdline',
+      'cmp-nvim-lsp',
+      'cmp-path',
+      'copilot-cmp',
+      'lspkind.nvim',
+    })
+
     local cmp = require('cmp')
     local lspkind = require('lspkind')
 

@@ -1,7 +1,8 @@
 -- ☕ Dead simple yet super extensible plugin to center the currently focused buffer to the middle of the screen.
----@type LazyPluginSpec
+---@type configs.PluginSpec
 return {
-  'shortcuts/no-neck-pain.nvim',
+  'no-neck-pain.nvim',
+  src = 'https://github.com/shortcuts/no-neck-pain.nvim',
   cmd = {
     'NoNeckPain',
   },
@@ -9,10 +10,12 @@ return {
   --   'BufNewFile',
   --   'BufReadPre',
   -- },
-  -- opts = {
-  --   autocmds = {
-  --     enableOnVimEnter = true,
-  --     enableOnTabEnter = true,
-  --   }
-  -- },
+  -- after = function()
+  --   require('no-neck-pain').setup({
+  --     autocmds = {
+  --       enableOnVimEnter = true,
+  --       enableOnTabEnter = true,
+  --     }
+  --   })
+  -- end,
 }
