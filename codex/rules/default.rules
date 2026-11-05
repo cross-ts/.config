@@ -41,12 +41,12 @@ prefix_rule(pattern = ["sort"], decision = "allow")
 prefix_rule(pattern = ["strings"], decision = "allow")
 
 prefix_rule(pattern = ["awk"], decision = "allow")
+prefix_rule(pattern = ["make"], decision = "allow")
 prefix_rule(pattern = ["sed"], decision = "allow")
 
 ### Substitute
 prefix_rule(pattern = ["grep"], decision = "forbidden", justification = "Substitute `rg`")
 prefix_rule(pattern = ["find"], decision = "forbidden", justification = "Substitute `fd`")
-prefix_rule(pattern = ["make"], decision = "forbidden", justification = "Substitute `gmake`")
 
 ## Installed tools
 prefix_rule(pattern = ["rg"], decision = "allow")
@@ -82,6 +82,5 @@ prefix_rule(pattern = ["tombi", "lint"], decision = "allow")
 prefix_rule(pattern = ["yamllint"], decision = "allow")
 
 ## MacOS Tools
-prefix_rule(pattern = ["gmake"], decision = "allow")
 prefix_rule(pattern = ["fm"], decision = "allow")
 prefix_rule(pattern = ["yap"], decision = "allow")
