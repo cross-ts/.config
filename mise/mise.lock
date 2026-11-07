@@ -38,7 +38,7 @@ url = "https://github.com/checkmake/checkmake/releases/download/v0.3.2/checkmake
 url_api = "https://api.github.com/repos/checkmake/checkmake/releases/assets/338779063"
 
 [[tools."github:composer/composer"]]
-version = "2.10.3"
+version = "2.11.1"
 backend = "github:composer/composer"
 specifiers = ["latest"]
 
@@ -46,21 +46,20 @@ specifiers = ["latest"]
 asset_pattern = "composer.phar"
 
 [tools."github:composer/composer"."platforms.macos-arm64"]
-checksum = "sha256:7a2d379d5b8ffdaa028580ef26494c36d2feef4b178d3dd1473a4dbc5e17c8d6"
-url = "https://github.com/composer/composer/releases/download/2.10.3/composer.phar"
-url_api = "https://api.github.com/repos/composer/composer/releases/assets/532220185"
+checksum = "sha256:6f1b891e1d4927d62740276c540fb490e47689e19e102c49e8da849794882f8c"
+url = "https://github.com/composer/composer/releases/download/2.11.1/composer.phar"
+url_api = "https://api.github.com/repos/composer/composer/releases/assets/692305077"
 provenance = "github-attestations"
-provenance_verified = true
 
 [[tools."github:cross-ts/rss-reader"]]
-version = "0.4.23"
+version = "0.4.24"
 backend = "github:cross-ts/rss-reader"
-specifiers = ["v0.4.23"]
+specifiers = ["v0.4.24"]
 
 [tools."github:cross-ts/rss-reader"."platforms.macos-arm64"]
-checksum = "sha256:5dae98d0905228fecc7bdfd2a9157b158bc2c0d78a8b4f919393720fb2266f2d"
-url = "https://github.com/cross-ts/rss-reader/releases/download/v0.4.23/rss-reader-v0.4.23-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/cross-ts/rss-reader/releases/assets/558436168"
+checksum = "sha256:1b52c5c6aa3070ecc817f555a127135590e7893c3143e73386c4d261c2c4e075"
+url = "https://github.com/cross-ts/rss-reader/releases/download/v0.4.24/rss-reader-v0.4.24-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/cross-ts/rss-reader/releases/assets/677036157"
 provenance = "github-attestations"
 
 [[tools."github:hadolint/hadolint"]]
@@ -75,7 +74,7 @@ url_api = "https://api.github.com/repos/hadolint/hadolint/releases/assets/496546
 provenance = "github-attestations"
 
 [[tools."github:php/pie"]]
-version = "1.5.3"
+version = "1.5.5"
 backend = "github:php/pie"
 specifiers = ["latest"]
 
@@ -83,13 +82,13 @@ specifiers = ["latest"]
 asset_pattern = "pie.phar"
 
 [tools."github:php/pie"."platforms.macos-arm64"]
-checksum = "sha256:34a1315073b6089d4cdf4cc5a8295ecc6d36cfde683ef785582f7da0d74f127b"
-url = "https://github.com/php/pie/releases/download/1.5.3/pie.phar"
-url_api = "https://api.github.com/repos/php/pie/releases/assets/664077188"
+checksum = "sha256:2ca0dff6868f1b53c095625674deef38ac698588e0a25e4321cd834a5b7553bc"
+url = "https://github.com/php/pie/releases/download/1.5.5/pie.phar"
+url_api = "https://api.github.com/repos/php/pie/releases/assets/691737172"
 provenance = "github-attestations"
 
 [[tools."github:phpstan/phpstan"]]
-version = "2.3.1"
+version = "2.3.4"
 backend = "github:phpstan/phpstan"
 specifiers = ["latest"]
 
@@ -97,9 +96,9 @@ specifiers = ["latest"]
 asset_pattern = "phpstan.phar"
 
 [tools."github:phpstan/phpstan"."platforms.macos-arm64"]
-checksum = "sha256:85157dba3d95d77ca603d2b7303aa78a538f9e3b56ccad07dd794c53aa96d1ae"
-url = "https://github.com/phpstan/phpstan/releases/download/2.3.1/phpstan.phar"
-url_api = "https://api.github.com/repos/phpstan/phpstan/releases/assets/623016794"
+checksum = "sha256:a961d12cc71941a31ad6560e6a330347d487612628c3202a718f71a59de21a7c"
+url = "https://github.com/phpstan/phpstan/releases/download/2.3.4/phpstan.phar"
+url_api = "https://api.github.com/repos/phpstan/phpstan/releases/assets/686573151"
 provenance = "github-attestations"
 
 [[tools."github:squizlabs/PHP_CodeSniffer"]]
@@ -165,13 +164,13 @@ backend = "asdf:lua"
 specifiers = ["5.4.8"]
 
 [[tools.node]]
-version = "26.12.1"
+version = "26.13.0"
 backend = "core:node"
-specifiers = ["26.12.1"]
+specifiers = ["26.13.0"]
 
 [tools.node."platforms.macos-arm64"]
-checksum = "sha256:1901d539912c02afa10d1cc126943a8855a7eedebe830119463470db5e6c59e8"
-url = "https://nodejs.org/dist/v26.12.1/node-v26.12.1-darwin-arm64.tar.gz"
+checksum = "sha256:d38bd5e5a2ddce6bbb5ce45e46e208337da4d51fffe611e567fd32073d6439f6"
+url = "https://nodejs.org/dist/v26.13.0/node-v26.13.0-darwin-arm64.tar.gz"
 
 [[tools."npm:@actions/languageserver"]]
 version = "0.3.61"
@@ -184,7 +183,7 @@ backend = "npm:@ansible/ansible-language-server"
 specifiers = ["latest"]
 
 [[tools."npm:@github/copilot-language-server"]]
-version = "1.560.0"
+version = "1.565.1"
 backend = "npm:@github/copilot-language-server"
 specifiers = ["latest"]
 
@@ -194,7 +193,7 @@ backend = "npm:@playwright/cli"
 specifiers = ["latest"]
 
 [[tools."npm:@quobix/vacuum"]]
-version = "0.35.0"
+version = "0.36.1"
 backend = "npm:@quobix/vacuum"
 specifiers = ["latest"]
 
@@ -209,7 +208,7 @@ backend = "npm:bash-language-server"
 specifiers = ["latest"]
 
 [[tools."npm:ccusage"]]
-version = "20.0.42"
+version = "20.0.46"
 backend = "npm:ccusage"
 specifiers = ["latest"]
 
@@ -234,7 +233,7 @@ backend = "npm:npm-check-updates"
 specifiers = ["latest"]
 
 [[tools."npm:tombi"]]
-version = "1.9.1"
+version = "1.9.8"
 backend = "npm:tombi"
 specifiers = ["latest"]
 
@@ -285,10 +284,10 @@ specifiers = ["latest"]
 uv = { path = "locks/pipx-isort/9.0.2", digest = "sha256:d96a3ed734f9c6bbc2cce011cf857f8ef0f51affe206fda7f357f0dca5ffa895" }
 
 [[tools."pipx:mypy"]]
-version = "2.4.0"
+version = "2.4.1"
 backend = "pipx:mypy"
 specifiers = ["latest"]
-uv = { path = "locks/pipx-mypy/2.4.0", digest = "sha256:0fc9ef6b99e88e40a30ee9b5ddc21a4e215913c30fe277e81eb54e4ee8fa36be" }
+uv = { path = "locks/pipx-mypy/2.4.1", digest = "sha256:b89c82f76f4816f8763189475d786a04a22c827bac3a9eb2b197733e1a35afac" }
 
 [[tools."pipx:nginx-language-server"]]
 version = "0.9.0"
@@ -309,24 +308,24 @@ specifiers = ["latest"]
 uv = { path = "locks/pipx-yamllint/1.38.0", digest = "sha256:6f655283d924206c209bc0893bbf5cd684649c042e4260b8a6d5c06383621bdf" }
 
 [[tools.pnpm]]
-version = "12.15.0"
+version = "12.17.0"
 backend = "aqua:pnpm/pnpm"
 specifiers = ["latest"]
 
 [tools.pnpm."platforms.macos-arm64"]
-checksum = "sha256:6a41a2877773e97f19832067187cc6fc82e186d8a2cf91fec4b4c1a5fbd6ef27"
-url = "https://github.com/pnpm/pnpm/releases/download/v12.15.0/pnpm-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/662173343"
+checksum = "sha256:446c334d493bdfc6cc2db693764d1812fca06456f6a4be7996a13d7008780239"
+url = "https://github.com/pnpm/pnpm/releases/download/v12.17.0/pnpm-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/692316720"
 provenance = "github-attestations"
 
 [[tools.python]]
-version = "3.15.1"
+version = "3.15.2"
 backend = "core:python"
-specifiers = ["3.15.1"]
+specifiers = ["3.15.2"]
 
 [tools.python."platforms.macos-arm64"]
-checksum = "sha256:1a4eb4d5aa82400de6eeb94e6fc6d870f5fabc97eb1d801f7eeba8072117b11c"
-url = "https://github.com/astral-sh/python-build-standalone/releases/download/20261021/cpython-3.15.1+20261021-aarch64-apple-darwin-install_only_stripped.tar.gz"
+checksum = "blake3:20b7ad4c4944023af58dee5d5ce5551509b1bbd13c4bb62534005b9ff43ed674"
+url = "https://github.com/astral-sh/python-build-standalone/releases/download/20261026/cpython-3.15.2+20261026-aarch64-apple-darwin-install_only_stripped.tar.gz"
 provenance = "github-attestations"
 
 [[tools.ruby]]
@@ -351,12 +350,12 @@ backend = "core:rust"
 specifiers = ["1.99.1"]
 
 [[tools.uv]]
-version = "0.13.5"
+version = "0.13.6"
 backend = "aqua:astral-sh/uv"
 specifiers = ["latest"]
 
 [tools.uv."platforms.macos-arm64"]
-checksum = "sha256:743f85035a1996ecb350659e01cd9faea9709829be09b1b4b03c73eaf3c9cd73"
-url = "https://github.com/astral-sh/uv/releases/download/0.13.5/uv-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/664335803"
+checksum = "sha256:60fbd5c8a1ed681845eea28d9d622fcde03c51e91a43465b64a1e17db1ed3472"
+url = "https://github.com/astral-sh/uv/releases/download/0.13.6/uv-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/679980393"
 provenance = "github-attestations"
