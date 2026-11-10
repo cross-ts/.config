@@ -7,7 +7,7 @@ command = "codex --no-daemon --profile $(print -l ${CODEX_HOME}/*.config.toml(:t
 
 [[snippets]]
 tag = ["claude"]
-command = "claude"
+command = "claude --model sonnet --advisor opus"
 
 ###################
 # Version Manager #
