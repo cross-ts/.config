@@ -149,3 +149,6 @@ cask '1password'
 cask '1password-cli'
 cask 'docker-desktop'
 cask 'steam'
+
+tap 'voicevox/voicevox'
+cask 'voicevox'

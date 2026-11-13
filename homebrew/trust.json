@@ -2,13 +2,15 @@
   "trustedtaps": [
     "hanasuke/moralerspace",
     "hashicorp/tap",
-    "microsoft/apm"
+    "microsoft/apm",
+    "voicevox/voicevox"
   ],
   "trustedformulae": [
     "hashicorp/tap/terraform",
     "microsoft/apm/apm"
   ],
   "trustedcasks": [
-    "stablyai/orca/orca"
+    "stablyai/orca/orca",
+    "voicevox/voicevox/voicevox"
   ]
 }
