@@ -21,7 +21,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y autoconf bison build-essential curl gettext git libgd-dev libcurl4-openssl-dev libedit-dev libicu-dev libjpeg-dev libmysqlclient-dev libonig-dev libpng-dev libpq-dev libreadline-dev libsqlite3-dev libssl-dev libxml2-dev libzip-dev openssl pkg-config re2c zlib1g-dev
 
-      - uses: jdx/mise-action@6612f0ef07ed2a736cd1e00a94a065522dd41195 # v5.2.5
+      - uses: jdx/mise-action@b44d12e7d0d8ee7461bb893e1b1993500433185b # v5.2.7
         env:
           XDG_CONFIG_HOME: ${{ github.workspace }}
 
@@ -30,7 +30,7 @@ jobs:
           XDG_CONFIG_HOME: ${{ github.workspace }}
 
       - id: pull-request
-        uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8.1.1
+        uses: peter-evans/create-pull-request@15733dbdfeedb4f7fdb73d13c6f5ac83b710fab8 # v8.1.2
         with:
           branch: mise-upgrade/${{ github.run_id }}
           title: 'Mise Upgrade'
