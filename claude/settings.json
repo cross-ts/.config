@@ -1,5 +1,6 @@
 {
   "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_CODE_MODE": "1",
     "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "0",
     "CLAUDE_CODE_ENABLE_EXPERIMENTAL_ADVISOR_TOOL": "1",
     "CLAUDE_CODE_ENABLE_AUTO_MODE": "1",
@@ -39,6 +40,9 @@
     "defaultMode": "auto"
   },
   "model": "opus",
+  "worktree": {
+    "baseRef": "fresh"
+  },
   "disableWorkflows": true,
   "enabledPlugins": {
     "tmux@cross-ts": true,
@@ -59,15 +63,24 @@
     }
   },
   "ultracode": false,
+  "promptSuggestionEnabled": false,
   "plansDirectory": ".claude/plans",
   "autoMemoryEnabled": true,
   "autoMemoryDirectory": "~/.local/share/claude/memories",
   "theme": "auto",
+  "editorMode": "normal",
   "remoteControlAtStartup": true,
   "agentPushNotifEnabled": true,
   "autoMode": {
     "environment": [
       "$defaults"
     ]
+  },
+  "pluginConfigs": {
+    "cc-plugin-agents-md@builtin": {
+      "options": {
+        "instructionFiles": "claude-md-or-agents-md"
+      }
+    }
   }
 }

@@ -4,6 +4,7 @@ model_reasoning_effort = "low"
 service_tier = "default"
 
 [features]
+memories = true
 fast_mode = false
 daemon_auto_start = false
 
