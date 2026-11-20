@@ -6,6 +6,7 @@
 #######
 tap 'hashicorp/tap'
 tap 'hanasuke/moralerspace'
+tap 'voicevox/voicevox'
 
 ########
 # Font #
@@ -25,15 +26,14 @@ cask 'copilot-cli'
 # Plugin Manager
 brew 'apm'
 
-# AI Apps
+# Workflow Manager
+brew 'dagu'
+
+# Apps
 cask 'antigravity'
 cask 'google-gemini'
 cask 'chatgpt'
 cask 'claude'
-
-# AI Terminal Emulator
-cask 'cmux'
-cask 'stablyai/orca/orca'
 
 ############
 # Terminal #
@@ -76,12 +76,14 @@ brew 'pinact'
 # Database
 brew 'sqlite'
 brew 'duckdb'
+brew 'percona-toolkit'
 
 # Utilities
 brew 'ripgrep'
 brew 'bat'
 brew 'eza'
 brew 'fd'
+brew 'ffmpeg'
 brew 'fzf'
 brew 'hyperfine'
 brew 'jq'
@@ -89,6 +91,7 @@ brew 'pet'
 brew 'marp-cli'
 brew 'tree'
 brew 'yq'
+
 if OS.mac?
   brew 'coreutils'
   brew 'make'
@@ -150,5 +153,4 @@ cask '1password-cli'
 cask 'docker-desktop'
 cask 'steam'
 
-tap 'voicevox/voicevox'
 cask 'voicevox'

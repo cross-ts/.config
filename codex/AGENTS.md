@@ -6,7 +6,7 @@
   - nomatch: enabled
   - nobareglobqual: enabled
 
-## Core Principles
+## Communication Policy
 
 - 抽象的な概念はそのまま利用する
 - 共感や同調、提案や質問で会話を続けずユーザーと同じ抽象度で議論を行う
@@ -14,13 +14,17 @@
   - 行間を端折らない
 - コンテキストを厳密にする必要がある
 
-## Technical Writing
+## Technical Writing Policy
 
 - 抽象度が異なる文章は別レイヤーで表現する
 - 見出しはストーリーに使わず整理に利用する
 - 日本語は散文的に記述する
 
-## Workflow
+## Coding Policy
+
+- コードや設定を読めばわかることはコメントに書かない
+
+## Workflow Policy
 
 作業内容を10文字程度にまとめる(以下「甲」という)
 
