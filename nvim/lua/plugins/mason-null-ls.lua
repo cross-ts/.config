@@ -1,12 +1,9 @@
 -- mason-null-ls bridges mason.nvim with the null-ls plugin - making it easier to use both plugins together.
----@type LazyPluginSpec
+---@type configs.PluginSpec
 return {
-  'jay-babu/mason-null-ls.nvim',
+  'mason-null-ls.nvim',
+  src = 'https://github.com/jay-babu/mason-null-ls.nvim',
   enabled = false,
-  dependencies = {
-    'nvimtools/none-ls.nvim',
-    'mason-org/mason.nvim',
-  },
   cmd = {
     'NoneLsInstall',
     'NoneLsUninstall',
@@ -15,7 +12,10 @@ return {
     'BufNewFile',
     'BufReadPre',
   },
-  config = function()
+  before = function()
+    require('lz.n').trigger_load({ 'none-ls.nvim', 'mason.nvim' })
+  end,
+  after = function()
     require('mason').setup()
     require('mason-null-ls').setup({
       handlers = {},

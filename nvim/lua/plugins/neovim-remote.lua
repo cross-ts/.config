@@ -1,16 +1,17 @@
 -- 👌 Support for --remote and friends.
----@type LazyPluginSpec
+---@type configs.PluginSpec
 return {
-  'mhinz/neovim-remote',
+  'neovim-remote',
+  src = 'https://github.com/mhinz/neovim-remote',
   event = 'TermOpen',
   build = function()
     vim.fn.system('brew require neovim-remote')
   end,
-  init = function()
+  beforeAll = function()
     vim.env.GIT_EDITOR = 'nvr --remote-wait'
     vim.env.VISUAL = 'nvr --remote-wait'
   end,
-  config = function()
+  after = function()
     vim.api.nvim_create_autocmd('FileType', {
       pattern = 'gitcommit,gitrebase,gitconfig',
       callback = function()

@@ -1,33 +1,35 @@
 -- 💥 Highly experimental plugin that completely replaces the UI for messages, cmdline and the popupmenu.
----@type LazyPluginSpec
+---@type configs.PluginSpec
 return {
-  'folke/noice.nvim',
+  'noice.nvim',
+  src = 'https://github.com/folke/noice.nvim',
   enabled = false,
-  dependencies = {
-    'MunifTanjim/nui.nvim',
-    'nvim-treesitter/nvim-treesitter',
-  },
   cmd = {
     'Noice',
     'NoiceAll',
   },
   event = {
-    'VeryLazy',
+    'DeferredUIEnter',
   },
-  opts = {
-    lsp = {
-      override = {
-        ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
-        ["vim.lsp.util.stylize_markdown"] = true,
-        ["cmp.entry.get_documentation"] = true,
+  before = function()
+    require('lz.n').trigger_load('nui.nvim')
+  end,
+  after = function()
+    require('noice').setup({
+      lsp = {
+        override = {
+          ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
+          ["vim.lsp.util.stylize_markdown"] = true,
+          ["cmp.entry.get_documentation"] = true,
+        },
       },
-    },
-    presets = {
-      bottom_search = true,
-      command_palette = true,
-      long_message_to_split = true,
-      inc_rename = false,
-      lsp_doc_border = false,
-    },
-  },
+      presets = {
+        bottom_search = true,
+        command_palette = true,
+        long_message_to_split = true,
+        inc_rename = false,
+        lsp_doc_border = false,
+      },
+    })
+  end,
 }

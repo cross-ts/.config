@@ -1,8 +1,10 @@
 -- autopairs for neovim written in lua
----@type LazyPluginSpec
+---@type configs.PluginSpec
 return {
-  'windwp/nvim-autopairs',
+  'nvim-autopairs',
+  src = 'https://github.com/windwp/nvim-autopairs',
   event = "InsertEnter",
-  config = true,
-  opts = {},
+  after = function()
+    require('nvim-autopairs').setup({})
+  end,
 }

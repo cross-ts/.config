@@ -1,7 +1,8 @@
 -- Portable package manager for Neovim that runs everywhere Neovim runs. Easily install and manage LSP servers, DAP servers, linters, and formatters.
----@type LazyPluginSpec
+---@type configs.PluginSpec
 return {
-  'mason-org/mason.nvim',
+  'mason.nvim',
+  src = 'https://github.com/mason-org/mason.nvim',
   enabled = false,
   cmd = {
     'Mason',
@@ -11,5 +12,7 @@ return {
     'MasonUninstallAll',
     'MasonLog',
   },
-  config = true,
+  after = function()
+    require('mason').setup({})
+  end,
 }

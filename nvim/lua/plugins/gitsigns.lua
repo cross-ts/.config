@@ -1,7 +1,8 @@
 -- Git integration for buffers
----@type LazyPluginSpec
+---@type configs.PluginSpec
 return {
-  'lewis6991/gitsigns.nvim',
+  'gitsigns.nvim',
+  src = 'https://github.com/lewis6991/gitsigns.nvim',
   event = {
     'BufReadPre',
     'BufNewFile',

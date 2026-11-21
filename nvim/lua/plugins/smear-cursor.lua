@@ -1,12 +1,15 @@
 -- 🌠 Neovim plugin to animate the cursor with a smear effect in all terminals
----@type LazyPluginSpec
+---@type configs.PluginSpec
 return {
-  "sphamba/smear-cursor.nvim",
+  "smear-cursor.nvim",
+  src = "https://github.com/sphamba/smear-cursor.nvim",
   cmd = {
     "SmearCursorToggle",
   },
   event = {
     "VimEnter",
   },
-  opts = {},
+  after = function()
+    require("smear_cursor").setup({})
+  end,
 }

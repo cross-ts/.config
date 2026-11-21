@@ -1,5 +1,7 @@
 -- UI Component Library for Neovim.
----@type LazyPluginSpec
+---@type configs.PluginSpec
 return {
-  'MunifTanjim/nui.nvim',
+  'nui.nvim',
+  src = 'https://github.com/MunifTanjim/nui.nvim',
+  lazy = true,
 }

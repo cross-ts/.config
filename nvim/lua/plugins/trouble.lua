@@ -1,8 +1,8 @@
 -- 🚦 A pretty diagnostics, references, telescope results, quickfix and location list to help you solve all the trouble your code is causing.
----@type LazyPluginSpec
+---@type configs.PluginSpec
 return {
-  "folke/trouble.nvim",
-  opts = {}, -- for default options, refer to the configuration section for custom setup.
+  "trouble.nvim",
+  src = "https://github.com/folke/trouble.nvim",
   cmd = "Trouble",
   keys = {
     {
@@ -36,4 +36,7 @@ return {
       desc = "Quickfix List (Trouble)",
     },
   },
+  after = function()
+    require("trouble").setup({}) -- for default options, refer to the configuration section for custom setup.
+  end,
 }

@@ -1,7 +1,8 @@
 -- Quickstart configs for Nvim LSP
----@type LazyPluginSpec
+---@type configs.PluginSpec
 return {
-  'neovim/nvim-lspconfig',
+  'nvim-lspconfig',
+  src = 'https://github.com/neovim/nvim-lspconfig',
   cmd = {
     'LspInfo',
     'LspStart',
@@ -13,7 +14,7 @@ return {
     'BufNewFile',
     'BufReadPre',
   },
-  config = function()
+  after = function()
     -- lua/configs/lsp/*.lua ベースでLSPサーバーを自動有効化 (mason-lspconfig相当)
     local disabled_servers = {
       phpantom = true,

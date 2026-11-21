@@ -1,14 +1,14 @@
 -- Nvim Treesitter configurations and abstraction layer
----@type LazyPluginSpec
+---@type configs.PluginSpec
 return {
-  'nvim-treesitter/nvim-treesitter',
-  build = ":TSUpdate",
-  dependencies = {
-    'nvim-treesitter/nvim-treesitter-context',
-    'RRethy/nvim-treesitter-endwise',
-  },
+  'nvim-treesitter',
+  src = 'https://github.com/nvim-treesitter/nvim-treesitter',
+  build = function()
+    -- :TSUpdate 相当 (install 直後は plugin/ が未 source でコマンドが無いため API を使う)
+    require('nvim-treesitter').update(nil, { summary = true })
+  end,
   lazy = false,
-  init = function()
+  after = function()
     local ensureInstalled = {
       -- Languages I use often
       'lua', 'python', 'typescript', 'php', 'phpdoc', 'ruby',

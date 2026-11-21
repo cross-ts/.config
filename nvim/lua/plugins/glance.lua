@@ -1,6 +1,7 @@
 -- Peek preview window for LSP locations in Neovim
----@type LazyPluginSpec
+---@type configs.PluginSpec
 return {
-  'dnlhc/glance.nvim',
+  'glance.nvim',
+  src = 'https://github.com/dnlhc/glance.nvim',
   cmd = 'Glance'
 }

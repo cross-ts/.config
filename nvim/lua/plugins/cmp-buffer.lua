@@ -1,5 +1,8 @@
 -- nvim-cmp source for buffer words
----@type LazyPluginSpec
+---@type configs.PluginSpec
 return {
-  'hrsh7th/cmp-buffer',
+  'cmp-buffer',
+  src = 'https://github.com/hrsh7th/cmp-buffer',
+  -- nvim-cmp の after で trigger_load する
+  lazy = true,
 }

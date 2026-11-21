@@ -1,16 +1,14 @@
 -- This is the lua implementation of nvim-hlchunk, you can use this neovim plugin to highlight your indent line and the current chunk (context) your cursor stayed
----@type LazyPluginSpec
+---@type configs.PluginSpec
 return {
-  "shellRaining/hlchunk.nvim",
-  dependencies = {
-    "nvim-treesitter/nvim-treesitter",
-  },
+  "hlchunk.nvim",
+  src = "https://github.com/shellRaining/hlchunk.nvim",
   event = {
     "BufNewFile",
     "BufReadPre",
   },
-  opts = function()
-    return {
+  after = function()
+    require("hlchunk").setup({
       chunk = {
         enable = true,
         use_treesitter = true,
@@ -38,6 +36,6 @@ return {
         enable = true,
         chars = { "⋅" },
       },
-    }
+    })
   end,
 }

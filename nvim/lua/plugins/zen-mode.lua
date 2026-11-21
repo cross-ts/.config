@@ -1,10 +1,13 @@
 -- 🧘 Distraction-free coding for Neovim
----@type LazyPluginSpec
+---@type configs.PluginSpec
 return {
-  "folke/zen-mode.nvim",
-  dependencies = {
-    "folke/twilight.nvim",
-  },
+  "zen-mode.nvim",
+  src = "https://github.com/folke/zen-mode.nvim",
   cmd = { "ZenMode" },
-  opts = {},
+  before = function()
+    require("lz.n").trigger_load("twilight.nvim")
+  end,
+  after = function()
+    require("zen-mode").setup({})
+  end,
 }

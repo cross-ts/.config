@@ -1,16 +1,13 @@
 -- null-ls.nvim reloaded / Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua.
----@type LazyPluginSpec
+---@type configs.PluginSpec
 return {
-  'nvimtools/none-ls.nvim',
-  main = 'null-ls',
-  dependencies = {
-    'nvim-lua/plenary.nvim',
-  },
+  'none-ls.nvim',
+  src = 'https://github.com/nvimtools/none-ls.nvim',
   event = {
     'BufReadPre',
     'BufNewFile',
   },
-  config = function()
+  after = function()
     local sources = {}
     for _, source in ipairs(vim.api.nvim_get_runtime_file('lua/configs/none-ls/*.lua', true)) do
       local source_name = vim.fn.fnamemodify(source, ':t:r')

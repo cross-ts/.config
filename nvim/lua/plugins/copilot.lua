@@ -1,19 +1,22 @@
 -- Fully featured & enhanced replacement for copilot.vim complete with API for interacting with Github Copilot
----@type LazyPluginSpec
+---@type configs.PluginSpec
 return {
-  'zbirenbaum/copilot.lua',
+  'copilot.lua',
+  src = 'https://github.com/zbirenbaum/copilot.lua',
   cmd = {
     'Copilot',
   },
   event = {
     'InsertEnter',
   },
-  opts = {
-    suggestion = {
-      enabled = false,
-    },
-    panel = {
-      enabled = false,
-    },
-  },
+  after = function()
+    require('copilot').setup({
+      suggestion = {
+        enabled = false,
+      },
+      panel = {
+        enabled = false,
+      },
+    })
+  end,
 }

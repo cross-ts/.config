@@ -21,7 +21,7 @@ return {
         checkThirdParty = false,
         library = {
           vim.env.VIMRUNTIME,
-          vim.fn.stdpath('data') .. '/lazy/lazy.nvim',
+          vim.fn.stdpath('data') .. '/site/pack/core/opt/lz.n',
         },
       },
     },

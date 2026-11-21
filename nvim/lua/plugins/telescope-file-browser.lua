@@ -1,9 +1,8 @@
 -- File Browser extension for telescope.nvim
----@type LazyPluginSpec
+---@type configs.PluginSpec
 return {
-  'nvim-telescope/telescope-file-browser.nvim',
-  dependencies = {
-    'nvim-telescope/telescope.nvim',
-    'nvim-lua/plenary.nvim',
-  },
+  'telescope-file-browser.nvim',
+  src = 'https://github.com/nvim-telescope/telescope-file-browser.nvim',
+  -- telescope.nvim の after で trigger_load する
+  lazy = true,
 }

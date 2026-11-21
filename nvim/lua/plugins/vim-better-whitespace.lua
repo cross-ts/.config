@@ -1,9 +1,10 @@
 -- Better whitespace highlighting for Vim
----@type LazyPluginSpec
+---@type configs.PluginSpec
 return {
-  'ntpeters/vim-better-whitespace',
+  'vim-better-whitespace',
+  src = 'https://github.com/ntpeters/vim-better-whitespace',
   event = 'BufRead',
-  init = function()
+  beforeAll = function()
     vim.g.strip_whitespace_on_save = 1
   end,
 }

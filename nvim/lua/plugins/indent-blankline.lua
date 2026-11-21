@@ -1,17 +1,17 @@
 -- Indent guides for Neovim
----@type LazyPluginSpec
+---@type configs.PluginSpec
 return {
-  'lukas-reineke/indent-blankline.nvim',
+  'indent-blankline.nvim',
+  src = 'https://github.com/lukas-reineke/indent-blankline.nvim',
   enabled = false,
-  dependencies = {
-    'HiPhish/rainbow-delimiters.nvim',
-  },
   event = {
     'BufNewFile',
     'BufReadPre',
   },
-  main = 'ibl',
-  config = function()
+  before = function()
+    require('lz.n').trigger_load('rainbow-delimiters.nvim')
+  end,
+  after = function()
     local rainbow = {
       "RainbowRed",
       "RainbowYellow",

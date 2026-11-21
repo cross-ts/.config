@@ -1,10 +1,8 @@
 -- Rainbow delimiters for Neovim with Tree-sitter
----@type LazyPluginSpec
+---@type configs.PluginSpec
 return {
-  'HiPhish/rainbow-delimiters.nvim',
-  dependencies = {
-    'nvim-treesitter/nvim-treesitter'
-  },
+  'rainbow-delimiters.nvim',
+  src = 'https://github.com/HiPhish/rainbow-delimiters.nvim',
   event = {
     'BufNewFile',
     'BufReadPre',
