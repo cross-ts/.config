@@ -11,4 +11,4 @@ daemon_auto_start = false
 [memories]
 use_memories = true
 generate_memories = false
-disable_on_external_context = false
+disable_on_external_context = true
