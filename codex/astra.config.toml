@@ -1,5 +1,5 @@
 personality = "pragmatic"
-model = "gpt-6-astra"
+model = "gpt-6.2-astra"
 model_reasoning_effort = "low"
 service_tier = "default"
 
@@ -11,4 +11,4 @@ daemon_auto_start = false
 [memories]
 use_memories = true
 generate_memories = true
-disable_on_external_context = false
+disable_on_external_context = true
