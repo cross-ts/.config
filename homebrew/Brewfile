@@ -46,7 +46,6 @@ brew 'tmux', args: ['HEAD']
 
 # Shell
 brew 'bash'
-brew 'fish'
 brew 'zsh'
 
 # Shell Prompt

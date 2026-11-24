@@ -1,11 +1,5 @@
 # AGENTS.md
 
-## Environment
-
-- zsh
-  - nomatch: enabled
-  - nobareglobqual: enabled
-
 ## Communication Policy
 
 - 抽象的な概念はそのまま利用する
@@ -26,7 +20,6 @@
 
 ## Workflow Policy
 
-作業内容を10文字程度にまとめる(以下「甲」という)
-
-- 作業開始時に `$tmux:rename-window` を使用しwindow名を甲に更新
-- 作業完了時に `say` コマンドを利用し「甲 <ユーザーに伝える内容>」を報告する
+- 作業内容を10文字程度にまとめる
+  - 作業開始時に `$tmux:rename-window` を使用しwindow名を作業内容で更新
+  - 作業完了時に `say` コマンドを利用し作業内容の完了についてユーザーに報告

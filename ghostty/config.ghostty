@@ -1,6 +1,7 @@
 # Application
 title = "Ghostty"
 shell-integration = zsh
+command = /opt/homebrew/bin/zsh
 
 # Window
 window-height = 10000
