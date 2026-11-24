@@ -23,6 +23,8 @@ tags
 ############
 # Claude Code
 **/CLAUDE.local.md
+**/.claude/*.local.md
+**/.claude/agent-memory-local
 **/.claude/plans
 **/.claude/worktrees
 **/.claude/settings.local.json
