@@ -1,0 +1,8 @@
+# $schema: https://raw.githubusercontent.com/dagucloud/dagu/refs/heads/main/internal/cmn/schema/config.schema.json
+
+host: 127.0.0.1
+port: 12055
+auth:
+  mode: none
+log_format: json
+check_updates: false
