@@ -1,22 +1,29 @@
-# MacOS
+#########
+# MacOS #
+#########
 .DS_Store
 
-# Editor
-## Neovim
+##########
+# Editor #
+##########
+# Neovim
 *.swp
 *.swo
 .null-ls*
 tags
 
-## JetBrains
+# JetBrains
 .idea
 
-## VSCode
+# VSCode
 .vscode
 
-# AI
-## Claude Code
-CLAUDE.local.md
-.claude/plans
-.claude/worktrees
-.claude/settings.local.json
+############
+# AI Agent #
+############
+# Claude Code
+**/CLAUDE.local.md
+**/.claude/plans
+**/.claude/worktrees
+**/.claude/settings.local.json
+**/.claude/.cc-writes/
