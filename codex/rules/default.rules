@@ -31,46 +31,47 @@ prefix_rule(pattern = ["sheldon"], decision = "forbidden")
 ##################
 # Tools Settings #
 ##################
-## Linux Commands
+# Linux Commands
 prefix_rule(pattern = ["mkdir"], decision = "allow")
 
 prefix_rule(pattern = ["awk"], decision = "allow")
 prefix_rule(pattern = ["make"], decision = "allow")
 prefix_rule(pattern = ["sed"], decision = "allow")
 
-### Substitute
+## Substitute
 prefix_rule(pattern = ["grep"], decision = "forbidden", justification = "Substitute `rg`")
 prefix_rule(pattern = ["find"], decision = "forbidden", justification = "Substitute `fd`")
 
-## Installed tools
+# Installed tools
 prefix_rule(pattern = ["obsidian"], decision = "allow")
 prefix_rule(pattern = ["duckdb"], decision = "allow")
 prefix_rule(pattern = ["playwright-cli"], decision = "allow")
 prefix_rule(pattern = ["tmux", "rename-window"], decision = "allow")
 
-### Substitute
+# Substitute
 prefix_rule(pattern = ["playwright"], decision = "forbidden", justification = "Substitute `playwright-cli`")
 
-## Git
+# Git
 prefix_rule(pattern = ["git"], decision = "allow")
 prefix_rule(pattern = ["git", ["config", "-C", "-c"]], decision = "forbidden")
 
-## GitHub CLI
+# GitHub CLI
 prefix_rule(pattern = ["gh"], decision = "allow")
 prefix_rule(pattern = ["gh", "auth"], decision = "forbidden")
 
-## Docker CLI
+# Docker CLI
 prefix_rule(pattern = ["docker"], decision = "allow")
 prefix_rule(pattern = ["docker", "login"], decision = "forbidden")
 prefix_rule(pattern = ["docker", "logout"], decision = "forbidden")
 
-## Linter
+# Linter
 prefix_rule(pattern = ["actionlint"], decision = "allow")
 prefix_rule(pattern = ["ansible-lint"], decision = "allow")
 prefix_rule(pattern = ["hadolint"], decision = "allow")
 prefix_rule(pattern = ["tombi", "lint"], decision = "allow")
 prefix_rule(pattern = ["yamllint"], decision = "allow")
 
-## MacOS Tools
+# MacOS Tools
 prefix_rule(pattern = ["fm"], decision = "allow")
+prefix_rule(pattern = ["say"], decision = "allow")
 prefix_rule(pattern = ["yap"], decision = "allow")
