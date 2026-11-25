@@ -6,3 +6,4 @@ auth:
   mode: none
 log_format: json
 check_updates: false
+skip_examples: true
